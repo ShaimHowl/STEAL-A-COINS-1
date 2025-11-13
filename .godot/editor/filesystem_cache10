@@ -1,0 +1,33 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1763032395
+icon.svg::CompressedTexture2D::2219951999146419051::1762971639::1763032395::1::::<><><>0<>0<>a1ad23946afe3208c62377c90b522f8d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1762971639::0::1::::<><><>0<>0<><>::
+::res://Assets/::1763033287
+Attack1.png::CompressedTexture2D::5313188049616506250::1762971639::1763032395::1::::<><><>0<>0<>cb7c2b6862ec274b948dcef6c7f3bbd6<>res://.godot/imported/Attack1.png-d625c10c73eaa163f817af6b1ed73cb1.ctex::
+::res://Assets/Images/::1763033295
+Background.jpg::CompressedTexture2D::1482878435092737087::1763033295::1763033297::1::::<><><>0<>0<>41b08e8ee3c389ef96a74782cb15fc97<>res://.godot/imported/Background.jpg-41a1bce2fd15466168818efc4d2b5cf9.ctex::
+::res://Assets/Martial Hero/::1762971639
+License.txt::TextFile::-1::1762971639::0::1::::<><><>0<>0<><>::
+::res://Assets/Martial Hero/Sprites/::1763032395
+Attack2.png::CompressedTexture2D::3896381968296340066::1762971639::1763032395::1::::<><><>0<>0<>a498d60723b39f24bd3a26ca559309e4<>res://.godot/imported/Attack2.png-d45615a8f94e4f77990b95f1e7b2c89e.ctex::
+Death.png::CompressedTexture2D::8668720328276519634::1762971639::1763032395::1::::<><><>0<>0<>a38374d513d90569b139161f74f16236<>res://.godot/imported/Death.png-bd30870b1e54376f4edec6d1e5b6cf0c.ctex::
+Fall.png::CompressedTexture2D::7772451835308534129::1762971639::1763032395::1::::<><><>0<>0<>f0964de09a710fb9353b00059f1a0f98<>res://.godot/imported/Fall.png-f3905a5734b60984ed8aeef5ecbc2bba.ctex::
+Idle.png::CompressedTexture2D::1304641946340586696::1762971639::1763032395::1::::<><><>0<>0<>af122e9527d994b4f6a5abe47898017a<>res://.godot/imported/Idle.png-f758a1eac547220ae4f3e0c26342276b.ctex::
+Jump.png::CompressedTexture2D::9176861933659033447::1762971639::1763032395::1::::<><><>0<>0<>11e4f84ba20fd210e77228cd85927286<>res://.godot/imported/Jump.png-cfba73df4024a40046a655d8d8371415.ctex::
+Run.png::CompressedTexture2D::1892506683019511489::1762971639::1763032395::1::::<><><>0<>0<>068c965b7576f7e4f86af73bf5e830a2<>res://.godot/imported/Run.png-26819f87388ba866ea3ed2caa1780130.ctex::
+Take Hit - white silhouette.png::CompressedTexture2D::6311530747764522290::1762971639::1763032395::1::::<><><>0<>0<>f4c4ab5821008554b655fa41abd52532<>res://.godot/imported/Take Hit - white silhouette.png-d9917c79cdbe641a922d76b130330f87.ctex::
+Take Hit.png::CompressedTexture2D::5422203832964072649::1762971639::1763032395::1::::<><><>0<>0<>d7e5f5183a5d64c9b0a0133b6dd7098d<>res://.godot/imported/Take Hit.png-4fc25390945e06ebe748a25694698fc3.ctex::
+::res://Assets/Tilesets/::1762971639
+::res://Assets/Tilesets/Pixel Art Platformer - Village Props v2.3.0/::1762971639
+Changelog.txt::TextFile::-1::1762971639::0::1::::<><><>0<>0<><>::
+::res://Assets/Tilesets/Pixel Art Platformer - Village Props v2.3.0/Texture/::1763032395
+TX Chest Animation.png::CompressedTexture2D::1107831109165527467::1762971639::1763032395::1::::<><><>0<>0<>7737f87a433e2422ebb06c4eb9093a9d<>res://.godot/imported/TX Chest Animation.png-429b77013aad97b16f3789e97b1947db.ctex::
+TX FX Flame.png::CompressedTexture2D::9004216610754717601::1762971639::1763032395::1::::<><><>0<>0<>421d7a1ee2b92f09f5eebce69ee88ce5<>res://.godot/imported/TX FX Flame.png-b0e2b70241c1a45975860838ef83704a.ctex::
+TX FX Torch Flame.png::CompressedTexture2D::7255068825836972247::1762971639::1763032395::1::::<><><>0<>0<>20507bf622de004e3b7a640cd61ca4fc<>res://.godot/imported/TX FX Torch Flame.png-091d499e9beff9a5bb7215ef0d4bdeb8.ctex::
+TX Tileset Ground.png::CompressedTexture2D::3243701304240590895::1762971639::1763032395::1::::<><><>0<>0<>e562d09e7680dbfdbcb50c6a90e6a3db<>res://.godot/imported/TX Tileset Ground.png-aff81feabf3197864569fad2c27f894c.ctex::
+TX Village Props.png::CompressedTexture2D::5801628898064302654::1762971639::1763032395::1::::<><><>0<>0<>8ae30e1281293c0eaa2af0de9223084a<>res://.godot/imported/TX Village Props.png-1c90210f493307f22cb490d0f87c8c71.ctex::
+::res://Scenes/::1763033090
+jugador.tscn::PackedScene::8530298965710665431::1762971639::0::1::::<><><>0<>0<><>::uid://st8i6fkks4mm::::res://Assets/Martial Hero/Sprites/Idle.png<>uid://8mlt6f0j6nss::::res://Scripts/jugador.gd<>uid://di0be77uls03v::::res://Assets/Martial Hero/Sprites/Fall.png<>uid://d30lttbifcdut::::res://Assets/Martial Hero/Sprites/Jump.png<>uid://170kqycccntx::::res://Assets/Martial Hero/Sprites/Run.png
+mundo.tscn::PackedScene::4376044656378419864::1763033090::0::1::::<><><>0<>0<><>::uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://bmhjj0jmak0fr::::res://Assets/Tilesets/Pixel Art Platformer - Village Props v2.3.0/Texture/TX Tileset Ground.png
+::res://Scripts/::1763033016
+jugador.gd::GDScript::2341707827205433362::1763033016::0::1::::<>CharacterBody2D<><>0<>0<><>::
