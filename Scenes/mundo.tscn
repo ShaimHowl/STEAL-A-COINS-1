@@ -1,14 +1,23 @@
-[gd_scene load_steps=8 format=3 uid="uid://b3l120pwrhb7m"]
+[gd_scene load_steps=6 format=4 uid="uid://b3l120pwrhb7m"]
 
 [ext_resource type="Texture2D" uid="uid://vek15uljfroh" path="res://Assets/Images/Background.jpg" id="1_gqidu"]
 [ext_resource type="PackedScene" uid="uid://dtse1o8wnri4f" path="res://Scenes/jugador.tscn" id="1_uqtxj"]
 [ext_resource type="Texture2D" uid="uid://bmhjj0jmak0fr" path="res://Assets/Tilesets/Pixel Art Platformer - Village Props v2.3.0/Texture/TX Tileset Ground.png" id="2_uqtxj"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_4cw5y"]
-distance = -7.0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uqtxj"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gqidu"]
 texture = ExtResource("2_uqtxj")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(5.84541, -5.84541, 8, 0.989223, 8, -8, 3.86696, -8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.629505, 4.5864, 5.84541, -8, -6.38498, -8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.629505, 4.5864, 5.84541, -8, -6.38498, -8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.629505, 4.5864, 5.84541, -8, -6.38498, -8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.629505, 4.5864, 5.84541, -8, -6.38498, -8)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.5288, 3.68711, 1.16908, 3.32739, -8, -8, -8)
 8:0/0 = 0
 9:0/0 = 0
 10:0/0 = 0
@@ -23,6 +32,12 @@ texture = ExtResource("2_uqtxj")
 25:0/0 = 0
 26:0/0 = 0
 27:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
 8:1/0 = 0
 9:1/0 = 0
 10:1/0 = 0
@@ -37,6 +52,12 @@ texture = ExtResource("2_uqtxj")
 25:1/0 = 0
 26:1/0 = 0
 27:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
 8:2/0 = 0
 9:2/0 = 0
 10:2/0 = 0
@@ -650,62 +671,27 @@ texture = ExtResource("2_uqtxj")
 29:31/0 = 0
 30:31/0 = 0
 31:31/0 = 0
-0:0/0 = 0
-0:1/0 = 0
-0:2/0 = 0
-1:0/0 = 0
-1:1/0 = 0
-1:2/0 = 0
-2:0/0 = 0
-2:1/0 = 0
-2:2/0 = 0
-3:0/0 = 0
-3:1/0 = 0
-3:2/0 = 0
-4:0/0 = 0
-4:1/0 = 0
-4:2/0 = 0
-5:0/0 = 0
-5:1/0 = 0
-5:2/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_gqidu"]
-sources/0 = SubResource("TileSetAtlasSource_uqtxj")
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_uqtxj"]
-size = Vector2(387, 52)
+[sub_resource type="TileSet" id="TileSet_glouy"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_gqidu")
 
 [node name="Mundo" type="Node2D"]
+position = Vector2(3, -7)
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(0, -48.4375)
+position = Vector2(39, -11)
 scale = Vector2(0.527853, 0.538949)
 texture = ExtResource("1_gqidu")
 
 [node name="jugador" parent="." instance=ExtResource("1_uqtxj")]
-position = Vector2(-40, -35)
-collision_mask = 2
+position = Vector2(-1, 6)
 
 [node name="Camera2D" type="Camera2D" parent="jugador"]
 position = Vector2(38, 31)
 offset = Vector2(0, -50)
 zoom = Vector2(3, 3)
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="jugador"]
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(9, 6)
-shape = SubResource("WorldBoundaryShape2D_4cw5y")
-
-[node name="TileMap" type="TileMap" parent="."]
-light_mask = 2
-position = Vector2(0, 5)
-tile_set = SubResource("TileSet_gqidu")
-format = 2
-layer_0/tile_data = PackedInt32Array(65524, 0, 0, 131060, 0, 1, 196596, 0, 2, 65525, 65536, 0, 131061, 65536, 1, 196597, 65536, 2, 65526, 131072, 0, 131062, 131072, 1, 196598, 131072, 2, 65527, 196608, 0, 131063, 196608, 1, 196599, 196608, 2, 65528, 262144, 0, 131064, 262144, 1, 196600, 262144, 2, 65529, 327680, 0, 131065, 327680, 1, 196601, 327680, 2, 65530, 0, 0, 131066, 0, 1, 196602, 0, 2, 65531, 65536, 0, 131067, 65536, 1, 196603, 65536, 2, 65532, 131072, 0, 131068, 131072, 1, 196604, 131072, 2, 65533, 196608, 0, 131069, 196608, 1, 196605, 196608, 2, 65534, 262144, 0, 131070, 262144, 1, 196606, 262144, 2, 65535, 327680, 0, 131071, 327680, 1, 196607, 327680, 2, 0, 0, 0, 65536, 0, 1, 131072, 0, 2, 1, 65536, 0, 65537, 65536, 1, 131073, 65536, 2, 2, 131072, 0, 65538, 131072, 1, 131074, 131072, 2, 3, 196608, 0, 65539, 196608, 1, 131075, 196608, 2, 4, 262144, 0, 65540, 262144, 1, 131076, 262144, 2, 5, 327680, 0, 65541, 327680, 1, 131077, 327680, 2, 6, 0, 0, 65542, 0, 1, 131078, 0, 2, 7, 65536, 0, 65543, 65536, 1, 131079, 65536, 2, 8, 131072, 0, 65544, 131072, 1, 131080, 131072, 2, 65545, 196608, 1, 131081, 196608, 2, 10, 262144, 0, 65546, 262144, 1, 131082, 262144, 2, 11, 327680, 0, 65547, 327680, 1, 131083, 327680, 2)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap"]
-position = Vector2(0.5, 23)
-shape = SubResource("RectangleShape2D_uqtxj")
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD+/wAAAAAAAAAAAAD//wAAAAABAAAAAAAAAAAAAAACAAAAAAABAAAAAAADAAAAAAACAAAAAAAEAAAAAAADAAAAAAAFAAAAAAD3/wAAAAACAAAAAAD4/wAAAAADAAAAAAD5/wAAAAAEAAAAAAD6/wAAAAAFAAAAAAD7/wAAAAABAAAAAAA=")
+tile_set = SubResource("TileSet_glouy")

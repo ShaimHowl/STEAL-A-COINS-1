@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 @export var speed= 200
-@export var jump = -300
+@export var jump = -500
 # Obtener la gravedad desde la configuración del proyecto para sincronizar con nodos RigidBody.
 var gravity = 980
 @onready var animated_sprite_2d = $AnimatedSprite2D
