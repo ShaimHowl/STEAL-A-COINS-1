@@ -1,50 +1,50 @@
-ea4bc82a6ad023ab7ee23ee620429895
-::res://::1763072787
-icon.svg::CompressedTexture2D/CompressedTexture2D::2219951999146419051::1763037075::1763037424::1::::<><><>0<>0<>f29d7dda42e7e7598ebfcf08a8bd1d47<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-README.md::TextFile/TextFile::-1::1763037075::0::1::::<><><>0<>0<><>::
-::res://Assets/::1763072787
-Attack1.png::CompressedTexture2D/CompressedTexture2D::5313188049616506250::1763037074::1763037424::1::::<><><>0<>0<>5d6dc797be5878447433cf08fe9ad53e<>res://.godot/imported/Attack1.png-d625c10c73eaa163f817af6b1ed73cb1.ctex::
-::res://Assets/Glacial-mountains-parallax-background_vnitti/::1763072769
-background_glacial_mountains.png::CompressedTexture2D::5384326461870702558::1763072768::1763072795::1::::<><><>0<>0<>f122b3559ea30ed7b2eb7293bce16a33<>res://.godot/imported/background_glacial_mountains.png-a2e911eed7cdf309114263d90daf7edb.ctex::
-background_glacial_mountains_lightened.png::CompressedTexture2D::6331136962763750218::1763072768::1763072795::1::::<><><>0<>0<>572aaf4ff73c646ad5acb8a732972ea7<>res://.godot/imported/background_glacial_mountains_lightened.png-b4439d4d7ed4903b41364c8909413c4c.ctex::
-Glacial_Mountains-Cover.png::CompressedTexture2D::6452509314541819538::1763072768::1763072795::1::::<><><>0<>0<>14caef36c70eab7062454655642f759e<>res://.godot/imported/Glacial_Mountains-Cover.png-201b738e2272521035c7936721aa6002.ctex::
-Readme.txt::TextFile::-1::1763072768::0::1::::<><><>0<>0<><>::
-::res://Assets/Glacial-mountains-parallax-background_vnitti/Layers/::1763072769
-clouds_bg.png::CompressedTexture2D::8113077718501254231::1763072768::1763072795::1::::<><><>0<>0<>bccbf0db533e7143d8bbcac40ed22d20<>res://.godot/imported/clouds_bg.png-bf0453be1f92c55d7f93c500b794569f.ctex::
-clouds_mg_1.png::CompressedTexture2D::8963292906462282515::1763072768::1763072795::1::::<><><>0<>0<>6aadbac258aedd6d57896d1545430e86<>res://.godot/imported/clouds_mg_1.png-9eb4cd37df885bcadbfbad697d2a3143.ctex::
-clouds_mg_1_lightened.png::CompressedTexture2D::4552325576914603731::1763072769::1763072795::1::::<><><>0<>0<>8001cb3135c14523bed5d3c95105d0e8<>res://.godot/imported/clouds_mg_1_lightened.png-79253269f2c3d6cebb65f310b8ed2b21.ctex::
-clouds_mg_2.png::CompressedTexture2D::1340245073992866302::1763072769::1763072795::1::::<><><>0<>0<>e38e6d69ea5cf662da83542dd12f9498<>res://.godot/imported/clouds_mg_2.png-966cffa4e68824342680deec27db2372.ctex::
-clouds_mg_3.png::CompressedTexture2D::748360780402371936::1763072769::1763072795::1::::<><><>0<>0<>804e8903f5026ff418f08e2e8b91132a<>res://.godot/imported/clouds_mg_3.png-f1cd5d4e5bbdb4712142b8ffa571cf10.ctex::
-cloud_lonely.png::CompressedTexture2D::6595692849963999365::1763072769::1763072795::1::::<><><>0<>0<>d1a6aa657bf353ac79e58d3f173f3d0d<>res://.godot/imported/cloud_lonely.png-2ef7d23c14bebd0114cc4f787a0b08fa.ctex::
-glacial_mountains.png::CompressedTexture2D::8572931839913634641::1763072769::1763072795::1::::<><><>0<>0<>2671c3d442d31d5f33500b98453082d1<>res://.godot/imported/glacial_mountains.png-01d763c3617d5fb5e45429a4816b99eb.ctex::
-glacial_mountains_lightened.png::CompressedTexture2D::1732255020580219652::1763072769::1763072795::1::::<><><>0<>0<>31caf2daee74e928121bc20302f0cecc<>res://.godot/imported/glacial_mountains_lightened.png-fc94db7bd2ba140f2141563f1998a6de.ctex::
-sky.png::CompressedTexture2D::4481460740984527207::1763072769::1763072795::1::::<><><>0<>0<>f6c18956e136f74c8b97610769ede96a<>res://.godot/imported/sky.png-a81313205cba20b286a1ff51f2c82804.ctex::
-sky_lightened.png::CompressedTexture2D::7740586584650761411::1763072769::1763072795::1::::<><><>0<>0<>cba101f6198d8118d61b57e36550ec3d<>res://.godot/imported/sky_lightened.png-aab99807507616fba07666c52bcf243e.ctex::
-::res://Assets/Glacial-mountains-parallax-background_vnitti/PSD/::1763072769
-::res://Assets/Images/::1763037423
-Background.jpg::CompressedTexture2D/CompressedTexture2D::1482878435092737087::1763037074::1763037423::1::::<><><>0<>0<>a86e80a66f03160a9bb326e565c9dd00<>res://.godot/imported/Background.jpg-41a1bce2fd15466168818efc4d2b5cf9.ctex::
-::res://Assets/Martial Hero/::1763037074
-License.txt::TextFile/TextFile::-1::1763037074::0::1::::<><><>0<>0<><>::
-::res://Assets/Martial Hero/Sprites/::1763037424
-Attack2.png::CompressedTexture2D/CompressedTexture2D::3896381968296340066::1763037074::1763037423::1::::<><><>0<>0<>212a717ba1f24aa1ba488d6d329c6dfb<>res://.godot/imported/Attack2.png-d45615a8f94e4f77990b95f1e7b2c89e.ctex::
-Death.png::CompressedTexture2D/CompressedTexture2D::8668720328276519634::1763037074::1763037423::1::::<><><>0<>0<>50711f9651d08a87e72675f9792edeba<>res://.godot/imported/Death.png-bd30870b1e54376f4edec6d1e5b6cf0c.ctex::
-Fall.png::CompressedTexture2D/CompressedTexture2D::7772451835308534129::1763037074::1763037423::1::::<><><>0<>0<>7e4a4207c7d93f76076569fa7209e9dc<>res://.godot/imported/Fall.png-f3905a5734b60984ed8aeef5ecbc2bba.ctex::
-Idle.png::CompressedTexture2D/CompressedTexture2D::1304641946340586696::1763037074::1763037423::1::::<><><>0<>0<>7cd752c3d74498e76d92a56bf84b0320<>res://.godot/imported/Idle.png-f758a1eac547220ae4f3e0c26342276b.ctex::
-Jump.png::CompressedTexture2D/CompressedTexture2D::9176861933659033447::1763037074::1763037423::1::::<><><>0<>0<>d03fa5d560a9b2abece962a8d9d7d04d<>res://.godot/imported/Jump.png-cfba73df4024a40046a655d8d8371415.ctex::
-Run.png::CompressedTexture2D/CompressedTexture2D::1892506683019511489::1763037074::1763037424::1::::<><><>0<>0<>a572c1d2ef14dad811af73531199207e<>res://.godot/imported/Run.png-26819f87388ba866ea3ed2caa1780130.ctex::
-Take Hit - white silhouette.png::CompressedTexture2D/CompressedTexture2D::6311530747764522290::1763037074::1763037424::1::::<><><>0<>0<>f6d3061daf152a580ab7b892f8cac0b4<>res://.godot/imported/Take Hit - white silhouette.png-d9917c79cdbe641a922d76b130330f87.ctex::
-Take Hit.png::CompressedTexture2D/CompressedTexture2D::5422203832964072649::1763037074::1763037424::1::::<><><>0<>0<>03c93b2fe76c78ec0331deb33f67e3aa<>res://.godot/imported/Take Hit.png-4fc25390945e06ebe748a25694698fc3.ctex::
-::res://Assets/Tilesets/::1763037074
-::res://Assets/Tilesets/Pixel Art Platformer - Village Props v2.3.0/::1763037075
-Changelog.txt::TextFile/TextFile::-1::1763037074::0::1::::<><><>0<>0<><>::
-::res://Assets/Tilesets/Pixel Art Platformer - Village Props v2.3.0/Texture/::1763037424
-TX Chest Animation.png::CompressedTexture2D/CompressedTexture2D::1107831109165527467::1763037075::1763037424::1::::<><><>0<>0<>527aba5c11fd91ac68deec4f3966b747<>res://.godot/imported/TX Chest Animation.png-429b77013aad97b16f3789e97b1947db.ctex::
-TX FX Flame.png::CompressedTexture2D/CompressedTexture2D::9004216610754717601::1763037075::1763037424::1::::<><><>0<>0<>b4ada6a412f489ad59848ecfeedd7003<>res://.godot/imported/TX FX Flame.png-b0e2b70241c1a45975860838ef83704a.ctex::
-TX FX Torch Flame.png::CompressedTexture2D/CompressedTexture2D::7255068825836972247::1763037075::1763037424::1::::<><><>0<>0<>949e816ccff99bb0585a96a429c861bc<>res://.godot/imported/TX FX Torch Flame.png-091d499e9beff9a5bb7215ef0d4bdeb8.ctex::
-TX Tileset Ground.png::CompressedTexture2D/CompressedTexture2D::3243701304240590895::1763037075::1763037424::1::::<><><>0<>0<>8d67202c524de4bc6a8fc8d1110af9d1<>res://.godot/imported/TX Tileset Ground.png-aff81feabf3197864569fad2c27f894c.ctex::
-TX Village Props.png::CompressedTexture2D/CompressedTexture2D::5801628898064302654::1763037075::1763037424::1::::<><><>0<>0<>9b9f766d640fa52ba452e6a9ee696276<>res://.godot/imported/TX Village Props.png-1c90210f493307f22cb490d0f87c8c71.ctex::
-::res://Scenes/::1763072589
-jugador.tscn::PackedScene::8530298965710665431::1763072589::0::1::::<><><>0<>0<><>::uid://st8i6fkks4mm::::res://Assets/Martial Hero/Sprites/Idle.png<>uid://8mlt6f0j6nss::::res://Scripts/jugador.gd<>uid://di0be77uls03v::::res://Assets/Martial Hero/Sprites/Fall.png<>uid://d30lttbifcdut::::res://Assets/Martial Hero/Sprites/Jump.png<>uid://170kqycccntx::::res://Assets/Martial Hero/Sprites/Run.png
-mundo.tscn::PackedScene::4376044656378419864::1763072589::0::1::::<><><>0<>0<><>::uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://bmhjj0jmak0fr::::res://Assets/Tilesets/Pixel Art Platformer - Village Props v2.3.0/Texture/TX Tileset Ground.png
-::res://Scripts/::1763057854
-jugador.gd::GDScript/GDScript::2341707827205433362::1763057854::0::1::::<>CharacterBody2D<><>0<>0<><>::
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1763551488
+icon.svg::CompressedTexture2D/CompressedTexture2D::2219951999146419051::1763551404::1763551404::1::::<><><>0<>0<>f29d7dda42e7e7598ebfcf08a8bd1d47<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1763551404::0::1::::<><><>0<>0<><>::
+::res://Assets/::1763551404
+Attack1.png::CompressedTexture2D/CompressedTexture2D::5313188049616506250::1763551404::1763551404::1::::<><><>0<>0<>5d6dc797be5878447433cf08fe9ad53e<>res://.godot/imported/Attack1.png-d625c10c73eaa163f817af6b1ed73cb1.ctex::
+::res://Assets/Glacial-mountains-parallax-background_vnitti/::1763551404
+background_glacial_mountains.png::CompressedTexture2D::5384326461870702558::1763551404::1763551404::1::::<><><>0<>0<>f122b3559ea30ed7b2eb7293bce16a33<>res://.godot/imported/background_glacial_mountains.png-a2e911eed7cdf309114263d90daf7edb.ctex::
+background_glacial_mountains_lightened.png::CompressedTexture2D::6331136962763750218::1763551404::1763551404::1::::<><><>0<>0<>572aaf4ff73c646ad5acb8a732972ea7<>res://.godot/imported/background_glacial_mountains_lightened.png-b4439d4d7ed4903b41364c8909413c4c.ctex::
+Glacial_Mountains-Cover.png::CompressedTexture2D::6452509314541819538::1763551404::1763551404::1::::<><><>0<>0<>14caef36c70eab7062454655642f759e<>res://.godot/imported/Glacial_Mountains-Cover.png-201b738e2272521035c7936721aa6002.ctex::
+Readme.txt::TextFile::-1::1763551404::0::1::::<><><>0<>0<><>::
+::res://Assets/Glacial-mountains-parallax-background_vnitti/Layers/::1763551404
+clouds_bg.png::CompressedTexture2D::8113077718501254231::1763551404::1763551404::1::::<><><>0<>0<>bccbf0db533e7143d8bbcac40ed22d20<>res://.godot/imported/clouds_bg.png-bf0453be1f92c55d7f93c500b794569f.ctex::
+clouds_mg_1.png::CompressedTexture2D::8963292906462282515::1763551404::1763551404::1::::<><><>0<>0<>6aadbac258aedd6d57896d1545430e86<>res://.godot/imported/clouds_mg_1.png-9eb4cd37df885bcadbfbad697d2a3143.ctex::
+clouds_mg_1_lightened.png::CompressedTexture2D::4552325576914603731::1763551404::1763551404::1::::<><><>0<>0<>8001cb3135c14523bed5d3c95105d0e8<>res://.godot/imported/clouds_mg_1_lightened.png-79253269f2c3d6cebb65f310b8ed2b21.ctex::
+clouds_mg_2.png::CompressedTexture2D::1340245073992866302::1763551404::1763551404::1::::<><><>0<>0<>e38e6d69ea5cf662da83542dd12f9498<>res://.godot/imported/clouds_mg_2.png-966cffa4e68824342680deec27db2372.ctex::
+clouds_mg_3.png::CompressedTexture2D::748360780402371936::1763551404::1763551404::1::::<><><>0<>0<>804e8903f5026ff418f08e2e8b91132a<>res://.godot/imported/clouds_mg_3.png-f1cd5d4e5bbdb4712142b8ffa571cf10.ctex::
+cloud_lonely.png::CompressedTexture2D::6595692849963999365::1763551404::1763551404::1::::<><><>0<>0<>d1a6aa657bf353ac79e58d3f173f3d0d<>res://.godot/imported/cloud_lonely.png-2ef7d23c14bebd0114cc4f787a0b08fa.ctex::
+glacial_mountains.png::CompressedTexture2D::8572931839913634641::1763551404::1763551404::1::::<><><>0<>0<>2671c3d442d31d5f33500b98453082d1<>res://.godot/imported/glacial_mountains.png-01d763c3617d5fb5e45429a4816b99eb.ctex::
+glacial_mountains_lightened.png::CompressedTexture2D::1732255020580219652::1763551404::1763551404::1::::<><><>0<>0<>31caf2daee74e928121bc20302f0cecc<>res://.godot/imported/glacial_mountains_lightened.png-fc94db7bd2ba140f2141563f1998a6de.ctex::
+sky.png::CompressedTexture2D::4481460740984527207::1763551404::1763551404::1::::<><><>0<>0<>f6c18956e136f74c8b97610769ede96a<>res://.godot/imported/sky.png-a81313205cba20b286a1ff51f2c82804.ctex::
+sky_lightened.png::CompressedTexture2D::7740586584650761411::1763551404::1763551404::1::::<><><>0<>0<>cba101f6198d8118d61b57e36550ec3d<>res://.godot/imported/sky_lightened.png-aab99807507616fba07666c52bcf243e.ctex::
+::res://Assets/Glacial-mountains-parallax-background_vnitti/PSD/::1763551404
+::res://Assets/Images/::1763551404
+Background.jpg::CompressedTexture2D/CompressedTexture2D::1482878435092737087::1763551404::1763551404::1::::<><><>0<>0<>a86e80a66f03160a9bb326e565c9dd00<>res://.godot/imported/Background.jpg-41a1bce2fd15466168818efc4d2b5cf9.ctex::
+::res://Assets/Martial Hero/::1763551404
+License.txt::TextFile::-1::1763551404::0::1::::<><><>0<>0<><>::
+::res://Assets/Martial Hero/Sprites/::1763551404
+Attack2.png::CompressedTexture2D/CompressedTexture2D::3896381968296340066::1763551404::1763551404::1::::<><><>0<>0<>212a717ba1f24aa1ba488d6d329c6dfb<>res://.godot/imported/Attack2.png-d45615a8f94e4f77990b95f1e7b2c89e.ctex::
+Death.png::CompressedTexture2D/CompressedTexture2D::8668720328276519634::1763551404::1763551404::1::::<><><>0<>0<>50711f9651d08a87e72675f9792edeba<>res://.godot/imported/Death.png-bd30870b1e54376f4edec6d1e5b6cf0c.ctex::
+Fall.png::CompressedTexture2D/CompressedTexture2D::7772451835308534129::1763551404::1763551404::1::::<><><>0<>0<>7e4a4207c7d93f76076569fa7209e9dc<>res://.godot/imported/Fall.png-f3905a5734b60984ed8aeef5ecbc2bba.ctex::
+Idle.png::CompressedTexture2D/CompressedTexture2D::1304641946340586696::1763551404::1763551404::1::::<><><>0<>0<>7cd752c3d74498e76d92a56bf84b0320<>res://.godot/imported/Idle.png-f758a1eac547220ae4f3e0c26342276b.ctex::
+Jump.png::CompressedTexture2D/CompressedTexture2D::9176861933659033447::1763551404::1763551404::1::::<><><>0<>0<>d03fa5d560a9b2abece962a8d9d7d04d<>res://.godot/imported/Jump.png-cfba73df4024a40046a655d8d8371415.ctex::
+Run.png::CompressedTexture2D/CompressedTexture2D::1892506683019511489::1763551404::1763551404::1::::<><><>0<>0<>a572c1d2ef14dad811af73531199207e<>res://.godot/imported/Run.png-26819f87388ba866ea3ed2caa1780130.ctex::
+Take Hit - white silhouette.png::CompressedTexture2D/CompressedTexture2D::6311530747764522290::1763551404::1763551404::1::::<><><>0<>0<>f6d3061daf152a580ab7b892f8cac0b4<>res://.godot/imported/Take Hit - white silhouette.png-d9917c79cdbe641a922d76b130330f87.ctex::
+Take Hit.png::CompressedTexture2D/CompressedTexture2D::5422203832964072649::1763551404::1763551404::1::::<><><>0<>0<>03c93b2fe76c78ec0331deb33f67e3aa<>res://.godot/imported/Take Hit.png-4fc25390945e06ebe748a25694698fc3.ctex::
+::res://Assets/Tilesets/::1763551404
+::res://Assets/Tilesets/Pixel Art Platformer - Village Props v2.3.0/::1763551404
+Changelog.txt::TextFile::-1::1763551404::0::1::::<><><>0<>0<><>::
+::res://Assets/Tilesets/Pixel Art Platformer - Village Props v2.3.0/Texture/::1763551404
+TX Chest Animation.png::CompressedTexture2D/CompressedTexture2D::1107831109165527467::1763551404::1763551404::1::::<><><>0<>0<>527aba5c11fd91ac68deec4f3966b747<>res://.godot/imported/TX Chest Animation.png-429b77013aad97b16f3789e97b1947db.ctex::
+TX FX Flame.png::CompressedTexture2D/CompressedTexture2D::9004216610754717601::1763551404::1763551404::1::::<><><>0<>0<>b4ada6a412f489ad59848ecfeedd7003<>res://.godot/imported/TX FX Flame.png-b0e2b70241c1a45975860838ef83704a.ctex::
+TX FX Torch Flame.png::CompressedTexture2D/CompressedTexture2D::7255068825836972247::1763551404::1763551404::1::::<><><>0<>0<>949e816ccff99bb0585a96a429c861bc<>res://.godot/imported/TX FX Torch Flame.png-091d499e9beff9a5bb7215ef0d4bdeb8.ctex::
+TX Tileset Ground.png::CompressedTexture2D/CompressedTexture2D::3243701304240590895::1763551404::1763551404::1::::<><><>0<>0<>8d67202c524de4bc6a8fc8d1110af9d1<>res://.godot/imported/TX Tileset Ground.png-aff81feabf3197864569fad2c27f894c.ctex::
+TX Village Props.png::CompressedTexture2D/CompressedTexture2D::5801628898064302654::1763551404::1763551404::1::::<><><>0<>0<>9b9f766d640fa52ba452e6a9ee696276<>res://.godot/imported/TX Village Props.png-1c90210f493307f22cb490d0f87c8c71.ctex::
+::res://Scenes/::1763551404
+jugador.tscn::PackedScene::8530298965710665431::1763551404::0::1::::<><><>0<>0<><>::uid://st8i6fkks4mm::::res://Assets/Martial Hero/Sprites/Idle.png<>uid://8mlt6f0j6nss::::res://Scripts/jugador.gd<>uid://di0be77uls03v::::res://Assets/Martial Hero/Sprites/Fall.png<>uid://d30lttbifcdut::::res://Assets/Martial Hero/Sprites/Jump.png<>uid://170kqycccntx::::res://Assets/Martial Hero/Sprites/Run.png
+mundo.tscn::PackedScene::4376044656378419864::1763551404::0::1::::<><><>0<>0<><>::uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://bmhjj0jmak0fr::::res://Assets/Tilesets/Pixel Art Platformer - Village Props v2.3.0/Texture/TX Tileset Ground.png<>uid://ciyhcnd31stqc::::res://Assets/Glacial-mountains-parallax-background_vnitti/background_glacial_mountains.png<>uid://tdhv1qot6vfy::::res://Assets/Glacial-mountains-parallax-background_vnitti/Layers/clouds_mg_2.png
+::res://Scripts/::1763551404
+jugador.gd::GDScript::2341707827205433362::1763551404::0::1::::<>CharacterBody2D<><>0<>0<><>::
