@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1763565679
 icon.svg::CompressedTexture2D/CompressedTexture2D::2219951999146419051::1763565558::1763565681::1::::<><><>0<>0<>f29d7dda42e7e7598ebfcf08a8bd1d47<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -33,3 +34,40 @@ jugador.tscn::PackedScene::8530298965710665431::1763565558::0::1::::<><><>0<>0<>
 mundo.tscn::PackedScene::4376044656378419864::1763565558::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png<>uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://cp3y87cfwm6er::::res://Final/Tiles.png
 ::res://Scripts/::1763565558
 jugador.gd::GDScript::2341707827205433362::1763565558::0::1::::<>CharacterBody2D<><>0<>0<><>::
+=======
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1763724457
+icon.svg::CompressedTexture2D/CompressedTexture2D::2219951999146419051::1763551404::1763551404::1::::<><><>0<>0<>f29d7dda42e7e7598ebfcf08a8bd1d47<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1763551404::0::1::::<><><>0<>0<><>::
+::res://Assets/::1763554229
+Attack1.png::CompressedTexture2D/CompressedTexture2D::5313188049616506250::1763551404::1763551404::1::::<><><>0<>0<>5d6dc797be5878447433cf08fe9ad53e<>res://.godot/imported/Attack1.png-d625c10c73eaa163f817af6b1ed73cb1.ctex::
+::res://Assets/Martial Hero/::1763551404
+License.txt::TextFile::-1::1763551404::0::1::::<><><>0<>0<><>::
+::res://Assets/Martial Hero/Sprites/::1763551404
+Attack2.png::CompressedTexture2D/CompressedTexture2D::3896381968296340066::1763551404::1763551404::1::::<><><>0<>0<>212a717ba1f24aa1ba488d6d329c6dfb<>res://.godot/imported/Attack2.png-d45615a8f94e4f77990b95f1e7b2c89e.ctex::
+Death.png::CompressedTexture2D/CompressedTexture2D::8668720328276519634::1763551404::1763551404::1::::<><><>0<>0<>50711f9651d08a87e72675f9792edeba<>res://.godot/imported/Death.png-bd30870b1e54376f4edec6d1e5b6cf0c.ctex::
+Fall.png::CompressedTexture2D/CompressedTexture2D::7772451835308534129::1763551404::1763551404::1::::<><><>0<>0<>7e4a4207c7d93f76076569fa7209e9dc<>res://.godot/imported/Fall.png-f3905a5734b60984ed8aeef5ecbc2bba.ctex::
+Idle.png::CompressedTexture2D/CompressedTexture2D::1304641946340586696::1763551404::1763551404::1::::<><><>0<>0<>7cd752c3d74498e76d92a56bf84b0320<>res://.godot/imported/Idle.png-f758a1eac547220ae4f3e0c26342276b.ctex::
+Jump.png::CompressedTexture2D/CompressedTexture2D::9176861933659033447::1763551404::1763551404::1::::<><><>0<>0<>d03fa5d560a9b2abece962a8d9d7d04d<>res://.godot/imported/Jump.png-cfba73df4024a40046a655d8d8371415.ctex::
+Run.png::CompressedTexture2D/CompressedTexture2D::1892506683019511489::1763551404::1763551404::1::::<><><>0<>0<>a572c1d2ef14dad811af73531199207e<>res://.godot/imported/Run.png-26819f87388ba866ea3ed2caa1780130.ctex::
+Take Hit - white silhouette.png::CompressedTexture2D/CompressedTexture2D::6311530747764522290::1763551404::1763551404::1::::<><><>0<>0<>f6d3061daf152a580ab7b892f8cac0b4<>res://.godot/imported/Take Hit - white silhouette.png-d9917c79cdbe641a922d76b130330f87.ctex::
+Take Hit.png::CompressedTexture2D/CompressedTexture2D::5422203832964072649::1763551404::1763551404::1::::<><><>0<>0<>03c93b2fe76c78ec0331deb33f67e3aa<>res://.godot/imported/Take Hit.png-4fc25390945e06ebe748a25694698fc3.ctex::
+::res://Final/::1763554137
+Background_0.png::CompressedTexture2D::4179224474721383145::1570025950::1763554137::1::::<><><>0<>0<>1cb8b34e7255d22c772e7fd7ce7fdff9<>res://.godot/imported/Background_0.png-80440a2e5bdfae02751683b4b331332c.ctex::
+Background_1.png::CompressedTexture2D::5242882152849799625::1570026016::1763554137::1::::<><><>0<>0<>050084e6846c00790349f092d59a78a1<>res://.godot/imported/Background_1.png-91ed911927c7cba70a81338d249583a1.ctex::
+brush.png::CompressedTexture2D::3426178195735485023::1570025568::1763554137::1::::<><><>0<>0<>74a9cc9748e04dfed08582bb1048195f<>res://.godot/imported/brush.png-48608c22c0167606d4581c191403da4c.ctex::
+Grass_background_1.png::CompressedTexture2D::8440565061443368298::1570025758::1763554137::1::::<><><>0<>0<>27f18a367e6953a6033a77775529801b<>res://.godot/imported/Grass_background_1.png-ff074cc974226ea7a27bea2c89661e78.ctex::
+Grass_background_2.png::CompressedTexture2D::6335798017814065592::1570025880::1763554137::1::::<><><>0<>0<>aa610312f7057997d47017374d9abb41<>res://.godot/imported/Grass_background_2.png-ba2169c08872f8cf454c577fff19c5c0.ctex::
+Salt.png::CompressedTexture2D::4270857820244803642::1570025904::1763554137::1::::<><><>0<>0<>8128f1365fa73027c92ebda29ff368fb<>res://.godot/imported/Salt.png-23f39d7c9692936aaf6e2be1ad812ba9.ctex::
+Tiles.png::CompressedTexture2D::5884994422189515893::1570026850::1763554137::1::::<><><>0<>0<>f359e20fc6fae2b1f56dfe53e0bf34b5<>res://.godot/imported/Tiles.png-434d75a3de05f7ca041e0418c98a5580.ctex::
+::res://Final/Social/::1763554138
+Autor_note.txt::TextFile::-1::1554244500::0::1::::<><><>0<>0<><>::
+moon.png::CompressedTexture2D::8287418154728726686::1570027000::1763554138::1::::<><><>0<>0<>5863eb770b642a44eef799e1f7b40b7e<>res://.godot/imported/moon.png-cd1ad87c62679def076d419f799a6f4c.ctex::
+test_1.png::CompressedTexture2D::8796997231660005702::1570026056::1763554137::1::::<><><>0<>0<>02f565c8aff251a374b60aa7c48ecc10<>res://.godot/imported/test_1.png-27d51fa37a53e6dfa85ee2d0c18d6f8b.ctex::
+test_2.png::CompressedTexture2D::3237711141728983175::1570026118::1763554137::1::::<><><>0<>0<>1be777fbd714cbd26144521a20d1a240<>res://.godot/imported/test_2.png-c70193cc8d45dbad344de2524ef111cb.ctex::
+::res://Scenes/::1763633005
+jugador.tscn::PackedScene::8530298965710665431::1763555104::0::1::::<><><>0<>0<><>::uid://st8i6fkks4mm::::res://Assets/Martial Hero/Sprites/Idle.png<>uid://8mlt6f0j6nss::::res://Scripts/jugador.gd<>uid://di0be77uls03v::::res://Assets/Martial Hero/Sprites/Fall.png<>uid://d30lttbifcdut::::res://Assets/Martial Hero/Sprites/Jump.png<>uid://170kqycccntx::::res://Assets/Martial Hero/Sprites/Run.png
+mundo.tscn::PackedScene::4376044656378419864::1763633005::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png<>uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://cp3y87cfwm6er::::res://Final/Tiles.png
+::res://Scripts/::1763633018
+jugador.gd::GDScript::2341707827205433362::1763633018::0::1::::<>CharacterBody2D<><>0<>0<><>::
+>>>>>>> 8fc394d8a3df548070759662df25f577ad4f5a37

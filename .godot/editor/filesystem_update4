@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 res://Scenes/mundo.tscn
+=======
+>>>>>>> 8fc394d8a3df548070759662df25f577ad4f5a37
 res://Scenes/jugador.tscn
+res://Scripts/jugador.gd
+res://Scenes/mundo.tscn
