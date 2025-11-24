@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=4 uid="uid://b3l120pwrhb7m"]
+[gd_scene load_steps=9 format=4 uid="uid://b3l120pwrhb7m"]
 
 [ext_resource type="Texture2D" uid="uid://b0sphmjtgvgmr" path="res://Final/Background_0.png" id="1_gqidu"]
 [ext_resource type="PackedScene" uid="uid://dtse1o8wnri4f" path="res://Scenes/jugador.tscn" id="1_uqtxj"]
 [ext_resource type="Texture2D" uid="uid://cgxxrdsm5emij" path="res://Final/Background_1.png" id="2_glouy"]
 [ext_resource type="Texture2D" uid="uid://cp3y87cfwm6er" path="res://Final/Tiles.png" id="2_gqidu"]
+[ext_resource type="AudioStream" uid="uid://vygde6p7l5q1" path="res://Sounds/treachery.mp3" id="5_yf8a8"]
+[ext_resource type="Script" uid="uid://8ad32v6s2g36" path="res://Scenes/treachery.gd" id="6_qxsm7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_glouy"]
 texture = ExtResource("2_gqidu")
@@ -454,3 +456,9 @@ position = Vector2(94, 114)
 position = Vector2(75, 90)
 offset = Vector2(0, -50)
 zoom = Vector2(3, 3)
+
+[node name="Treachery" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(270, 219)
+stream = ExtResource("5_yf8a8")
+autoplay = true
+script = ExtResource("6_qxsm7")
