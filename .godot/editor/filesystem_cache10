@@ -1,9 +1,25 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1763976411
+::res://::1764154881
 icon.svg::CompressedTexture2D/CompressedTexture2D::2219951999146419051::1763551404::1763551404::1::::<><><>0<>0<>f29d7dda42e7e7598ebfcf08a8bd1d47<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1763551404::0::1::::<><><>0<>0<><>::
-::res://Assets/::1763554229
+::res://Assets/::1764154881
 Attack1.png::CompressedTexture2D/CompressedTexture2D::5313188049616506250::1763551404::1763551404::1::::<><><>0<>0<>5d6dc797be5878447433cf08fe9ad53e<>res://.godot/imported/Attack1.png-d625c10c73eaa163f817af6b1ed73cb1.ctex::
+::res://Assets/Flying Demon 2D Pixel Art/::1714068328
+License.txt::TextFile::-1::1692717228::0::1::::<><><>0<>0<><>::
+::res://Assets/Flying Demon 2D Pixel Art/Sprites/::1714069672
+projectile.png::CompressedTexture2D::2296761256925217120::1714069672::1764154972::1::::<><><>0<>0<>dc5ff620010e3ea6199b0812321ed6d6<>res://.godot/imported/projectile.png-b9c9ee5bd6224e342a6d0ade3e62c792.ctex::
+::res://Assets/Flying Demon 2D Pixel Art/Sprites/without_outline/::1714069088
+ATTACK.png::CompressedTexture2D::6512444273404697217::1714068798::1764154972::1::::<><><>0<>0<>72da4b90943b381782c2aca48fb6f03f<>res://.godot/imported/ATTACK.png-bc7de5e3f29e717f1dc3cfd845d31e0e.ctex::
+DEATH.png::CompressedTexture2D::1569130810166116809::1714068798::1764154972::1::::<><><>0<>0<>fd9f2a926b2b88fa265d135530f5cced<>res://.godot/imported/DEATH.png-d5529bf75c0b5cfc7c982fff4c44892a.ctex::
+FLYING.png::CompressedTexture2D::7153875415903878873::1714068798::1764154972::1::::<><><>0<>0<>0d6eaf48529c700dcff1bcc5a1ec62c5<>res://.godot/imported/FLYING.png-65833258f7fe867b447c28965e8d251f.ctex::
+HURT.png::CompressedTexture2D::4067354472963246356::1714068798::1764154972::1::::<><><>0<>0<>bb5ab562d0510bd82890ff63e6575852<>res://.godot/imported/HURT.png-3f6a1081bc576eef09afff2b9aec8513.ctex::
+IDLE.png::CompressedTexture2D::2506956375442324031::1714068798::1764154972::1::::<><><>0<>0<>3f3bbbac0389b3a7f2a814510e1c9afb<>res://.godot/imported/IDLE.png-97b882956b5d6786caf939e27efb4902.ctex::
+::res://Assets/Flying Demon 2D Pixel Art/Sprites/with_outline/::1714069054
+ATTACK.png::CompressedTexture2D::4099573995902682586::1714068940::1764154972::1::::<><><>0<>0<>3a0ad40f91348e017d85fcdb857831d8<>res://.godot/imported/ATTACK.png-3331b9f3d282a2a0b6d49166e0392463.ctex::
+DEATH.png::CompressedTexture2D::146852251565689361::1714068940::1764154972::1::::<><><>0<>0<>bfc2b324aadeccd571dfd629866d29b0<>res://.godot/imported/DEATH.png-70527f8ab6f2d6d1dd76fd5db73ec986.ctex::
+FLYING.png::CompressedTexture2D::8846477088878280682::1714068940::1764154972::1::::<><><>0<>0<>7d4887f431e4e6788506bddfb4af1dbd<>res://.godot/imported/FLYING.png-13100b5e851411d625471ea2f7ae881f.ctex::
+HURT.png::CompressedTexture2D::7534852905657021896::1714068940::1764154972::1::::<><><>0<>0<>487eed88dee1ba8d9438fb797dd7f620<>res://.godot/imported/HURT.png-24d337e990d32e79cfecd416edbc067c.ctex::
+IDLE.png::CompressedTexture2D::7601921672871987339::1714068940::1764154972::1::::<><><>0<>0<>159737ab5de114109348e73cb121803d<>res://.godot/imported/IDLE.png-c174240902f86fd5bf2562342fee8b90.ctex::
 ::res://Assets/Martial Hero/::1763551404
 License.txt::TextFile::-1::1763551404::0::1::::<><><>0<>0<><>::
 ::res://Assets/Martial Hero/Sprites/::1763551404
@@ -28,10 +44,11 @@ Autor_note.txt::TextFile::-1::1554244500::0::1::::<><><>0<>0<><>::
 moon.png::CompressedTexture2D/CompressedTexture2D::8287418154728726686::1570027000::1763975780::1::::<><><>0<>0<>173334c06ae90109e8eb234a28f0049e<>res://.godot/imported/moon.png-cd1ad87c62679def076d419f799a6f4c.ctex::
 test_1.png::CompressedTexture2D/CompressedTexture2D::8796997231660005702::1570026056::1763975780::1::::<><><>0<>0<>7d831afd8a6458d867ba687286f14ebb<>res://.godot/imported/test_1.png-27d51fa37a53e6dfa85ee2d0c18d6f8b.ctex::
 test_2.png::CompressedTexture2D/CompressedTexture2D::3237711141728983175::1570026118::1763975780::1::::<><><>0<>0<>d6654a52ca7646e348f91887e4eff832<>res://.godot/imported/test_2.png-c70193cc8d45dbad344de2524ef111cb.ctex::
-::res://Scenes/::1763975952
+::res://Scenes/::1764149903
 jugador.tscn::PackedScene::8530298965710665431::1763975780::0::1::::<><><>0<>0<><>::uid://st8i6fkks4mm::::res://Assets/Martial Hero/Sprites/Idle.png<>uid://8mlt6f0j6nss::::res://Scripts/jugador.gd<>uid://chx0owerqejmo::::res://Assets/Attack1.png<>uid://di0be77uls03v::::res://Assets/Martial Hero/Sprites/Fall.png<>uid://bvro3vcd53oh3::::res://Assets/Martial Hero/Sprites/Attack2.png<>uid://d30lttbifcdut::::res://Assets/Martial Hero/Sprites/Jump.png<>uid://170kqycccntx::::res://Assets/Martial Hero/Sprites/Run.png
-mundo.tscn::PackedScene::4376044656378419864::1763975952::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png<>uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://cgxxrdsm5emij::::res://Final/Background_1.png<>uid://cp3y87cfwm6er::::res://Final/Tiles.png
+mundo.tscn::PackedScene::4376044656378419864::1764149903::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png<>uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://cgxxrdsm5emij::::res://Final/Background_1.png<>uid://cp3y87cfwm6er::::res://Final/Tiles.png<>uid://vygde6p7l5q1::::res://Sounds/treachery.mp3<>uid://8ad32v6s2g36::::res://Scenes/treachery.gd
+treachery.gd::GDScript::2316465445267673095::1763976863::0::1::::<>AudioStreamPlayer2D<><>0<>0<><>::
 ::res://Scripts/::1763975952
 jugador.gd::GDScript::2341707827205433362::1763975952::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Sounds/::1763976411
-treachery.mp3::AudioStreamMP3::1523880700541527338::1763976392::1763976415::1::::<><><>0<>0<>f0935956c55a60bac73e66e98ed64ba6<>res://.godot/imported/treachery.mp3-9bf7125075df57f26d7c73ef65ac566f.mp3str::
+::res://Sounds/::1764149826
+treachery.mp3::AudioStreamMP3::1523880700541527338::1763976392::1764149826::1::::<><><>0<>0<>f0ea6d63948b9b52e8a2d4d0747d6efe<>res://.godot/imported/treachery.mp3-9bf7125075df57f26d7c73ef65ac566f.mp3str::
