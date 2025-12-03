@@ -1,7 +1,7 @@
-TileMapLayer
 CollisionShape2D
 AnimatedSprite2D
 CharacterBody2D
+TileMapLayer
 Node2D
 Sprite2D
 ParallaxLayer
