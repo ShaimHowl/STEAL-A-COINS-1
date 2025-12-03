@@ -1,55 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://cn6vt7g7vg5yp"]
+[gd_scene load_steps=2 format=3 uid="uid://cn6vt7g7vg5yp"]
 
 [ext_resource type="Script" uid="uid://dj81v4pusdbtm" path="res://demon.gd" id="1_08f0l"]
-[ext_resource type="Texture2D" uid="uid://dgkoslosyvvvf" path="res://Assets/Flying Demon 2D Pixel Art/Sprites/with_outline/IDLE.png" id="2_vdycq"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vio0h"]
-atlas = ExtResource("2_vdycq")
-region = Rect2(0, 0, 81, 71)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hf2h4"]
-atlas = ExtResource("2_vdycq")
-region = Rect2(81, 0, 81, 71)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jlc2q"]
-atlas = ExtResource("2_vdycq")
-region = Rect2(162, 0, 81, 71)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_877uw"]
-atlas = ExtResource("2_vdycq")
-region = Rect2(243, 0, 81, 71)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_frgam"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vio0h")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hf2h4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jlc2q")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_877uw")
-}],
-"loop": true,
-"name": &"Idle",
-"speed": 7.0
-}]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_08f0l"]
-radius = 23.3452
 
 [node name="demon" type="CharacterBody2D"]
 script = ExtResource("1_08f0l")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_frgam")
-animation = &"Idle"
-autoplay = "Idle"
-frame_progress = 0.551594
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_08f0l")
