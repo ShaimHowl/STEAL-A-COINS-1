@@ -6,7 +6,7 @@ func _ready():
 	$AnimatedSprite2F.play("andar")
 	velocity.x = -velocidad
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if is_on_wall():
 		if !$AnimatedSprite2F.flip_h: #ESTA MIRANDO A LA IZQUIERDA
 			velocity.x = velocidad
