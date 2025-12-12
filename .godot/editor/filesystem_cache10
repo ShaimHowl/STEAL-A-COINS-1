@@ -1,10 +1,10 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1765537018
+::res://::1765538039
 demon.gd::GDScript::7860703800471600782::1764155989::0::1::::<>CharacterBody2D<><>0<>0<><>::
 demon.tscn::PackedScene::5750602723487063991::1764758865::0::1::::<><><>0<>0<><>::uid://dj81v4pusdbtm::::res://demon.gd
 icon.svg::CompressedTexture2D/CompressedTexture2D::2219951999146419051::1763551404::1763551404::1::::<><><>0<>0<>f29d7dda42e7e7598ebfcf08a8bd1d47<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1763551404::0::1::::<><><>0<>0<><>::
-::res://Assets/::1764760011
+::res://Assets/::1765538039
 Attack1.png::CompressedTexture2D/CompressedTexture2D::5313188049616506250::1763551404::1763551404::1::::<><><>0<>0<>5d6dc797be5878447433cf08fe9ad53e<>res://.godot/imported/Attack1.png-d625c10c73eaa163f817af6b1ed73cb1.ctex::
 ::res://Assets/Bringer-Of-Death/::1617352226
 Contact.txt::TextFile::-1::1601133100::0::1::::<><><>0<>0<><>::
@@ -138,6 +138,13 @@ Bringer-of-Death_Walk_8.png::CompressedTexture2D::2675522250914152655::161735272
 ::res://Assets/Bringer-Of-Death/SpriteSheet/::1764760012
 Bringer-of-Death-SpritSheet.png::CompressedTexture2D::3249415907841998540::1617352432::1764760012::1::::<><><>0<>0<>603523c007e0ed283f330fee5cc79ca1<>res://.godot/imported/Bringer-of-Death-SpritSheet.png-ecfbb89a2dba3bc2f5a0b4306ca55c92.ctex::
 Bringer-of-Death-SpritSheet_no-Effect.png::CompressedTexture2D::7312543900251713356::1617352512::1764760012::1::::<><><>0<>0<>70b9afd38113195eb81449a57db1faa6<>res://.godot/imported/Bringer-of-Death-SpritSheet_no-Effect.png-9d1a9e0537fc094eee22e179ccee92fc.ctex::
+::res://Assets/Coins_16x16/::1747575236
+::res://Assets/Coins_16x16/Aseprites/::1747397018
+::res://Assets/Coins_16x16/PNG/::1747575236
+Coin_Four.png::CompressedTexture2D::7019879937523042366::1747396991::1765538040::1::::<><><>0<>0<>6226856422cca82fd77c2dfd06860d6e<>res://.godot/imported/Coin_Four.png-c7a4a8cf6e102d83c385a4f0587c9eb6.ctex::
+Coin_One.png::CompressedTexture2D::8077075406814109488::1747327341::1765538040::1::::<><><>0<>0<>866e6f2dd21299e9d5b942f9de4f5282<>res://.godot/imported/Coin_One.png-9029474b941f7e0628dae0141b89d24f.ctex::
+Coin_Three.png::CompressedTexture2D::6615375261612069952::1747393573::1765538040::1::::<><><>0<>0<>f2a58c282607fa4a247d94e863768c67<>res://.godot/imported/Coin_Three.png-351464bec5f4a057383e1dcdc0a1fa46.ctex::
+Coin_Two.png::CompressedTexture2D::5813594214249114406::1747348282::1765538040::1::::<><><>0<>0<>bc87487391fd22512c8f850bbac96c59<>res://.godot/imported/Coin_Two.png-43514827d8da5be605287649292e3c2d.ctex::
 ::res://Assets/Martial Hero/::1763551404
 License.txt::TextFile::-1::1763551404::0::1::::<><><>0<>0<><>::
 ::res://Assets/Martial Hero/Sprites/::1763551404
@@ -169,9 +176,9 @@ test_2.png::CompressedTexture2D/CompressedTexture2D::3237711141728983175::157002
 ::res://SATYR_sprite_sheet  (2)/::1765369609
 SPRITE_PORTRAIT.png::CompressedTexture2D::7515923028008320263::1762395117::1765369609::1::::<><><>0<>0<>5283de59d37e8ffa7efc875bcccacd5d<>res://.godot/imported/SPRITE_PORTRAIT.png-0e0891d5d3f1837c1a4870164bf70e0a.ctex::
 SPRITE_SHEET.png::CompressedTexture2D::4808049995720330032::1762395056::1765369609::1::::<><><>0<>0<>bcee00c4dd4096f2b5c3139b7c37fdbb<>res://.godot/imported/SPRITE_SHEET.png-d11b63839965c57b31899a7b1c189b2c.ctex::
-::res://Scenes/::1765369765
+::res://Scenes/::1765537705
 jugador.tscn::PackedScene::8530298965710665431::1765369765::0::1::::<><><>0<>0<><>::uid://st8i6fkks4mm::::res://Assets/Martial Hero/Sprites/Idle.png<>uid://8mlt6f0j6nss::::res://Scripts/jugador.gd<>uid://chx0owerqejmo::::res://Assets/Attack1.png<>uid://di0be77uls03v::::res://Assets/Martial Hero/Sprites/Fall.png<>uid://bvro3vcd53oh3::::res://Assets/Martial Hero/Sprites/Attack2.png<>uid://d30lttbifcdut::::res://Assets/Martial Hero/Sprites/Jump.png<>uid://170kqycccntx::::res://Assets/Martial Hero/Sprites/Run.png
-mundo.tscn::PackedScene::4376044656378419864::1765363745::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png<>uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://cgxxrdsm5emij::::res://Final/Background_1.png<>uid://cqr6j3evgk3cn::::res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png<>uid://vygde6p7l5q1::::res://Sounds/treachery.mp3<>uid://8ad32v6s2g36::::res://Scenes/treachery.gd
+mundo.tscn::PackedScene::4376044656378419864::1765537705::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png<>uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://cgxxrdsm5emij::::res://Final/Background_1.png<>uid://cqr6j3evgk3cn::::res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png<>uid://vygde6p7l5q1::::res://Sounds/treachery.mp3<>uid://8ad32v6s2g36::::res://Scenes/treachery.gd
 treachery.gd::GDScript::2316465445267673095::1763976863::0::1::::<>AudioStreamPlayer2D<><>0<>0<><>::
 ::res://Scripts/::1765281458
 enemigo.gd::GDScript::684648248330525318::1765281458::0::1::::<>CharacterBody2D<><>0<>0<><>::

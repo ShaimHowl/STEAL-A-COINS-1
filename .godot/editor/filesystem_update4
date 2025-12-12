@@ -1,1 +1,4 @@
 res://Scenes/mundo.tscn
+res://coins.gd
+res://Scenes/coins.tscn
+res://Scripts/coins.gd
