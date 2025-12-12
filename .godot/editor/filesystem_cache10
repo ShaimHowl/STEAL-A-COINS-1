@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1765369603
+::res://::1765537018
 demon.gd::GDScript::7860703800471600782::1764155989::0::1::::<>CharacterBody2D<><>0<>0<><>::
 demon.tscn::PackedScene::5750602723487063991::1764758865::0::1::::<><><>0<>0<><>::uid://dj81v4pusdbtm::::res://demon.gd
 icon.svg::CompressedTexture2D/CompressedTexture2D::2219951999146419051::1763551404::1763551404::1::::<><><>0<>0<>f29d7dda42e7e7598ebfcf08a8bd1d47<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -166,11 +166,11 @@ Autor_note.txt::TextFile::-1::1554244500::0::1::::<><><>0<>0<><>::
 moon.png::CompressedTexture2D/CompressedTexture2D::8287418154728726686::1570027000::1763975780::1::::<><><>0<>0<>173334c06ae90109e8eb234a28f0049e<>res://.godot/imported/moon.png-cd1ad87c62679def076d419f799a6f4c.ctex::
 test_1.png::CompressedTexture2D/CompressedTexture2D::8796997231660005702::1570026056::1763975780::1::::<><><>0<>0<>7d831afd8a6458d867ba687286f14ebb<>res://.godot/imported/test_1.png-27d51fa37a53e6dfa85ee2d0c18d6f8b.ctex::
 test_2.png::CompressedTexture2D/CompressedTexture2D::3237711141728983175::1570026118::1763975780::1::::<><><>0<>0<>d6654a52ca7646e348f91887e4eff832<>res://.godot/imported/test_2.png-c70193cc8d45dbad344de2524ef111cb.ctex::
-::res://SATYR_sprite_sheet  (2)/::1765369596
+::res://SATYR_sprite_sheet  (2)/::1765369609
 SPRITE_PORTRAIT.png::CompressedTexture2D::7515923028008320263::1762395117::1765369609::1::::<><><>0<>0<>5283de59d37e8ffa7efc875bcccacd5d<>res://.godot/imported/SPRITE_PORTRAIT.png-0e0891d5d3f1837c1a4870164bf70e0a.ctex::
 SPRITE_SHEET.png::CompressedTexture2D::4808049995720330032::1762395056::1765369609::1::::<><><>0<>0<>bcee00c4dd4096f2b5c3139b7c37fdbb<>res://.godot/imported/SPRITE_SHEET.png-d11b63839965c57b31899a7b1c189b2c.ctex::
-::res://Scenes/::1765363745
-jugador.tscn::PackedScene::8530298965710665431::1764156125::0::1::::<><><>0<>0<><>::uid://st8i6fkks4mm::::res://Assets/Martial Hero/Sprites/Idle.png<>uid://8mlt6f0j6nss::::res://Scripts/jugador.gd<>uid://chx0owerqejmo::::res://Assets/Attack1.png<>uid://di0be77uls03v::::res://Assets/Martial Hero/Sprites/Fall.png<>uid://bvro3vcd53oh3::::res://Assets/Martial Hero/Sprites/Attack2.png<>uid://d30lttbifcdut::::res://Assets/Martial Hero/Sprites/Jump.png<>uid://170kqycccntx::::res://Assets/Martial Hero/Sprites/Run.png
+::res://Scenes/::1765369765
+jugador.tscn::PackedScene::8530298965710665431::1765369765::0::1::::<><><>0<>0<><>::uid://st8i6fkks4mm::::res://Assets/Martial Hero/Sprites/Idle.png<>uid://8mlt6f0j6nss::::res://Scripts/jugador.gd<>uid://chx0owerqejmo::::res://Assets/Attack1.png<>uid://di0be77uls03v::::res://Assets/Martial Hero/Sprites/Fall.png<>uid://bvro3vcd53oh3::::res://Assets/Martial Hero/Sprites/Attack2.png<>uid://d30lttbifcdut::::res://Assets/Martial Hero/Sprites/Jump.png<>uid://170kqycccntx::::res://Assets/Martial Hero/Sprites/Run.png
 mundo.tscn::PackedScene::4376044656378419864::1765363745::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png<>uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://cgxxrdsm5emij::::res://Final/Background_1.png<>uid://cqr6j3evgk3cn::::res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png<>uid://vygde6p7l5q1::::res://Sounds/treachery.mp3<>uid://8ad32v6s2g36::::res://Scenes/treachery.gd
 treachery.gd::GDScript::2316465445267673095::1763976863::0::1::::<>AudioStreamPlayer2D<><>0<>0<><>::
 ::res://Scripts/::1765281458
