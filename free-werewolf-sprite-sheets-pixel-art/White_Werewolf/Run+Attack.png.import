@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfc1fih65gxlf"
-path="res://.godot/imported/SPRITE_PORTRAIT.png-0e0891d5d3f1837c1a4870164bf70e0a.ctex"
+uid="uid://dtfmj15ssovpr"
+path="res://.godot/imported/Run+Attack.png-796b3b1de9bf32e43c2708d41db6d6df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SATYR_sprite_sheet  (2)/SPRITE_PORTRAIT.png"
-dest_files=["res://.godot/imported/SPRITE_PORTRAIT.png-0e0891d5d3f1837c1a4870164bf70e0a.ctex"]
+source_file="res://free-werewolf-sprite-sheets-pixel-art/White_Werewolf/Run+Attack.png"
+dest_files=["res://.godot/imported/Run+Attack.png-796b3b1de9bf32e43c2708d41db6d6df.ctex"]
 
 [params]
 

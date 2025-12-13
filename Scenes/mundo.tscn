@@ -118,7 +118,7 @@ offset = Vector2(0, -50)
 zoom = Vector2(1, 1.1)
 
 [node name="jugador" parent="." instance=ExtResource("1_uqtxj")]
-position = Vector2(-29, 625)
+position = Vector2(14, 537)
 collision_layer = 17
 
 [node name="Node2D" parent="." instance=ExtResource("7_i8avv")]

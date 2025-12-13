@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://carb47noy7no7"
-path="res://.godot/imported/SPRITE_SHEET.png-d11b63839965c57b31899a7b1c189b2c.ctex"
+uid="uid://cvk0q7c6jddgm"
+path="res://.godot/imported/Run.png-065ac014567a3dde2c58ea234de67287.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SATYR_sprite_sheet  (2)/SPRITE_SHEET.png"
-dest_files=["res://.godot/imported/SPRITE_SHEET.png-d11b63839965c57b31899a7b1c189b2c.ctex"]
+source_file="res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Run.png"
+dest_files=["res://.godot/imported/Run.png-065ac014567a3dde2c58ea234de67287.ctex"]
 
 [params]
 
