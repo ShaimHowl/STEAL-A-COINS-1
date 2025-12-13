@@ -1,6 +1,4 @@
 res://Scenes/mundo.tscn
-res://coins.gd
-res://Scenes/coins.tscn
-res://Scripts/coins.gd
 res://Scenes/jugador.tscn
-res://Scripts/jugador.gd
+res://Scripts/coins.gd
+res://Scenes/coins.tscn

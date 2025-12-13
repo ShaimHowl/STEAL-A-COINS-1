@@ -1,11 +1,10 @@
-[gd_scene load_steps=9 format=4 uid="uid://b3l120pwrhb7m"]
+[gd_scene load_steps=8 format=4 uid="uid://b3l120pwrhb7m"]
 
 [ext_resource type="Texture2D" uid="uid://b0sphmjtgvgmr" path="res://Final/Background_0.png" id="1_gqidu"]
 [ext_resource type="PackedScene" uid="uid://dtse1o8wnri4f" path="res://Scenes/jugador.tscn" id="1_uqtxj"]
 [ext_resource type="Texture2D" uid="uid://cgxxrdsm5emij" path="res://Final/Background_1.png" id="2_glouy"]
 [ext_resource type="Texture2D" uid="uid://cqr6j3evgk3cn" path="res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png" id="3_i8avv"]
-[ext_resource type="AudioStream" uid="uid://vygde6p7l5q1" path="res://Sounds/treachery.mp3" id="5_yf8a8"]
-[ext_resource type="Script" uid="uid://8ad32v6s2g36" path="res://Scenes/treachery.gd" id="6_qxsm7"]
+[ext_resource type="PackedScene" uid="uid://dpqnh5sv8jh3b" path="res://Scenes/coins.tscn" id="7_i8avv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ibak7"]
 texture = ExtResource("3_i8avv")
@@ -93,8 +92,8 @@ position = Vector2(-299, -53)
 motion_scale = Vector2(0, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/montaña"]
-position = Vector2(297, 45.999996)
-scale = Vector2(2.984375, 3.5600963)
+position = Vector2(297, 46)
+scale = Vector2(1.73438, 1.66346)
 texture = ExtResource("1_gqidu")
 centered = false
 
@@ -103,7 +102,7 @@ position = Vector2(11, -116)
 motion_mirroring = Vector2(320, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(121.99994, 2023)
+position = Vector2(122, 2023)
 scale = Vector2(0.445213, 0.751448)
 texture = ExtResource("2_glouy")
 centered = false
@@ -114,16 +113,37 @@ tile_set = SubResource("TileSet_qxsm7")
 
 [node name="Camera2D" type="Camera2D" parent="TileMapLayer"]
 position = Vector2(574, 376)
-scale = Vector2(1.3377099, 1)
+scale = Vector2(1.33771, 1)
 offset = Vector2(0, -50)
 zoom = Vector2(1, 1.1)
 
 [node name="jugador" parent="." instance=ExtResource("1_uqtxj")]
-position = Vector2(33, 554)
+position = Vector2(-29, 625)
 collision_layer = 17
 
-[node name="Treachery" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(270, 219)
-stream = ExtResource("5_yf8a8")
-autoplay = true
-script = ExtResource("6_qxsm7")
+[node name="Node2D" parent="." instance=ExtResource("7_i8avv")]
+position = Vector2(130, 561)
+
+[node name="Node2D2" parent="." instance=ExtResource("7_i8avv")]
+position = Vector2(194, 557)
+
+[node name="Node2D3" parent="." instance=ExtResource("7_i8avv")]
+position = Vector2(266, 560)
+
+[node name="Node2D4" parent="." instance=ExtResource("7_i8avv")]
+position = Vector2(349, 560)
+
+[node name="Node2D5" parent="." instance=ExtResource("7_i8avv")]
+position = Vector2(431, 562)
+
+[node name="Node2D6" parent="." instance=ExtResource("7_i8avv")]
+position = Vector2(529, 559)
+
+[node name="Node2D7" parent="." instance=ExtResource("7_i8avv")]
+position = Vector2(630, 560)
+
+[node name="Node2D8" parent="." instance=ExtResource("7_i8avv")]
+position = Vector2(725, 559)
+
+[node name="Node2D9" parent="." instance=ExtResource("7_i8avv")]
+position = Vector2(818, 561)
