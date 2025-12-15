@@ -302,18 +302,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a0p7g"]
-size = Vector2(40, 53.0625)
+size = Vector2(75, 99)
 
 [node name="jugador" type="CharacterBody2D"]
 script = ExtResource("1_n4xcq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(70.63, -77.31)
-scale = Vector2(0.974531, 0.957969)
+position = Vector2(98.13, -58.810013)
+scale = Vector2(1.4042186, 1.2470313)
 sprite_frames = SubResource("SpriteFrames_gxv3l")
 animation = &"Attack2"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(81, -39)
+position = Vector2(94.5, -26.5)
 shape = SubResource("RectangleShape2D_a0p7g")
