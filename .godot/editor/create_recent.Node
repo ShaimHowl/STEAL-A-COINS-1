@@ -1,4 +1,7 @@
+Camera2D
 Sprite2D
+ParallaxLayer
+ParallaxBackground
 CollisionShape2D
 AnimatedSprite2D
 Area2D
@@ -6,8 +9,6 @@ TileMapLayer
 Marker2D
 CharacterBody2D
 Node2D
-ParallaxLayer
-ParallaxBackground
 Node
 CanvasLayer
 StaticBody2D

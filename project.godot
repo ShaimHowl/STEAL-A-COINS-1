@@ -15,6 +15,12 @@ run/main_scene="uid://b3l120pwrhb7m"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=1842
+window/size/viewport_height=964
+window/size/resizable=false
+
 [input]
 
 jump={

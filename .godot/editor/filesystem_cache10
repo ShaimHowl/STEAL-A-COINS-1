@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1765790095
+::res://::1765886796
 demon.gd::GDScript::7860703800471600782::1764155989::0::1::::<>CharacterBody2D<><>0<>0<><>::
 demon.tscn::PackedScene::5750602723487063991::1764758865::0::1::::<><><>0<>0<><>::uid://dj81v4pusdbtm::::res://demon.gd
 icon.svg::CompressedTexture2D/CompressedTexture2D::2219951999146419051::1763551404::1763551404::1::::<><><>0<>0<>f29d7dda42e7e7598ebfcf08a8bd1d47<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -211,13 +211,13 @@ Jump.png::CompressedTexture2D::1103940416289837733::1765790082::1765790082::1:::
 Run+Attack.png::CompressedTexture2D::8503918057824261939::1765790082::1765790082::1::::<><><>0<>0<>79dd7a7e27c79f78958eb0815366342e<>res://.godot/imported/Run+Attack.png-796b3b1de9bf32e43c2708d41db6d6df.ctex::
 Run.png::CompressedTexture2D::39683078131714492::1765790082::1765790082::1::::<><><>0<>0<>c2da4bfdb777576efde3afed7b275212<>res://.godot/imported/Run.png-95c09b17727733d935cefd6f679d8e90.ctex::
 Walk.png::CompressedTexture2D::5779480689947804100::1765790082::1765790082::1::::<><><>0<>0<>06b42e506c031755f98fe95eee7677bb<>res://.godot/imported/Walk.png-745ae778ac51c2af7b491986f3eeed69.ctex::
-::res://Scenes/::1765790082
+::res://Scenes/::1765886780
 coins.tscn::PackedScene::8245928175683633229::1765790082::0::1::::<><><>0<>0<><>::uid://j00dtf6yovjl::::res://Scripts/coins.gd<>uid://dncuitfxjy7ng::::res://Assets/Coins_16x16/PNG/Coin_One.png
-jugador.tscn::PackedScene::8530298965710665431::1765790082::0::1::::<><><>0<>0<><>::uid://8mlt6f0j6nss::::res://Scripts/jugador.gd<>uid://cya3ibtmv4wgd::::res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Attack_1.png<>uid://nbli1jls1y2y::::res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Attack_2.png<>uid://d1vrip20xorlr::::res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Idle.png<>uid://cmwfl4vwbqc7i::::res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Jump.png<>uid://cvk0q7c6jddgm::::res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Run.png
-mundo.tscn::PackedScene::4376044656378419864::1765790082::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png<>uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://cgxxrdsm5emij::::res://Final/Background_1.png<>uid://cqr6j3evgk3cn::::res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png<>uid://dpqnh5sv8jh3b::::res://Scenes/coins.tscn
-::res://Scripts/::1765790082
+jugador.tscn::PackedScene::8530298965710665431::1765790732::0::1::::<><><>0<>0<><>::uid://8mlt6f0j6nss::::res://Scripts/jugador.gd<>uid://cya3ibtmv4wgd::::res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Attack_1.png<>uid://nbli1jls1y2y::::res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Attack_2.png<>uid://d1vrip20xorlr::::res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Idle.png<>uid://cmwfl4vwbqc7i::::res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Jump.png<>uid://cvk0q7c6jddgm::::res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Run.png
+mundo.tscn::PackedScene::4376044656378419864::1765886780::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png<>uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://cqr6j3evgk3cn::::res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png<>uid://dpqnh5sv8jh3b::::res://Scenes/coins.tscn
+::res://Scripts/::1765791479
 coins.gd::GDScript::684833325903482017::1765790082::0::1::::<>Area2D<><>0<>0<><>::
 enemigo.gd::GDScript::684648248330525318::1765281458::0::1::::<>CharacterBody2D<><>0<>0<><>::
-jugador.gd::GDScript::2341707827205433362::1765790082::0::1::::<>CharacterBody2D<><>0<>0<><>::
+jugador.gd::GDScript::2341707827205433362::1765791479::0::1::::<>CharacterBody2D<><>0<>0<><>::
 ::res://Sounds/::1764149826
 treachery.mp3::AudioStreamMP3/AudioStreamMP3::1523880700541527338::1763976392::1764149826::1::::<><><>0<>0<>f0ea6d63948b9b52e8a2d4d0747d6efe<>res://.godot/imported/treachery.mp3-9bf7125075df57f26d7c73ef65ac566f.mp3str::
