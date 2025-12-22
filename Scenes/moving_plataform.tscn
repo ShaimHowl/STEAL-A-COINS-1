@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=4 uid="uid://cnbyv8plphfm"]
+[gd_scene load_steps=9 format=4 uid="uid://cnbyv8plphfm"]
 
 [ext_resource type="Texture2D" uid="uid://cqr6j3evgk3cn" path="res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png" id="1_1fixo"]
+[ext_resource type="Script" uid="uid://ddy0yrj1qgsqs" path="res://Scenes/moving_plataform.gd" id="1_3tkj6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3tkj6"]
 texture = ExtResource("1_1fixo")
@@ -117,6 +118,7 @@ _data = {
 }
 
 [node name="MovingPlataform" type="Node2D"]
+script = ExtResource("1_3tkj6")
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
 

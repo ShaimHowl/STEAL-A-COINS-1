@@ -1,2 +1,10 @@
+res://Scenes/trampa.tscn
 res://Scenes/mundo.tscn
-res://Scenes/main_menu.tscn
+res://Scenes/jugador.tscn
+res://Scripts/trampa.gd
+res://Scripts/jugador.gd
+res://Scenes/Vida.tscn
+res://Scenes/vida.gd
+res://Scripts/vida.gd
+res://Scenes/moving_plataform.tscn
+res://Scenes/moving_plataform.gd

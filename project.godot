@@ -15,12 +15,20 @@ run/main_scene="uid://bwoajv3vauep7"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Mundo="*res://Game..gd"
+
 [display]
 
 window/size/viewport_width=1356
 window/size/viewport_height=708
 window/size/resizable=false
 window/stretch/mode="canvas_items"
+
+[global_group]
+
+jugador=""
 
 [input]
 
@@ -50,8 +58,14 @@ Attack2={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_2="Enemys"
+2d_physics/layer_5="player"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.017382, 0.02319822, 0.19768158, 1)

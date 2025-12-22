@@ -2,9 +2,8 @@ extends CharacterBody2D
 
 @export var speed = 300
 @export var jump = -430
-
+var health = 100
 var gravity = 980
-
 @onready var animated_sprite_2d = $AnimatedSprite2D
 
 func _physics_process(delta):
@@ -44,3 +43,8 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, speed)
 
 	move_and_slide()
+
+
+func _on_damgedetection_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
+	health -= 25
+	print(health)

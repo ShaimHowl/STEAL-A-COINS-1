@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dg6kn65l0f78g"]
+
+[ext_resource type="Texture2D" uid="uid://c5brnqq2eh0o4" path="res://Assets/Animate Spikes/Animate Spikes/spikes.png" id="1_d15tb"]
+[ext_resource type="Script" uid="uid://dfnt8dohc5767" path="res://Scripts/pinchos.gd" id="1_o6r8l"]
+
+[sub_resource type="GDScript" id="GDScript_306q4"]
+script/source = "extends Node2D
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.get_name() == \"jugador\":
+		get_tree().reload_current_scene()
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d15tb"]
+size = Vector2(41, 17)
+
+[node name="Pinchos" type="Node2D"]
+script = SubResource("GDScript_306q4")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("1_o6r8l")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+texture_filter = 1
+position = Vector2(-13, -11.5)
+scale = Vector2(0.62857145, 0.67142856)
+texture = ExtResource("1_d15tb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-12.5, 2.5)
+shape = SubResource("RectangleShape2D_d15tb")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

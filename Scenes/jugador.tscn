@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://dtse1o8wnri4f"]
+[gd_scene load_steps=39 format=3 uid="uid://dtse1o8wnri4f"]
 
 [ext_resource type="Script" uid="uid://8mlt6f0j6nss" path="res://Scripts/jugador.gd" id="1_n4xcq"]
 [ext_resource type="Texture2D" uid="uid://ch5yc8gptoiym" path="res://Assets/template_free/individual_sheets/male_hero_template-idle.png" id="4_5nsjc"]
@@ -240,18 +240,37 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4xcq"]
-size = Vector2(35, 55)
+size = Vector2(28.524384, 45.2535)
 
-[node name="jugador" type="CharacterBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iw3ti"]
+size = Vector2(28.11583, 45.253517)
+
+[node name="jugador" type="CharacterBody2D" groups=["jugador"]]
+position = Vector2(-61, 29)
+rotation = -0.00519228
+scale = Vector2(0.9452705, 1.0164816)
+collision_layer = 16
 script = ExtResource("1_n4xcq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(65.00004, -32.30996)
+position = Vector2(66, -32)
 scale = Vector2(1.9218756, 1.6610931)
 sprite_frames = SubResource("SpriteFrames_gxv3l")
 animation = &"Idle"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(64.5, -32.5)
+position = Vector2(65.381226, -31.097622)
+scale = Vector2(1.0000005, 1.0000002)
 shape = SubResource("RectangleShape2D_n4xcq")
+
+[node name="Damgedetection" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Damgedetection"]
+position = Vector2(65.5855, -31.097616)
+scale = Vector2(1.0000005, 1.0000002)
+shape = SubResource("RectangleShape2D_iw3ti")
+
+[connection signal="area_shape_entered" from="Damgedetection" to="." method="_on_damgedetection_area_shape_entered"]

@@ -1,0 +1,104 @@
+[gd_scene load_steps=14 format=3 uid="uid://cidit7t5rckk4"]
+
+[ext_resource type="Texture2D" uid="uid://cuqwcit48xok6" path="res://Trap and Weapon/Trap and Weapon/Suriken.png" id="1_hitas"]
+[ext_resource type="Script" uid="uid://cqgq8djs2rsrj" path="res://Scripts/trampa.gd" id="1_st3ur"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_st3ur"]
+atlas = ExtResource("1_hitas")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ona6"]
+atlas = ExtResource("1_hitas")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jp6yl"]
+atlas = ExtResource("1_hitas")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_syb6t"]
+atlas = ExtResource("1_hitas")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sr3h5"]
+atlas = ExtResource("1_hitas")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oet3e"]
+atlas = ExtResource("1_hitas")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mbaom"]
+atlas = ExtResource("1_hitas")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynh0k"]
+atlas = ExtResource("1_hitas")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ckpvg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_st3ur")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ona6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jp6yl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_syb6t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sr3h5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oet3e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mbaom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynh0k")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h0w0c"]
+size = Vector2(25, 7)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_st3ur"]
+radius = 26.0
+
+[node name="Trampa" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_st3ur")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_ckpvg")
+autoplay = "default"
+frame = 2
+frame_progress = 0.096454956
+
+[node name="floor" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_h0w0c")
+
+[node name="detection_floor" type="RayCast2D" parent="."]
+position = Vector2(30, -9)
+target_position = Vector2(0, 16)
+
+[node name="detection_wall" type="RayCast2D" parent="."]
+target_position = Vector2(29, 0)
+
+[node name="Damage" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Damage"]
+position = Vector2(1, -10)
+shape = SubResource("CircleShape2D_st3ur")
