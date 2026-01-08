@@ -1,3 +1,7 @@
-res://Scenes/moving_platadorm_3.tscn
-res://Scenes/detalles_3.tscn
 res://Scenes/nivel_3.tscn
+res://Scripts/jugador.gd
+res://Scenes/mision.tscn
+res://Scripts/main_menu.gd
+res://Scenes/main_menu.tscn
+res://Scenes/nivel_2.tscn
+res://Scripts/ResultadoMision.gd

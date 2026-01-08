@@ -5,7 +5,6 @@ extends CharacterBody2D
 @export var jump = -430
 @export var max_health = 100
 
-
 var health
 var gravity = 980
 var muerto = false
@@ -21,7 +20,7 @@ func _physics_process(delta):
 	if muerto:
 		return
 
-	# --- Movimiento (igual que antes) ---
+	# --- Movimiento ---
 	if not is_on_floor():
 		velocity.y += gravity * delta
 
@@ -56,7 +55,7 @@ func _physics_process(delta):
 	if direction:
 		velocity.x = direction * current_speed
 	else:
-		velocity.x = 0   # ← Freno instantáneo, sin deslizamiento
+		velocity.x = 0
 
 	move_and_slide()
 
@@ -70,12 +69,23 @@ func recibir_daño(cantidad):
 		return
 
 	health -= cantidad
-	GameData.health = health   # ← GUARDA LA VIDA GLOBAL
+	GameData.health = health
 	print("Vida:", health)
 
 	if health <= 0:
 		morir()
 
+# ===============================
+# CURACIÓN
+# ===============================
+func curar(cantidad):
+	if muerto:
+		return
+
+	health += cantidad
+
+	if health > max_health:
+		health = max_health
 
 func morir():
 	muerto = true
@@ -88,4 +98,5 @@ func morir():
 
 
 
-	# Mostrar pantalla de Game Over (el nodo GameOver es Control con el script)
+	GameData.health = health
+	print("Curado. Vida actual:", health)
