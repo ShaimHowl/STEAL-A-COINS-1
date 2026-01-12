@@ -560,6 +560,9 @@ position = Vector2(528, 528)
 [node name="Trampa3" parent="." instance=ExtResource("2_2w53t")]
 position = Vector2(892, 522)
 
+[node name="Trampa4" parent="." instance=ExtResource("2_2w53t")]
+position = Vector2(1203, 513)
+
 [node name="Coleccion" type="CanvasLayer" parent="."]
 script = ExtResource("1_5dm08")
 
