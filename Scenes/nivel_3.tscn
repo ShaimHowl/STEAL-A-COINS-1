@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://bmahyajw6if3i"]
+[gd_scene load_steps=25 format=4 uid="uid://bmahyajw6if3i"]
 
 [ext_resource type="Script" uid="uid://4hsxgnqbysy4" path="res://Scripts/Coleccion.tres.gd" id="1_5dm08"]
 [ext_resource type="Script" uid="uid://dgq2biw1eshua" path="res://Scripts/nivel_3.gd" id="1_jxqql"]
@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://cndw8ox6w8duc" path="res://Scenes/pocion.tscn" id="17_bvitb"]
 [ext_resource type="PackedScene" uid="uid://dg6kn65l0f78g" path="res://Scenes/pinchos.tscn" id="18_fpc32"]
 [ext_resource type="PackedScene" uid="uid://1qqmngll3bi6" path="res://Scenes/enemy.tscn" id="19_oh2mj"]
+[ext_resource type="PackedScene" uid="uid://dw68xlihcg8fd" path="res://Scenes/menupausa.tscn" id="20_1nruq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_io8q0"]
 texture = ExtResource("7_cfnh5")
@@ -786,8 +787,16 @@ position = Vector2(426, 192)
 [node name="enemy12" parent="." instance=ExtResource("19_oh2mj")]
 position = Vector2(212, 192)
 
+[node name="Menupausa" parent="." instance=ExtResource("20_1nruq")]
+process_mode = 3
+position = Vector2(-18, 79)
+
+[node name="VBoxContainer" parent="Menupausa" index="1"]
+visible = false
+
 [editable path="Vida"]
 [editable path="Portal"]
 [editable path="Portal2"]
 [editable path="Portal3"]
 [editable path="Portal4"]
+[editable path="Menupausa"]
