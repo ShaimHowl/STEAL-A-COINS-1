@@ -9,9 +9,19 @@ var jugador_en_area: Node2D = null
 @onready var timer: Timer = $Timer
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var audio_hit: AudioStreamPlayer = $AudioStreamPlayer
+@export var mirar_izquierda: bool = false
+
 
 func _ready():
-	velocity.x = -enemyrun
+	if mirar_izquierda:
+		velocity.x = -enemyrun
+		sprite.flip_h = false
+		area.scale.x = 1
+	else:
+		velocity.x = enemyrun
+		sprite.flip_h = true
+		area.scale.x = -1
+
 	sprite.play("default")
 
 	area.body_entered.connect(_on_area_enter)

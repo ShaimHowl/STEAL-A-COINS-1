@@ -204,7 +204,7 @@ autoplay = "animacion"
 
 [node name="Audio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_16hvj")
-volume_db = -5.474
+volume_db = 8.801
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_comenzar_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_opciones_pressed"]

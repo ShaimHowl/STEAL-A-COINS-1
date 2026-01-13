@@ -373,6 +373,11 @@ rotation = -0.00519228
 scale = Vector2(0.9452705, 1.0164816)
 collision_layer = 16
 script = ExtResource("1_n4xcq")
+speed = null
+run_speed = null
+jump = null
+max_health = null
+mirar_derecha = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(66, -32)

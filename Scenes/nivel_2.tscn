@@ -986,7 +986,11 @@ tile_map_data = PackedByteArray("AABmADIAAAAAAAUAAABmADMAAAAAAAQAAABmADQAAAAAAAU
 tile_set = SubResource("TileSet_hxfkh")
 
 [node name="jugador" parent="." instance=ExtResource("2_804co")]
-position = Vector2(1152, 616)
+position = Vector2(1160, 627.0001)
+speed = 150
+run_speed = 300
+jump = -430
+max_health = 100
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_k6xhl")
@@ -1069,24 +1073,24 @@ offset_right = 1331.0
 offset_bottom = 84.0
 
 [node name="Portal" parent="." instance=ExtResource("16_sselb")]
-position = Vector2(1233, 311)
+position = Vector2(1237, 313)
 scale = Vector2(1.2, 1.2)
 collision_layer = 2
 collision_mask = 16
 
 [node name="Destinacion" parent="Portal" index="2"]
-position = Vector2(-667.5, -110)
+position = Vector2(-833.33325, -103.333336)
 
 [node name="Portal2" parent="." instance=ExtResource("16_sselb")]
-position = Vector2(550, 160)
+position = Vector2(552, 165)
 collision_layer = 2
 collision_mask = 16
 
 [node name="Destinacion" parent="Portal2" index="2"]
-position = Vector2(593, 177)
+position = Vector2(208, 23)
 
 [node name="Portal3" parent="." instance=ExtResource("16_sselb")]
-position = Vector2(186, 158)
+position = Vector2(189, 156)
 scale = Vector2(1.2, 1.2)
 collision_layer = 2
 collision_mask = 16
@@ -1095,7 +1099,7 @@ collision_mask = 16
 position = Vector2(-12.500002, -1.6666641)
 
 [node name="Destinacion" parent="Portal3" index="2"]
-position = Vector2(472.5, 18.333338)
+position = Vector2(798.3334, 153.33333)
 
 [node name="Portal4" parent="." instance=ExtResource("16_sselb")]
 position = Vector2(729, 158)
@@ -1107,7 +1111,7 @@ collision_mask = 16
 position = Vector2(-12.500002, -1.6666641)
 
 [node name="Destinacion" parent="Portal4" index="2"]
-position = Vector2(-419.16666, 18.333338)
+position = Vector2(-260.8333, 15.833338)
 
 [node name="enemy2" parent="." instance=ExtResource("15_k6xhl")]
 position = Vector2(911, 589)
@@ -1135,6 +1139,9 @@ position = Vector2(1232, 308)
 
 [node name="enemy10" parent="." instance=ExtResource("15_k6xhl")]
 position = Vector2(239, 162)
+
+[node name="enemy11" parent="." instance=ExtResource("15_k6xhl")]
+position = Vector2(781, 162)
 
 [node name="Pocion" parent="." instance=ExtResource("18_4k5f8")]
 position = Vector2(758, 98)

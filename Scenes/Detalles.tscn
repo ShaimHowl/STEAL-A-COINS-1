@@ -63,26 +63,37 @@ theme_override_font_sizes/font_size = 55
 text = "Nivel 1:Primeras trampas"
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 150.0
-offset_top = 176.0
-offset_right = 1065.0
-offset_bottom = 259.0
+offset_left = 56.0
+offset_top = 167.0
+offset_right = 971.0
+offset_bottom = 250.0
 theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
 theme_override_fonts/font = ExtResource("2_mqihf")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 30
 text = "10 de daño 
 cada toque"
 
 [node name="Label3" type="Label" parent="."]
-offset_left = 747.0
-offset_top = 173.0
-offset_right = 1662.0
-offset_bottom = 256.0
+offset_left = 443.0
+offset_top = 160.0
+offset_right = 768.0
+offset_bottom = 243.0
 theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
 theme_override_fonts/font = ExtResource("2_mqihf")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 30
 text = "5 de daño 
 cada toque"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 819.0
+offset_top = 157.0
+offset_right = 1295.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_fonts/font = ExtResource("2_mqihf")
+theme_override_font_sizes/font_size = 30
+text = "Usa el portal para
+teletransportarte"
 
 [node name="Button" type="Button" parent="."]
 offset_left = 437.0
@@ -98,15 +109,17 @@ theme_override_font_sizes/font_size = 65
 text = "Comenzar"
 
 [node name="trampa1" type="Sprite2D" parent="."]
-position = Vector2(352, 398)
+position = Vector2(187, 376)
+scale = Vector2(0.812, 0.91628957)
 texture = ExtResource("3_mqihf")
 
 [node name="trampa2" type="Sprite2D" parent="."]
-position = Vector2(938, 393.00003)
-scale = Vector2(2.443478, 2.481012)
+position = Vector2(581.00006, 391)
+scale = Vector2(1.952174, 2.443037)
 texture = ExtResource("6_wvp5v")
 
 [node name="transicion" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(684, 380)
 scale = Vector2(1.4785156, 1)
 texture = ExtResource("1_iil4g")

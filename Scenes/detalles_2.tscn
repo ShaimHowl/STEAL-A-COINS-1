@@ -69,7 +69,7 @@ offset_bottom = 246.0
 theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
 theme_override_fonts/font = ExtResource("2_h6pr8")
 theme_override_font_sizes/font_size = 45
-text = "5 de daño/0.3s"
+text = "5 de daño/0.45s"
 
 [node name="Button" type="Button" parent="."]
 offset_left = 409.0

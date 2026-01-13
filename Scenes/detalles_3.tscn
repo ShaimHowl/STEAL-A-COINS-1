@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b2sswmbou53rj" path="res://Assets/fondoazul.png" id="1_f3kh8"]
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_05c0f"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_c0yc2"]
-[ext_resource type="Texture2D" uid="uid://b3vbrfvvhlqw2" path="res://Assets/sonidos/enemy2.png" id="4_f3kh8"]
+[ext_resource type="Texture2D" uid="uid://chhnq3a3lbvrq" path="res://Detallesf/detallesf3.png" id="5_05c0f"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="5_rmeiq"]
 
 [sub_resource type="Animation" id="Animation_cfapw"]
@@ -89,9 +89,9 @@ text = "Seguir
 "
 
 [node name="trampa1" type="Sprite2D" parent="."]
-position = Vector2(634, 415)
-scale = Vector2(3.4035342, 2.9682393)
-texture = ExtResource("4_f3kh8")
+position = Vector2(630, 398)
+scale = Vector2(0.26055157, 0.19518486)
+texture = ExtResource("5_05c0f")
 
 [node name="transicion" type="Sprite2D" parent="."]
 position = Vector2(684, 380)
