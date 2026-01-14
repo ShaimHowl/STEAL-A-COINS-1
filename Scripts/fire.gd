@@ -13,10 +13,13 @@ func _physics_process(delta):
 				$AudioStreamPlayer.play()
 			temporizador_daño = tiempo_entre_daño
 
+
+
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.name == "jugador":
 		jugador_en_contacto = body
 		temporizador_daño = 0.0  # daño inmediato al entrar
+
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body == jugador_en_contacto:
