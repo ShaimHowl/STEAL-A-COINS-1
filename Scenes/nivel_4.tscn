@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://3euum38ajap5"]
+[gd_scene load_steps=19 format=4 uid="uid://3euum38ajap5"]
 
 [ext_resource type="Script" uid="uid://bupei18p3obs2" path="res://Scripts/nivel_4.gd" id="1_mobm4"]
 [ext_resource type="Script" uid="uid://4hsxgnqbysy4" path="res://Scripts/Coleccion.tres.gd" id="1_uts83"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dtse1o8wnri4f" path="res://Scenes/jugador.tscn" id="9_k7b3m"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="10_anpwb"]
 [ext_resource type="Texture2D" uid="uid://cqr6j3evgk3cn" path="res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png" id="11_qahvg"]
+[ext_resource type="Texture2D" uid="uid://mi1psc8tu77y" path="res://Assets/mf.png" id="13_ybmds"]
 
 [sub_resource type="Animation" id="Animation_f3x5k"]
 length = 0.001
@@ -216,6 +217,10 @@ position = Vector2(-2.0000002, -0.999996)
 scale = Vector2(1.7708334, 1.704327)
 texture = ExtResource("7_qahvg")
 centered = false
+
+[node name="Mf" type="Sprite2D" parent="."]
+position = Vector2(1148, 427)
+texture = ExtResource("13_ybmds")
 
 [editable path="Menupausa"]
 [editable path="Vida"]
