@@ -172,6 +172,7 @@ offset_right = 1327.0
 offset_bottom = 74.0
 
 [node name="transicion" type="Sprite2D" parent="."]
+visible = false
 self_modulate = Color(1, 1, 1, 0.6117647)
 position = Vector2(714.99994, 375)
 scale = Vector2(2.2886298, 2.2642486)
