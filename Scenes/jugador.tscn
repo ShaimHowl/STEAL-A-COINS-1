@@ -363,21 +363,16 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4xcq"]
-size = Vector2(34.783833, 51.248085)
+size = Vector2(34.783833, 50.177498)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iw3ti"]
-size = Vector2(44.43112, 46.237274)
+size = Vector2(43.3733, 44.259537)
 
 [node name="jugador" type="CharacterBody2D" groups=["jugador"]]
 rotation = -0.00519228
 scale = Vector2(0.9452705, 1.0164816)
 collision_layer = 16
 script = ExtResource("1_n4xcq")
-speed = null
-run_speed = null
-jump = null
-max_health = null
-mirar_derecha = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(66, -32)
@@ -387,7 +382,7 @@ animation = &"Idle"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(65.15603, -31.128271)
+position = Vector2(65.15604, -31.663567)
 scale = Vector2(1.0000006, 1.0000002)
 shape = SubResource("RectangleShape2D_n4xcq")
 
@@ -396,7 +391,7 @@ collision_layer = 16
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Damgedetection"]
-position = Vector2(64.701256, -28.704597)
+position = Vector2(65.2302, -29.693481)
 scale = Vector2(1.0000006, 1.0000002)
 shape = SubResource("RectangleShape2D_iw3ti")
 

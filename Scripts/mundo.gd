@@ -1,6 +1,9 @@
 extends Node2D
-@export var tiempo_inicial: int = 30
+@export var tiempo_inicial: int = 35
 @export var escena_final: String = "res://Scenes/misionfallida.tscn"
+@export var sonido_alerta: AudioStreamPlayer
+var sonido_reproducido := false
+
 
 var tiempo_restante: float
 
@@ -13,6 +16,11 @@ func _ready():
 func _process(delta):
 	if tiempo_restante > 0:
 		tiempo_restante -= delta
+
+		if not sonido_reproducido and tiempo_restante <= 10:
+			sonido_reproducido = true
+			reproducir_alerta()
+
 		if tiempo_restante <= 0:
 			tiempo_restante = 0
 			_cuando_termina_el_tiempo()
@@ -22,9 +30,14 @@ func _actualizar_label():
 	var minutos = int(tiempo_restante) / 60
 	var segundos = int(tiempo_restante) % 60
 	$CanvasLayer/Label.text = "%02d:%02d" % [minutos, segundos]
+func reproducir_alerta():
+	var player := $CanvasLayer/AudioStreamPlayer2
+	if sonido_alerta:
+		player.stream = sonido_alerta
+	player.play()
 
 func terminar_mision():
-	await get_tree().create_timer(0.25).timeout  # ⏳ medio segundo de retraso
+	await get_tree().create_timer(0.10).timeout  # ⏳ medio segundo de retraso
 	get_tree().change_scene_to_file("res://Scenes/mision.tscn")
 func _cuando_termina_el_tiempo():
-	get_tree().change_scene_to_file(escena_final)
+	get_tree().change_scene_to_file("res://Scenes/misionfallida.tscn")

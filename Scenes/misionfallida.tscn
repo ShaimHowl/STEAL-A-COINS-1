@@ -1,13 +1,106 @@
-[gd_scene load_steps=13 format=3 uid="uid://c581f8ukk5lgo"]
+[gd_scene load_steps=27 format=3 uid="uid://c581f8ukk5lgo"]
 
 [ext_resource type="Script" uid="uid://dhy8g354k18dh" path="res://Scripts/misionfallida.gd" id="1_opspj"]
-[ext_resource type="Texture2D" uid="uid://mi1psc8tu77y" path="res://Assets/mf.png" id="2_nwugw"]
 [ext_resource type="AudioStream" uid="uid://dx8rucdunm3do" path="res://Sounds/complete.wav" id="2_o1uvq"]
+[ext_resource type="Texture2D" uid="uid://3em6nv3pxml6" path="res://Detallesf/misionf.png" id="2_t4ryu"]
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="3_fl284"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="4_dae75"]
 [ext_resource type="Texture2D" uid="uid://c60sxysj86lqj" path="res://Icono/Copilot_20260102_170116.png" id="5_nwugw"]
 [ext_resource type="Texture2D" uid="uid://ihloljqkc4jb" path="res://Assets/fondogris.png" id="6_fl284"]
 [ext_resource type="AudioStream" uid="uid://c7yregjerupmc" path="res://Sounds/game-over-417465.mp3" id="7_dae75"]
+[ext_resource type="Texture2D" uid="uid://dncuitfxjy7ng" path="res://Assets/Coins_16x16/PNG/Coin_One.png" id="9_80bml"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k3bf4"]
+atlas = ExtResource("9_80bml")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ikvd"]
+atlas = ExtResource("9_80bml")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5iqhi"]
+atlas = ExtResource("9_80bml")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gjeh3"]
+atlas = ExtResource("9_80bml")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shps0"]
+atlas = ExtResource("9_80bml")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7hl7j"]
+atlas = ExtResource("9_80bml")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_27lni"]
+atlas = ExtResource("9_80bml")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6plj"]
+atlas = ExtResource("9_80bml")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tva0q"]
+atlas = ExtResource("9_80bml")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8pvbx"]
+atlas = ExtResource("9_80bml")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2jc4o"]
+atlas = ExtResource("9_80bml")
+region = Rect2(160, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tclv6"]
+atlas = ExtResource("9_80bml")
+region = Rect2(176, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qqcc8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k3bf4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ikvd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5iqhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gjeh3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shps0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7hl7j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_27lni")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d6plj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tva0q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8pvbx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2jc4o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tclv6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="Animation" id="Animation_qrfpl"]
 length = 0.001
@@ -55,7 +148,7 @@ script = ExtResource("1_opspj")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(679, 360.99997)
 scale = Vector2(0.9153645, 0.72851557)
-texture = ExtResource("2_nwugw")
+texture = ExtResource("2_t4ryu")
 
 [node name="LabelTitulo" type="Label" parent="."]
 anchors_preset = 8
@@ -107,6 +200,18 @@ expand_icon = true
 
 [node name="SonidoMision" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_o1uvq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(107, 157)
+scale = Vector2(5.125, 3.375)
+sprite_frames = SubResource("SpriteFrames_qqcc8")
+autoplay = "default"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(1254, 156)
+scale = Vector2(5.125, 3.375)
+sprite_frames = SubResource("SpriteFrames_qqcc8")
+autoplay = "default"
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(708, 372)

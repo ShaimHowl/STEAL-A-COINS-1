@@ -5,14 +5,21 @@ const RAY_FLOOR_POSITION_X = 30
 const RAY_WALL_TARGET_POSITION_X = 29
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
+@export var empieza_a_la_derecha: bool = true
+
 var jugador_en_contacto: Node2D = null
 var tiempo_entre_daño := 0.4
 var temporizador_daño := 0.0
 
 func _ready():
-	velocity.x = SPEED
-	$detection_floor.position.x = RAY_FLOOR_POSITION_X
-	$detection_wall.target_position.x = RAY_WALL_TARGET_POSITION_X
+	if empieza_a_la_derecha:
+		velocity.x = SPEED
+		$detection_floor.position.x = RAY_FLOOR_POSITION_X
+		$detection_wall.target_position.x = RAY_WALL_TARGET_POSITION_X
+	else:
+		velocity.x = -SPEED
+		$detection_floor.position.x = -RAY_FLOOR_POSITION_X
+		$detection_wall.target_position.x = -RAY_WALL_TARGET_POSITION_X
 
 func _physics_process(delta):
 	if not is_on_floor():
@@ -36,7 +43,7 @@ func _physics_process(delta):
 func _on_damage_body_entered(body: Node2D) -> void:
 	if body.name == "jugador":
 		jugador_en_contacto = body
-		temporizador_daño = 0.0  # daño inmediato al entrar
+		temporizador_daño = 0.0
 
 func _on_damage_body_exited(body: Node2D) -> void:
 	if body == jugador_en_contacto:

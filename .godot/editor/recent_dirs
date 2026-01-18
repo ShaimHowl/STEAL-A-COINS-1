@@ -1,6 +1,7 @@
-res://Scenes
-C:/Users/shaim/Pictures/STEAL-A-COINS-1
 res://Scripts
+res://Scenes
+res://Assets/Coins_16x16/PNG
+C:/Users/shaim/Pictures/STEAL-A-COINS-1
 res://Assets/AnimatedPotions 16x16/Poison Green
 res://Assets/AnimatedPotions 16x16/Dark Green Potion
 res://Assets/Animate Spikes/Animate Spikes
@@ -10,7 +11,6 @@ res://Assets/Forest_Monsters_FREE/Mushroom/Mushroom with VFX
 res://Assets/Forest_Monsters_FREE/Mushroom/Mushroom without VFX
 res://Assets/template_free/individual_sheets
 res://Assets/template_free
-res://Assets/Coins_16x16/PNG
 res://Trap and Weapon/Trap and Weapon
 res://Assets/32x32 Portal Asset Pack/32x32 Portal Asset Pack
 res://Assets

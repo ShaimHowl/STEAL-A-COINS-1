@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bv0s11x5kmmck"]
+[gd_scene load_steps=12 format=3 uid="uid://bv0s11x5kmmck"]
 
 [ext_resource type="Script" uid="uid://dgspoh2hx068g" path="res://Scripts/detalles.gd" id="1_i0yh6"]
 [ext_resource type="Texture2D" uid="uid://b2sswmbou53rj" path="res://Assets/fondoazul.png" id="1_iil4g"]
@@ -7,6 +7,7 @@
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="4_d2vfm"]
 [ext_resource type="Texture2D" uid="uid://cjhfvcmnngt3e" path="res://Assets/Background/trampa2.png" id="6_wvp5v"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="7_d2vfm"]
+[ext_resource type="Texture2D" uid="uid://bixgwdxvp80hg" path="res://Assets/Background/portal.png" id="7_wvp5v"]
 
 [sub_resource type="Animation" id="Animation_d2vfm"]
 length = 0.001
@@ -109,17 +110,21 @@ theme_override_font_sizes/font_size = 65
 text = "Comenzar"
 
 [node name="trampa1" type="Sprite2D" parent="."]
-position = Vector2(187, 376)
+position = Vector2(191, 403.00003)
 scale = Vector2(0.812, 0.91628957)
 texture = ExtResource("3_mqihf")
 
 [node name="trampa2" type="Sprite2D" parent="."]
-position = Vector2(581.00006, 391)
+position = Vector2(589.00006, 406)
 scale = Vector2(1.952174, 2.443037)
 texture = ExtResource("6_wvp5v")
 
+[node name="trampa3" type="Sprite2D" parent="."]
+position = Vector2(1044, 395)
+scale = Vector2(1.952174, 2.443037)
+texture = ExtResource("7_wvp5v")
+
 [node name="transicion" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(684, 380)
 scale = Vector2(1.4785156, 1)
 texture = ExtResource("1_iil4g")
