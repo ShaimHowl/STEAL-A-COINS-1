@@ -1,4 +1,3 @@
-res://Scenes/nivel_3.tscn
+res://Scenes/nivel_4.tscn
 res://Scenes/pinchos.tscn
-res://Scenes/jugador.tscn
 res://Scripts/nivel_3.gd

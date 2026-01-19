@@ -190,22 +190,22 @@ collision_mask = 16
 id_moneda = "m39"
 
 [node name="Coins27" parent="." instance=ExtResource("8_270ks")]
-position = Vector2(856, 400)
+position = Vector2(1050, 409)
 collision_mask = 16
 id_moneda = "m40"
 
 [node name="Coins28" parent="." instance=ExtResource("8_270ks")]
-position = Vector2(658, 410)
+position = Vector2(858, 395)
 collision_mask = 16
 id_moneda = "m41"
 
 [node name="Coins29" parent="." instance=ExtResource("8_270ks")]
-position = Vector2(471, 414)
+position = Vector2(642, 405)
 collision_mask = 16
 id_moneda = "m42"
 
 [node name="Coins30" parent="." instance=ExtResource("8_270ks")]
-position = Vector2(178, 414)
+position = Vector2(418, 408)
 collision_mask = 16
 id_moneda = "m43"
 
@@ -285,6 +285,7 @@ tile_map_data = PackedByteArray("AAAAACsAAAAAAAEAAAABACsAAAABAAEAAAAAACwAAAAAAAE
 tile_set = SubResource("TileSet_ybmds")
 
 [node name="transicion" type="Sprite2D" parent="CanvasLayer"]
+visible = false
 position = Vector2(714.99994, 375)
 scale = Vector2(2.2886298, 2.2642486)
 texture = ExtResource("7_o0bg6")
