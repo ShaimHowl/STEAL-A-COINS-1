@@ -589,6 +589,7 @@ _data = {
 }
 
 [node name="nivel_3" type="Node2D"]
+position = Vector2(1, 0)
 script = ExtResource("1_jxqql")
 metadata/_edit_vertical_guides_ = [-598.0]
 
