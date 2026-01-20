@@ -131,6 +131,7 @@ _data = {
 }
 
 [node name="nivel_4" type="Node2D"]
+position = Vector2(0, -1)
 script = ExtResource("1_mobm4")
 
 [node name="Coleccion" type="CanvasLayer" parent="."]
@@ -200,7 +201,7 @@ collision_mask = 16
 id_moneda = "m41"
 
 [node name="Coins29" parent="." instance=ExtResource("8_270ks")]
-position = Vector2(642, 405)
+position = Vector2(690, 412)
 collision_mask = 16
 id_moneda = "m42"
 
@@ -209,15 +210,17 @@ position = Vector2(418, 408)
 collision_mask = 16
 id_moneda = "m43"
 
+[node name="Coins31" parent="." instance=ExtResource("8_270ks")]
+position = Vector2(183, 409)
+collision_mask = 16
+id_moneda = "m44"
+
 [node name="Trampa" parent="." instance=ExtResource("9_6v4t3")]
 position = Vector2(732, 680)
 empieza_a_la_derecha = false
 
 [node name="Trampa2" parent="." instance=ExtResource("9_6v4t3")]
 position = Vector2(1265, 680)
-
-[node name="Trampa3" parent="." instance=ExtResource("9_6v4t3")]
-position = Vector2(467, 423)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -258,6 +261,10 @@ rotation = -0.033161256
 [node name="Pinchos6" parent="CanvasLayer" instance=ExtResource("12_dvqrj")]
 position = Vector2(818, 422)
 rotation = -0.033161256
+
+[node name="Pinchos7" parent="CanvasLayer" instance=ExtResource("12_dvqrj")]
+position = Vector2(600, 387)
+rotation = 1.553343
 
 [node name="CharacterBody2D" parent="CanvasLayer" instance=ExtResource("13_ybmds")]
 position = Vector2(180, 676)
@@ -340,6 +347,9 @@ position = Vector2(607, 401)
 [node name="enemy2" parent="." instance=ExtResource("21_o36qj")]
 position = Vector2(189, 419)
 mirar_izquierda = true
+
+[node name="enemy3" parent="." instance=ExtResource("21_o36qj")]
+position = Vector2(465, 415)
 
 [editable path="Menupausa"]
 [editable path="Vida"]

@@ -1,5 +1,5 @@
 extends Node2D
-@export var tiempo_inicial: int = 30
+@export var tiempo_inicial: int = 27
 @export var escena_final: String = "res://Scenes/misionfallida.tscn"
 @export var sonido_alerta: AudioStreamPlayer
 var sonido_reproducido := false
@@ -8,6 +8,7 @@ var sonido_reproducido := false
 var tiempo_restante: float
 
 func _ready():
+	
 	tiempo_restante = tiempo_inicial
 	GameData.monedas = 0
 	GameData.monedas_recogidas.clear()

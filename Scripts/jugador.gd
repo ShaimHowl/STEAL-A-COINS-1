@@ -5,9 +5,12 @@ extends CharacterBody2D
 @export var jump = -382
 @export var max_health = 100
 
+@export var start_facing_left := false   # ← NUEVO: elegir orientación en el inspector
+
 var health
 var gravity = 980
 var muerto = false
+var mirando_izquierda = false
 
 @onready var animated_sprite_2d = $AnimatedSprite2D
 
@@ -15,10 +18,19 @@ func _ready():
 	health = GameData.health  
 	add_to_group("jugador")
 
+	# --- Aplicar orientación inicial desde el inspector ---
+	mirando_izquierda = start_facing_left
+	animated_sprite_2d.flip_h = mirando_izquierda
+
 
 func _physics_process(delta):
 	if muerto:
 		return
+
+	# --- Girar manualmente ---
+	if Input.is_action_just_pressed("flip"):
+		mirando_izquierda = !mirando_izquierda
+		animated_sprite_2d.flip_h = mirando_izquierda
 
 	# --- Movimiento ---
 	if not is_on_floor():
@@ -33,11 +45,15 @@ func _physics_process(delta):
 	if Input.is_action_pressed("run") and direction != 0:
 		current_speed = run_speed
 
+	# --- Dirección automática SOLO si hay movimiento ---
 	if direction < 0:
-		animated_sprite_2d.flip_h = true
+		mirando_izquierda = true
 	elif direction > 0:
-		animated_sprite_2d.flip_h = false
+		mirando_izquierda = false
 
+	animated_sprite_2d.flip_h = mirando_izquierda
+
+	# --- Animaciones ---
 	if is_on_floor():
 		if direction == 0:
 			animated_sprite_2d.play("Idle")
@@ -52,6 +68,7 @@ func _physics_process(delta):
 		else:
 			animated_sprite_2d.play("fall")
 
+	# --- Movimiento horizontal ---
 	if direction:
 		velocity.x = direction * current_speed
 	else:
@@ -77,7 +94,7 @@ func recibir_daño(cantidad):
 
 
 # ===============================
-# CURACIÓN (CORREGIDO)
+# CURACIÓN
 # ===============================
 func curar(cantidad):
 	if muerto:
@@ -88,7 +105,7 @@ func curar(cantidad):
 	if health > max_health:
 		health = max_health
 
-	GameData.health = health  # ← AHORA SE ACTUALIZA AL MOMENTO
+	GameData.health = health
 	print("Curado. Vida actual:", health)
 
 

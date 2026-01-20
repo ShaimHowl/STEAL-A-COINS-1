@@ -991,6 +991,7 @@ tile_set = SubResource("TileSet_hxfkh")
 position = Vector2(1160, 627.0001)
 run_speed = 300
 jump = -430
+start_facing_left = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_k6xhl")
@@ -1148,6 +1149,7 @@ position = Vector2(758, 98)
 collision_layer = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(700.5, 501)
 scale = Vector2(3.4322917, 4.0925927)
 texture = ExtResource("17_f5q35")
