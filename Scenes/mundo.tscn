@@ -5,10 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://dtse1o8wnri4f" path="res://Scenes/jugador.tscn" id="1_uqtxj"]
 [ext_resource type="PackedScene" uid="uid://cidit7t5rckk4" path="res://Scenes/trampa.tscn" id="3_has1v"]
 [ext_resource type="Texture2D" uid="uid://cqr6j3evgk3cn" path="res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png" id="3_i8avv"]
-[ext_resource type="AudioStream" uid="uid://c3t633oynjjsj" path="res://Sounds/Loop It [DGW OST].mp3" id="5_yf8a8"]
 [ext_resource type="PackedScene" uid="uid://cnbyv8plphfm" path="res://Scenes/moving_plataform.tscn" id="6_qxsm7"]
 [ext_resource type="PackedScene" uid="uid://dpqnh5sv8jh3b" path="res://Scenes/coins.tscn" id="7_i8avv"]
 [ext_resource type="Texture2D" uid="uid://dncuitfxjy7ng" path="res://Assets/Coins_16x16/PNG/Coin_One.png" id="7_ibak7"]
+[ext_resource type="AudioStream" uid="uid://6rd2vi1ckd5i" path="res://Sounds/Vibe Mountain - Operatic 3 NO COPYRIGHT 8-bit Music.mp3" id="8_f3x5k"]
 [ext_resource type="FontFile" uid="uid://boisxvh4qu2yb" path="res://Fuentes/dogica/OTF/dogicabold.otf" id="10_has1v"]
 [ext_resource type="PackedScene" uid="uid://dqu4xi0mqcxrl" path="res://Scenes/portal.tscn" id="10_m1vgi"]
 [ext_resource type="PackedScene" uid="uid://b4khxde14clru" path="res://Scenes/Vida.tscn" id="11_m1vgi"]
@@ -253,8 +253,8 @@ position = Vector2(954, 588)
 position = Vector2(1131, 587)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_yf8a8")
-volume_db = -14.842
+stream = ExtResource("8_f3x5k")
+volume_db = -3.068
 autoplay = true
 
 [node name="Portal" parent="." instance=ExtResource("10_m1vgi")]

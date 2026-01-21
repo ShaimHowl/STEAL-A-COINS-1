@@ -4,3 +4,6 @@ res://GameData.gd
 res://Scenes/moving_plataform_6.tscn
 res://Scenes/nivel_3.tscn
 res://Scripts/nivel_3.gd
+res://Scenes/moving_plataform_4.tscn
+res://Scenes/mundo.tscn
+res://Scripts/nivel_4.gd
