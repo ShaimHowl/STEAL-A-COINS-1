@@ -329,7 +329,7 @@ position = Vector2(544, 651)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("17_s4kv5")
-volume_db = 1.02
+volume_db = 2.943
 autoplay = true
 
 [node name="Pocion" parent="." instance=ExtResource("18_pdtf5")]
@@ -345,10 +345,13 @@ position = Vector2(502, 278)
 collision_layer = 1
 
 [node name="moving_plataform4" parent="." instance=ExtResource("18_s4kv5")]
-position = Vector2(1258, 633)
+position = Vector2(1257, 641)
 
 [node name="enemy10" parent="." instance=ExtResource("17_5vihe")]
 position = Vector2(607, 401)
+
+[node name="enemy11" parent="." instance=ExtResource("17_5vihe")]
+position = Vector2(1028, 654)
 
 [node name="enemy3" parent="." instance=ExtResource("21_o36qj")]
 position = Vector2(465, 415)

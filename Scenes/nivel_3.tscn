@@ -656,6 +656,22 @@ rotation = 3.1415925
 position = Vector2(836, 121)
 rotation = 3.1415925
 
+[node name="Pinchos8" parent="." instance=ExtResource("18_fpc32")]
+position = Vector2(550, 568)
+rotation = 3.1415925
+
+[node name="Pinchos10" parent="." instance=ExtResource("18_fpc32")]
+position = Vector2(807, 573)
+rotation = 3.1415925
+
+[node name="Pinchos11" parent="." instance=ExtResource("18_fpc32")]
+position = Vector2(1157, 569)
+rotation = 3.1415925
+
+[node name="Pinchos9" parent="." instance=ExtResource("18_fpc32")]
+position = Vector2(264, 571)
+rotation = 3.1415925
+
 [node name="jugador" parent="." instance=ExtResource("10_koyrs")]
 position = Vector2(-18.000008, 627.99994)
 
@@ -840,7 +856,7 @@ position = Vector2(331, 392)
 position = Vector2(697, 387)
 
 [node name="Pinchos4" parent="." instance=ExtResource("18_fpc32")]
-position = Vector2(1042, 384)
+position = Vector2(1039, 389)
 
 [node name="enemy10" parent="." instance=ExtResource("19_oh2mj")]
 position = Vector2(740, 192)

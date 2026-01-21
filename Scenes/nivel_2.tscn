@@ -990,7 +990,7 @@ tile_set = SubResource("TileSet_hxfkh")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_k6xhl")
-volume_db = -14.123
+volume_db = -5.293
 autoplay = true
 
 [node name="Coins2" parent="." instance=ExtResource("12_paidj")]
@@ -1185,7 +1185,7 @@ position = Vector2(1138, 530)
 start_facing_left = true
 
 [node name="moving_plataform_5" parent="." instance=ExtResource("22_xiqut")]
-position = Vector2(173, 574)
+position = Vector2(171, 578)
 
 [editable path="Pinchos"]
 [editable path="Vida"]
