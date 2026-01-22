@@ -156,7 +156,7 @@ text = "1
 "
 
 [node name="jugador" parent="." instance=ExtResource("9_k7b3m")]
-position = Vector2(-19.000015, 690.99994)
+position = Vector2(998.00006, 188)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(682, 353)
@@ -234,7 +234,7 @@ id_moneda = "m47"
 [node name="Coins36" parent="." instance=ExtResource("8_270ks")]
 position = Vector2(1251, 174)
 collision_mask = 16
-id_moneda = "m47"
+id_moneda = "m49"
 
 [node name="Trampa" parent="." instance=ExtResource("9_6v4t3")]
 position = Vector2(732, 680)
@@ -388,12 +388,6 @@ position = Vector2(1117, 176)
 [node name="CharacterBody2D15" parent="." instance=ExtResource("13_ybmds")]
 position = Vector2(800, 179)
 
-[node name="CharacterBody2D16" parent="." instance=ExtResource("13_ybmds")]
-position = Vector2(308, 179)
-
-[node name="CharacterBody2D17" parent="." instance=ExtResource("13_ybmds")]
-position = Vector2(360, 179)
-
 [node name="CharacterBody2D18" parent="." instance=ExtResource("13_ybmds")]
 position = Vector2(418, 179)
 
@@ -403,6 +397,7 @@ tile_map_data = PackedByteArray("AAAAACsAAAAAAAEAAAABACsAAAAAAAEAAAAAACwAAAAAAAE
 tile_set = SubResource("TileSet_ybmds")
 
 [node name="transicion" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(714.99994, 375)
 scale = Vector2(2.2886298, 2.2642486)
 texture = ExtResource("7_o0bg6")
@@ -420,5 +415,9 @@ position = Vector2(-17.999939, 77)
 [node name="VBoxContainer" parent="Menupausa" index="1"]
 visible = false
 
+[node name="Pinchos7" parent="." instance=ExtResource("12_dvqrj")]
+position = Vector2(1215, 100)
+
 [editable path="Vida"]
 [editable path="Menupausa"]
+[editable path="Pinchos7"]
