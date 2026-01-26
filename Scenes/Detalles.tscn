@@ -71,7 +71,18 @@ offset_bottom = 250.0
 theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
 theme_override_fonts/font = ExtResource("2_mqihf")
 theme_override_font_sizes/font_size = 30
-text = "10 de daño 
+text = "15 de daño 
+cada toque"
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 56.0
+offset_top = 167.0
+offset_right = 971.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_fonts/font = ExtResource("2_mqihf")
+theme_override_font_sizes/font_size = 30
+text = "15 de daño 
 cada toque"
 
 [node name="Label3" type="Label" parent="."]
@@ -82,7 +93,7 @@ offset_bottom = 243.0
 theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
 theme_override_fonts/font = ExtResource("2_mqihf")
 theme_override_font_sizes/font_size = 30
-text = "5 de daño 
+text = "15 de daño 
 cada toque"
 
 [node name="Label4" type="Label" parent="."]

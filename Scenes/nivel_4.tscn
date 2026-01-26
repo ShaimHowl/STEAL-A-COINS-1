@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://3euum38ajap5"]
+[gd_scene load_steps=29 format=4 uid="uid://3euum38ajap5"]
 
 [ext_resource type="Script" uid="uid://bupei18p3obs2" path="res://Scripts/nivel_4.gd" id="1_mobm4"]
 [ext_resource type="Script" uid="uid://4hsxgnqbysy4" path="res://Scripts/Coleccion.tres.gd" id="1_uts83"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://cdu1t1lpecbyw" path="res://Scenes/moving_plataform_4.tscn" id="18_s4kv5"]
 [ext_resource type="PackedScene" uid="uid://c36ka6kmx2jog" path="res://Scenes/enemy2.tscn" id="21_o36qj"]
 [ext_resource type="PackedScene" uid="uid://b1dplj0r6bey2" path="res://Scenes/moving_plataform_6.tscn" id="22_448gy"]
+[ext_resource type="PackedScene" uid="uid://bqd7schgknnyt" path="res://Scenes/veneno.tscn" id="23_g6hel"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o0bg6"]
 texture = ExtResource("11_qahvg")
@@ -380,7 +381,7 @@ position = Vector2(367, 418)
 position = Vector2(261, 181)
 
 [node name="CharacterBody2D12" parent="." instance=ExtResource("13_ybmds")]
-position = Vector2(522, 180)
+position = Vector2(574, 178)
 
 [node name="CharacterBody2D14" parent="." instance=ExtResource("13_ybmds")]
 position = Vector2(1117, 176)
@@ -390,18 +391,6 @@ position = Vector2(800, 179)
 
 [node name="CharacterBody2D18" parent="." instance=ExtResource("13_ybmds")]
 position = Vector2(418, 179)
-
-[node name="CharacterBody2D19" parent="." instance=ExtResource("13_ybmds")]
-position = Vector2(333, 176)
-
-[node name="CharacterBody2D20" parent="." instance=ExtResource("13_ybmds")]
-position = Vector2(469, 176)
-
-[node name="CharacterBody2D21" parent="." instance=ExtResource("13_ybmds")]
-position = Vector2(568, 174)
-
-[node name="CharacterBody2D22" parent="." instance=ExtResource("13_ybmds")]
-position = Vector2(625, 174)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(-1, 0)
@@ -432,6 +421,10 @@ position = Vector2(1215, 100)
 
 [node name="Pinchos8" parent="." instance=ExtResource("12_dvqrj")]
 position = Vector2(1121, 356)
+
+[node name="veneno" parent="." instance=ExtResource("23_g6hel")]
+position = Vector2(29, 604)
+collision_mask = 16
 
 [editable path="Vida"]
 [editable path="Menupausa"]

@@ -59,7 +59,7 @@ offset_bottom = 97.0
 theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
 theme_override_fonts/font = ExtResource("2_h6pr8")
 theme_override_font_sizes/font_size = 55
-text = "Nivel 2: Primer enemigo"
+text = "Nivel 2: primer enemigo"
 
 [node name="Label2" type="Label" parent="."]
 offset_left = 355.0
@@ -91,7 +91,6 @@ scale = Vector2(1.5228572, 1.2797619)
 texture = ExtResource("4_g1twu")
 
 [node name="transicion" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(684, 380)
 scale = Vector2(1.4785156, 1)
 texture = ExtResource("1_cfapw")
@@ -104,6 +103,6 @@ autoplay = "trampas1"
 
 [node name="Audio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_1x2mp")
-volume_db = -5.474
+volume_db = 13.193
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
