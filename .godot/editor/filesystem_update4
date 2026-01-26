@@ -1,13 +1,5 @@
-res://Scenes/nivel_4.tscn
-res://Scripts/nivel_2.gd
-res://Scripts/nivel_3.gd
-res://Scripts/nivel_4.gd
-res://Scenes/pinchos.tscn
-res://Scenes/detalles_4.tscn
-res://Scenes/detalles_2.tscn
-res://Scripts/detalles_2.gd
-res://Scenes/Detalles.tscn
-res://Scenes/detalles_3.tscn
 res://Scenes/veneno.tscn
-res://Scripts/pocion.gd
 res://Scripts/veneno.gd
+res://Scenes/nivel_4.tscn
+res://Scripts/jugador.gd
+res://Scenes/jugador.tscn
