@@ -1,1 +1,4 @@
-res://Scenes/nivel_4.tscn
+res://Scenes/sueloveneno.tscn
+res://Scenes/detalles_5.tscn
+res://Scripts/detalles_5.gd
+res://Scenes/nivel_5.tscn
