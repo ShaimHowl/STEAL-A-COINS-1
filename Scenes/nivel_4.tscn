@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://3euum38ajap5"]
+[gd_scene load_steps=30 format=4 uid="uid://3euum38ajap5"]
 
 [ext_resource type="Script" uid="uid://bupei18p3obs2" path="res://Scripts/nivel_4.gd" id="1_mobm4"]
 [ext_resource type="Script" uid="uid://4hsxgnqbysy4" path="res://Scripts/Coleccion.tres.gd" id="1_uts83"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://c36ka6kmx2jog" path="res://Scenes/enemy2.tscn" id="21_o36qj"]
 [ext_resource type="PackedScene" uid="uid://b1dplj0r6bey2" path="res://Scenes/moving_plataform_6.tscn" id="22_448gy"]
 [ext_resource type="PackedScene" uid="uid://ctd8gggp7pk26" path="res://Scenes/sueloveneno.tscn" id="23_g6hel"]
+[ext_resource type="PackedScene" uid="uid://bqd7schgknnyt" path="res://Scenes/veneno.tscn" id="24_4w77p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o0bg6"]
 texture = ExtResource("11_qahvg")
@@ -425,6 +426,10 @@ position = Vector2(1215, 100)
 
 [node name="Pinchos8" parent="." instance=ExtResource("12_dvqrj")]
 position = Vector2(1121, 356)
+
+[node name="veneno" parent="." instance=ExtResource("24_4w77p")]
+position = Vector2(18, 597)
+collision_mask = 16
 
 [editable path="Vida"]
 [editable path="Menupausa"]
