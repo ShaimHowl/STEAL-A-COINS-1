@@ -1,9 +1,4 @@
-res://Scenes/sueloveneno.tscn
-res://Scenes/detalles_5.tscn
-res://Scripts/detalles_5.gd
+res://Scenes/jugador.tscn
 res://Scenes/nivel_5.tscn
-res://Scenes/nivel_4.tscn
-res://Scripts/veneno.gd
-res://Scripts/nivel_5.gd
-res://Scenes/mision5.tscn
-res://Scripts/mision_5.gd
+res://Scenes/veneno.tscn
+res://Scenes/detalles_5.tscn

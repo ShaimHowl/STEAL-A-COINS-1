@@ -1,35 +1,46 @@
-[gd_scene load_steps=11 format=3 uid="uid://bqd7schgknnyt"]
+[gd_scene load_steps=13 format=3 uid="uid://bqd7schgknnyt"]
 
 [ext_resource type="Script" uid="uid://chiu1cgvoqten" path="res://Scripts/veneno.gd" id="1_6ls7a"]
-[ext_resource type="Texture2D" uid="uid://deqdrnlubwfol" path="res://Assets/AnimatedPotions 16x16/Poison Green/Potion.png" id="2_w5odu"]
+[ext_resource type="Texture2D" uid="uid://c8txapfff2qu8" path="res://Assets/AnimatedPotions 16x16/Acid Potion/Potion.png" id="2_6ls7a"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_n760t"]
-atlas = ExtResource("2_w5odu")
+[sub_resource type="AtlasTexture" id="AtlasTexture_w5odu"]
+atlas = ExtResource("2_6ls7a")
 region = Rect2(0, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gj8w8"]
-atlas = ExtResource("2_w5odu")
+[sub_resource type="AtlasTexture" id="AtlasTexture_n760t"]
+atlas = ExtResource("2_6ls7a")
 region = Rect2(16, 0, 16, 16)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_gj8w8"]
+atlas = ExtResource("2_6ls7a")
+region = Rect2(32, 0, 16, 16)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_dfmgi"]
-atlas = ExtResource("2_w5odu")
+atlas = ExtResource("2_6ls7a")
 region = Rect2(0, 16, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6dl4t"]
-atlas = ExtResource("2_w5odu")
+atlas = ExtResource("2_6ls7a")
 region = Rect2(16, 16, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v3yfl"]
-atlas = ExtResource("2_w5odu")
-region = Rect2(0, 32, 16, 16)
+atlas = ExtResource("2_6ls7a")
+region = Rect2(32, 16, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yg7h4"]
-atlas = ExtResource("2_w5odu")
+atlas = ExtResource("2_6ls7a")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gi3f"]
+atlas = ExtResource("2_6ls7a")
 region = Rect2(16, 32, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4qdca"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w5odu")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_n760t")
 }, {
@@ -47,6 +58,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_yg7h4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gi3f")
 }],
 "loop": true,
 "name": &"veneno",
@@ -54,21 +68,21 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mhs06"]
-radius = 28.01785
+radius = 18.027756
 
 [node name="veneno" type="Area2D"]
 script = ExtResource("1_6ls7a")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(69, 64)
-scale = Vector2(3.0156248, 3.046875)
+position = Vector2(60.9375, 70.6875)
+scale = Vector2(2.0078123, 2.2109375)
 sprite_frames = SubResource("SpriteFrames_4qdca")
 animation = &"veneno"
 autoplay = "veneno"
 frame_progress = 0.7240538
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(69, 65)
+position = Vector2(61, 73)
 shape = SubResource("CircleShape2D_mhs06")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,5 +1,5 @@
-CanvasLayer
 AnimatedSprite2D
+CanvasLayer
 CharacterBody2D
 Timer
 Area2D

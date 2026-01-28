@@ -4,9 +4,9 @@
 [ext_resource type="Script" uid="uid://cn73umben57tm" path="res://Scripts/detalles_5.gd" id="1_hdicr"]
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_hdicr"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_tsjc1"]
-[ext_resource type="Texture2D" uid="uid://cn31jt72m1v6d" path="res://Assets/Background/fuego-removebg-preview.png" id="4_5an60"]
 [ext_resource type="Texture2D" uid="uid://cmyxqqc85qfcc" path="res://Assets/Background/portalv.png" id="5_tsjc1"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="5_whcjo"]
+[ext_resource type="Texture2D" uid="uid://bjgl10nrxajvx" path="res://Assets/Background/acid.png" id="6_tsjc1"]
 
 [sub_resource type="Animation" id="Animation_cfapw"]
 length = 0.001
@@ -73,10 +73,10 @@ theme_override_font_sizes/font_size = 38
 text = "15 de daño/0.4s"
 
 [node name="Label3" type="Label" parent="."]
-offset_left = 947.0
-offset_top = 155.0
-offset_right = 1862.0
-offset_bottom = 238.0
+offset_left = 873.0
+offset_top = 159.0
+offset_right = 1788.0
+offset_bottom = 242.0
 theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
 theme_override_fonts/font = ExtResource("2_hdicr")
 theme_override_font_sizes/font_size = 38
@@ -103,9 +103,9 @@ scale = Vector2(2.6836948, 2.0175133)
 texture = ExtResource("5_tsjc1")
 
 [node name="trampa2" type="Sprite2D" parent="."]
-position = Vector2(610.5, 483.51923)
-scale = Vector2(6.649999, 4.854074)
-texture = ExtResource("4_5an60")
+position = Vector2(935, 350)
+scale = Vector2(0.6629167, 0.8009058)
+texture = ExtResource("6_tsjc1")
 
 [node name="transicion" type="Sprite2D" parent="."]
 visible = false

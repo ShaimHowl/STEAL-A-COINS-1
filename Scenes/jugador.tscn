@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://dtse1o8wnri4f"]
+[gd_scene load_steps=50 format=3 uid="uid://dtse1o8wnri4f"]
 
 [ext_resource type="Script" uid="uid://8mlt6f0j6nss" path="res://Scripts/jugador.gd" id="1_n4xcq"]
 [ext_resource type="Texture2D" uid="uid://ch5yc8gptoiym" path="res://Assets/template_free/individual_sheets/male_hero_template-idle.png" id="4_5nsjc"]
@@ -46,30 +46,6 @@ region = Rect2(1024, 0, 128, 128)
 [sub_resource type="AtlasTexture" id="AtlasTexture_s0mfl"]
 atlas = ExtResource("4_5nsjc")
 region = Rect2(1152, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_iw3ti"]
-atlas = ExtResource("6_3cdix")
-region = Rect2(0, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_q526c"]
-atlas = ExtResource("6_3cdix")
-region = Rect2(128, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_deksw"]
-atlas = ExtResource("6_3cdix")
-region = Rect2(256, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3kbxk"]
-atlas = ExtResource("6_3cdix")
-region = Rect2(384, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rmprl"]
-atlas = ExtResource("6_3cdix")
-region = Rect2(512, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_i3eul"]
-atlas = ExtResource("6_3cdix")
-region = Rect2(640, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aw8s2"]
 atlas = ExtResource("5_6vc6x")
@@ -227,29 +203,6 @@ animations = [{
 "loop": true,
 "name": &"Idle",
 "speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_iw3ti")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_q526c")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_deksw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3kbxk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rmprl")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_i3eul")
-}],
-"loop": true,
-"name": &"ataque",
-"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
