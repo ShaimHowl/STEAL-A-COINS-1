@@ -1,7 +1,7 @@
 extends Area2D
 
-@export var daño_por_tick := 2
-@export var daño_total := 10
+@export var daño_por_tick := 25
+@export var daño_total := 100
 @export var tiempo_entre_ticks := 0.4
 
 var daño_acumulado := 0
