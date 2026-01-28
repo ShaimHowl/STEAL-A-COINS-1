@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://bkju6su60ktt7"]
+[gd_scene load_steps=16 format=4 uid="uid://bkju6su60ktt7"]
 
 [ext_resource type="Script" uid="uid://4hsxgnqbysy4" path="res://Scripts/Coleccion.tres.gd" id="1_frn1h"]
 [ext_resource type="Script" uid="uid://5t5tbvyftwai" path="res://Scripts/nivel_5.gd" id="1_tv3d1"]
@@ -11,8 +11,9 @@
 [ext_resource type="PackedScene" uid="uid://dtse1o8wnri4f" path="res://Scenes/jugador.tscn" id="6_wu0pg"]
 [ext_resource type="Texture2D" uid="uid://purfw8pyd70w" path="res://Assets/MM_UI/Background_09.png" id="9_0f1x4"]
 [ext_resource type="PackedScene" uid="uid://dpqnh5sv8jh3b" path="res://Scenes/coins.tscn" id="12_1rvgi"]
+[ext_resource type="PackedScene" uid="uid://bhsn26caxf5h7" path="res://Scenes/moving_plataform_7.tscn" id="12_mbc7v"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wu0pg"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ik8hl"]
 texture = ExtResource("5_ad31s")
 0:0/0 = 0
 1:0/0 = 0
@@ -83,7 +84,7 @@ texture = ExtResource("5_ad31s")
 6:7/0 = 0
 7:7/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1rvgi"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t4m5r"]
 texture = ExtResource("9_0f1x4")
 0:0/0 = 0
 1:0/0 = 0
@@ -41750,8 +41751,8 @@ texture = ExtResource("9_0f1x4")
 
 [sub_resource type="TileSet" id="TileSet_unkrv"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_wu0pg")
-sources/5 = SubResource("TileSetAtlasSource_1rvgi")
+sources/0 = SubResource("TileSetAtlasSource_ik8hl")
+sources/5 = SubResource("TileSetAtlasSource_t4m5r")
 
 [node name="nivel_5" type="Node2D"]
 script = ExtResource("1_tv3d1")
@@ -41817,5 +41818,8 @@ id_moneda = "m50"
 position = Vector2(614, 661)
 collision_mask = 16
 id_moneda = "m51"
+
+[node name="moving_plataform_7" parent="." instance=ExtResource("12_mbc7v")]
+position = Vector2(1152, 665)
 
 [editable path="Vida"]
