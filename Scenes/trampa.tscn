@@ -1,50 +1,44 @@
-[gd_scene load_steps=15 format=3 uid="uid://cidit7t5rckk4"]
+[gd_scene format=3 uid="uid://cidit7t5rckk4"]
 
-[ext_resource type="Texture2D" uid="uid://cuqwcit48xok6" path="res://Trap and Weapon/Trap and Weapon/Suriken.png" id="1_hitas"]
 [ext_resource type="Script" uid="uid://cqgq8djs2rsrj" path="res://Scripts/trampa.gd" id="1_st3ur"]
+[ext_resource type="Texture2D" uid="uid://bnrc8581650m5" path="res://Assets/Trap and Weapon/Suriken.png" id="2_1ona6"]
 [ext_resource type="AudioStream" uid="uid://druswm8b1d213" path="res://Sounds/homemadeoof-47509.mp3" id="3_1ona6"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_st3ur"]
-atlas = ExtResource("1_hitas")
+[sub_resource type="AtlasTexture" id="AtlasTexture_jp6yl"]
+atlas = ExtResource("2_1ona6")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1ona6"]
-atlas = ExtResource("1_hitas")
+[sub_resource type="AtlasTexture" id="AtlasTexture_syb6t"]
+atlas = ExtResource("2_1ona6")
 region = Rect2(32, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jp6yl"]
-atlas = ExtResource("1_hitas")
+[sub_resource type="AtlasTexture" id="AtlasTexture_sr3h5"]
+atlas = ExtResource("2_1ona6")
 region = Rect2(64, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_syb6t"]
-atlas = ExtResource("1_hitas")
+[sub_resource type="AtlasTexture" id="AtlasTexture_oet3e"]
+atlas = ExtResource("2_1ona6")
 region = Rect2(96, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_sr3h5"]
-atlas = ExtResource("1_hitas")
+[sub_resource type="AtlasTexture" id="AtlasTexture_mbaom"]
+atlas = ExtResource("2_1ona6")
 region = Rect2(128, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_oet3e"]
-atlas = ExtResource("1_hitas")
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynh0k"]
+atlas = ExtResource("2_1ona6")
 region = Rect2(160, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mbaom"]
-atlas = ExtResource("1_hitas")
+[sub_resource type="AtlasTexture" id="AtlasTexture_ckpvg"]
+atlas = ExtResource("2_1ona6")
 region = Rect2(192, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ynh0k"]
-atlas = ExtResource("1_hitas")
+[sub_resource type="AtlasTexture" id="AtlasTexture_h0w0c"]
+atlas = ExtResource("2_1ona6")
 region = Rect2(224, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ckpvg"]
 animations = [{
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_st3ur")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1ona6")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_jp6yl")
 }, {
@@ -62,6 +56,12 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ynh0k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ckpvg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h0w0c")
 }],
 "loop": true,
 "name": &"default",
@@ -74,37 +74,37 @@ size = Vector2(25, 7)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ona6"]
 size = Vector2(42, 15)
 
-[node name="Trampa" type="CharacterBody2D"]
+[node name="Trampa" type="CharacterBody2D" unique_id=997750259]
 collision_layer = 16
 script = ExtResource("1_st3ur")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(2, 2)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=459404369]
+position = Vector2(0, -5)
+scale = Vector2(1.140625, 0.765625)
 sprite_frames = SubResource("SpriteFrames_ckpvg")
 autoplay = "default"
-frame = 2
-frame_progress = 0.096454956
+frame_progress = 0.4591195
 
-[node name="floor" type="CollisionShape2D" parent="."]
+[node name="floor" type="CollisionShape2D" parent="." unique_id=130118711]
 position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_h0w0c")
 
-[node name="detection_floor" type="RayCast2D" parent="."]
+[node name="detection_floor" type="RayCast2D" parent="." unique_id=36307770]
 position = Vector2(30, -9)
 target_position = Vector2(0, 16)
 
-[node name="detection_wall" type="RayCast2D" parent="."]
+[node name="detection_wall" type="RayCast2D" parent="." unique_id=2121531668]
 target_position = Vector2(29, 0)
 
-[node name="Damage" type="Area2D" parent="."]
+[node name="Damage" type="Area2D" parent="." unique_id=1744967367]
 collision_layer = 2
 collision_mask = 16
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Damage"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Damage" unique_id=830701064]
 position = Vector2(0, -11.5)
 shape = SubResource("RectangleShape2D_1ona6")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1967783270]
 stream = ExtResource("3_1ona6")
 
 [connection signal="body_entered" from="Damage" to="." method="_on_damage_body_entered"]

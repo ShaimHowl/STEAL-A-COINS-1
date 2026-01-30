@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://bmahyajw6if3i"]
+[gd_scene format=4 uid="uid://bmahyajw6if3i"]
 
 [ext_resource type="Script" uid="uid://4hsxgnqbysy4" path="res://Scripts/Coleccion.tres.gd" id="1_5dm08"]
 [ext_resource type="Script" uid="uid://dgq2biw1eshua" path="res://Scripts/nivel_3.gd" id="1_jxqql"]
@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bplsa8n3ftnb3" path="res://Sounds/pink.png" id="6_0tgaq"]
 [ext_resource type="Texture2D" uid="uid://cqr6j3evgk3cn" path="res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png" id="7_cfnh5"]
 [ext_resource type="Texture2D" uid="uid://c6vnhr60h30pi" path="res://14-TileSets/Terrain (32x32).png" id="8_yvowg"]
-[ext_resource type="Texture2D" uid="uid://csvc2uy4ji6pg" path="res://14-TileSets/Decorations (32x32).png" id="9_koyrs"]
+[ext_resource type="Texture2D" uid="uid://c6vnhr60h30pi" path="res://14-TileSets/Terrain (32x32).png" id="9_koyrs"]
 [ext_resource type="PackedScene" uid="uid://dtse1o8wnri4f" path="res://Scenes/jugador.tscn" id="10_koyrs"]
 [ext_resource type="PackedScene" uid="uid://c36ka6kmx2jog" path="res://Scenes/enemy2.tscn" id="12_io8q0"]
 [ext_resource type="AudioStream" uid="uid://c1qirm3c0qkmu" path="res://Sounds/Powerup.mp3" id="13_2v3mx"]
