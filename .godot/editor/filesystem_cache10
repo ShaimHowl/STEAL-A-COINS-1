@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769767187
+::res://::1769767262
 barra_salud.tscn::PackedScene::787703600351861078::1769766592::0::1::::<><><>0<>0<><>::
 control.gd::GDScript::1215726667227415089::1769766592::0::1::::<>Control<><>0<>0<><>::
 export_presets.cfg::TextFile::-1::1769766592::0::1::::<><><>0<>0<><>::
@@ -4104,7 +4104,7 @@ male_hero_template-walk.png::CompressedTexture2D::4792006248989087633::176976659
 ::res://Assets/Tileset Samurai/::1769766591
 ::res://Assets/Tileset Samurai/Input/::1769766591
 Sample 32x Tileset.png::CompressedTexture2D/CompressedTexture2D::5932857064130250001::1769766591::1769766591::1::::<><><>0<>0<>388d1bf09ce4ef7bbc3994624965181e<>res://.godot/imported/Sample 32x Tileset.png-cccc7f692accc0335f1c1c7ca3d53f8d.ctex::
-::res://Assets/Trap and Weapon/::1769766748
+::res://Assets/Trap and Weapon/::1769767189
 00 All.png::CompressedTexture2D::3055891500320090885::1712497560::1769767189::1::::<><><>0<>0<>f61a26de1c67e34fc5a6b28d3ea70032<>res://.godot/imported/00 All.png-48eb79fa49fb4fea1b671882bd5bb80d.ctex::
 00 All_Rocket.png::CompressedTexture2D::6361128040825243573::1681495634::1769767189::1::::<><><>0<>0<>70e798458280acc82d9e405f72f646f9<>res://.godot/imported/00 All_Rocket.png-c9fff9cfe12e270f651d64dc8e792950.ctex::
 00 Gun.png::CompressedTexture2D::279171697755367522::1682059232::1769767189::1::::<><><>0<>0<>c6b017b179003e6e5cb330c1029adc16<>res://.godot/imported/00 Gun.png-9590a5dd75c0be93c968cf0d9b9f15ec.ctex::
