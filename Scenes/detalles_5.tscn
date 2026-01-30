@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bj0hwgxymth7r"]
+[gd_scene format=3 uid="uid://bj0hwgxymth7r"]
 
 [ext_resource type="Texture2D" uid="uid://b2sswmbou53rj" path="res://Assets/fondoazul.png" id="1_07x4x"]
 [ext_resource type="Script" uid="uid://cn73umben57tm" path="res://Scripts/detalles_5.gd" id="1_hdicr"]
@@ -44,15 +44,15 @@ _data = {
 &"trampas1": SubResource("Animation_i0yh6")
 }
 
-[node name="detalles_5" type="Node2D"]
+[node name="detalles_5" type="Node2D" unique_id=2009570502]
 script = ExtResource("1_hdicr")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=658531872]
 position = Vector2(675, 360.5)
 scale = Vector2(1.4355469, 0.7548828)
 texture = ExtResource("1_07x4x")
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=1583135111]
 offset_left = 122.0
 offset_top = 28.0
 offset_right = 1427.0
@@ -62,7 +62,7 @@ theme_override_fonts/font = ExtResource("2_hdicr")
 theme_override_font_sizes/font_size = 55
 text = "Nivel 5: quarta trampa"
 
-[node name="Label2" type="Label" parent="."]
+[node name="Label2" type="Label" parent="." unique_id=1625861455]
 offset_left = 107.0
 offset_top = 163.0
 offset_right = 1022.0
@@ -72,7 +72,7 @@ theme_override_fonts/font = ExtResource("2_hdicr")
 theme_override_font_sizes/font_size = 38
 text = "15 de daño/0.4s"
 
-[node name="Label3" type="Label" parent="."]
+[node name="Label3" type="Label" parent="." unique_id=1677566116]
 offset_left = 873.0
 offset_top = 159.0
 offset_right = 1788.0
@@ -82,7 +82,7 @@ theme_override_fonts/font = ExtResource("2_hdicr")
 theme_override_font_sizes/font_size = 38
 text = "???"
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=1488575084]
 offset_left = 409.0
 offset_top = 584.0
 offset_right = 872.0
@@ -96,30 +96,28 @@ theme_override_font_sizes/font_size = 65
 text = "Seguir
 "
 
-[node name="trampa1" type="Sprite2D" parent="."]
+[node name="trampa1" type="Sprite2D" parent="." unique_id=331581353]
 position = Vector2(343.00003, 378.99997)
 rotation = 1.553343
 scale = Vector2(2.6836948, 2.0175133)
 texture = ExtResource("5_tsjc1")
 
-[node name="trampa2" type="Sprite2D" parent="."]
+[node name="trampa2" type="Sprite2D" parent="." unique_id=1577054906]
 position = Vector2(935, 350)
 scale = Vector2(0.6629167, 0.8009058)
 texture = ExtResource("6_tsjc1")
 
-[node name="transicion" type="Sprite2D" parent="."]
+[node name="transicion" type="Sprite2D" parent="." unique_id=591549967]
 visible = false
 position = Vector2(684, 380)
 scale = Vector2(1.4785156, 1)
 texture = ExtResource("1_07x4x")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion"]
-libraries = {
-&"": SubResource("AnimationLibrary_wvp5v")
-}
-autoplay = "trampas1"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion" unique_id=1826336075]
+libraries/ = SubResource("AnimationLibrary_wvp5v")
+autoplay = &"trampas1"
 
-[node name="Audio" type="AudioStreamPlayer" parent="."]
+[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=119814299]
 stream = ExtResource("5_whcjo")
 volume_db = -5.474
 

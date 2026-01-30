@@ -11,4 +11,4 @@ func _process(_delta: float) -> void:
 
 func _on_button_pressed() -> void:
 	tecla_audio.play()
-	get_tree().change_scene_to_file("res://Scenes/nivel_5.tscn")
+	get_tree().change_scene_to_file("res://Scenes/mundo.tscn")
