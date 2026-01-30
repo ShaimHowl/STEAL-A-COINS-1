@@ -22,7 +22,6 @@
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="21_duede"]
 [ext_resource type="AudioStream" uid="uid://daxlko0xjf3im" path="res://Sounds/clock-ticking-60-second-countdown-118231.mp3" id="22_mepvm"]
 [ext_resource type="Texture2D" uid="uid://mxn34c4huhhs" path="res://Assets/Background/rosa.png" id="23_2v3mx"]
-[ext_resource type="PackedScene" uid="uid://bqd7schgknnyt" path="res://Scenes/veneno.tscn" id="23_nqsir"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_io8q0"]
 texture = ExtResource("7_cfnh5")
@@ -902,10 +901,6 @@ texture = ExtResource("23_2v3mx")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="transicion" unique_id=1630728858]
 libraries/ = SubResource("AnimationLibrary_d67sf")
 autoplay = &"juego"
-
-[node name="veneno" parent="." unique_id=1229868325 instance=ExtResource("23_nqsir")]
-position = Vector2(59, 539)
-collision_mask = 16
 
 [editable path="Vida"]
 [editable path="Portal"]

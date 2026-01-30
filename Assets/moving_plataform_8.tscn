@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://bhsn26caxf5h7"]
+[gd_scene format=3 uid="uid://b461i2jn7vo8d"]
 
-[ext_resource type="Texture2D" uid="uid://cqr6j3evgk3cn" path="res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png" id="1_achfc"]
+[ext_resource type="Texture2D" uid="uid://cqr6j3evgk3cn" path="res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png" id="1_mflk3"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t5o15"]
-texture = ExtResource("1_achfc")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qrcms"]
+texture = ExtResource("1_mflk3")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -75,12 +75,12 @@ texture = ExtResource("1_achfc")
 6:7/0 = 0
 7:7/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_dcbgi"]
+[sub_resource type="TileSet" id="TileSet_sgg77"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_t5o15")
+sources/0 = SubResource("TileSetAtlasSource_qrcms")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rj6yj"]
-size = Vector2(84, 15)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o00b0"]
+size = Vector2(71, 15)
 
 [sub_resource type="Animation" id="Animation_dnh8m"]
 length = 2.0
@@ -95,7 +95,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(0, 0), Vector2(0, 200), Vector2(0, 0)]
+"values": [Vector2(0, 0), Vector2(0, -200), Vector2(0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_b8ima"]
@@ -114,25 +114,25 @@ tracks/0/keys = {
 "values": [Vector2(0, 0), Vector2(0, -150), Vector2(0, 0)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_x5t5r"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_welfq"]
 _data = {
 &"RESET": SubResource("Animation_dnh8m"),
 &"arriba": SubResource("Animation_b8ima")
 }
 
-[node name="moving_plataform_7" type="Node2D" unique_id=412995077]
+[node name="moving_plataform_8" type="Node2D" unique_id=563374187]
 
-[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=10144447]
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=607816680]
 
-[node name="TileMapLayer" type="TileMapLayer" parent="AnimatableBody2D" unique_id=2133065154]
+[node name="TileMapLayer" type="TileMapLayer" parent="AnimatableBody2D" unique_id=341555009]
 position = Vector2(-12, 0)
-tile_map_data = PackedByteArray(0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 4, 0, 0, 0, 0, 0, 1, 0, 2, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0)
-tile_set = SubResource("TileSet_dcbgi")
+tile_map_data = PackedByteArray(0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 4, 0, 0, 0, 0, 0, 1, 0, 2, 0, 0, 0)
+tile_set = SubResource("TileSet_sgg77")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=685254821]
-position = Vector2(40, 7.5)
-shape = SubResource("RectangleShape2D_rj6yj")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=731614998]
+position = Vector2(33.5, 7.5)
+shape = SubResource("RectangleShape2D_o00b0")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=453123224]
-libraries/ = SubResource("AnimationLibrary_x5t5r")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=1463734653]
+libraries/ = SubResource("AnimationLibrary_welfq")
 autoplay = &"RESET"

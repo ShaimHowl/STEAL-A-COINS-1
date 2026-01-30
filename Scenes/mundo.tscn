@@ -19,7 +19,6 @@
 [ext_resource type="Texture2D" uid="uid://b2sswmbou53rj" path="res://Assets/fondoazul.png" id="17_hppdt"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="18_rr27p"]
 [ext_resource type="AudioStream" uid="uid://daxlko0xjf3im" path="res://Sounds/clock-ticking-60-second-countdown-118231.mp3" id="19_f3x5k"]
-[ext_resource type="PackedScene" uid="uid://ctd8gggp7pk26" path="res://Scenes/sueloveneno.tscn" id="20_d67sf"]
 
 [sub_resource type="Animation" id="Animation_f3x5k"]
 length = 0.001
@@ -224,10 +223,6 @@ position = Vector2(1232, 395)
 root_node = NodePath("../transicion")
 libraries/ = SubResource("AnimationLibrary_d67sf")
 autoplay = &"juego"
-
-[node name="sueloveneno" parent="." unique_id=691608323 instance=ExtResource("20_d67sf")]
-position = Vector2(174, 684)
-rotation = 1.5707964
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1438046222]
 position = Vector2(10, 30)
