@@ -1,5 +1,5 @@
 extends Node2D
-@export var tiempo_inicial: int = 25
+@export var tiempo_inicial: int = 35
 @export var escena_final: String = "res://Scenes/misionfallida.tscn"
 @export var sonido_alerta: AudioStreamPlayer
 var sonido_reproducido := false

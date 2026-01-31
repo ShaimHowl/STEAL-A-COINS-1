@@ -1,11 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://1qqmngll3bi6"]
+[gd_scene format=3 uid="uid://1qqmngll3bi6"]
 
 [ext_resource type="Script" uid="uid://ccdbn3by7umab" path="res://Scripts/enemy.gd" id="1_1f0kj"]
 [ext_resource type="Texture2D" uid="uid://b7ua0nsa53s83" path="res://Assets/Forest_Monsters_FREE/Mushroom/Mushroom without VFX/Mushroom-Run.png" id="2_afpow"]
 [ext_resource type="AudioStream" uid="uid://druswm8b1d213" path="res://Sounds/homemadeoof-47509.mp3" id="3_afpow"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_haro7"]
-size = Vector2(25, 29)
+size = Vector2(21.5, 5.5)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_287tu"]
 atlas = ExtResource("2_afpow")
@@ -72,44 +72,44 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1f0kj"]
-size = Vector2(25, 37)
+size = Vector2(21.5, 33.5)
 
-[node name="enemy" type="CharacterBody2D"]
+[node name="enemy" type="CharacterBody2D" unique_id=1160076953]
 collision_layer = 8
 script = ExtResource("1_1f0kj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(4, -10)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=66851177]
+position = Vector2(2.25, 1.75)
 shape = SubResource("RectangleShape2D_haro7")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1218428227]
 texture_filter = 1
 position = Vector2(3, -32)
 scale = Vector2(1, 1.223)
 sprite_frames = SubResource("SpriteFrames_po0sg")
 animation = &"run"
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." unique_id=1544674935]
 collision_layer = 2
 collision_mask = 16
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(3, -13)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1149637678]
+position = Vector2(1.25, -11.25)
 shape = SubResource("RectangleShape2D_1f0kj")
 
-[node name="rayo" type="Node2D" parent="."]
+[node name="rayo" type="Node2D" parent="." unique_id=2100407072]
 position = Vector2(1, -26)
 
-[node name="rayo1" type="RayCast2D" parent="rayo"]
+[node name="rayo1" type="RayCast2D" parent="rayo" unique_id=162076999]
 target_position = Vector2(70, 0)
 
-[node name="rayo2" type="RayCast2D" parent="rayo"]
+[node name="rayo2" type="RayCast2D" parent="rayo" unique_id=986258339]
 target_position = Vector2(-70, 0)
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=312989693]
 wait_time = 0.4
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1912699588]
 stream = ExtResource("3_afpow")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -212,7 +212,7 @@ collision_mask = 16
 id_moneda = "m45"
 
 [node name="Coins31" parent="." unique_id=1691966912 instance=ExtResource("8_270ks")]
-position = Vector2(967, 175)
+position = Vector2(1022, 173)
 collision_mask = 16
 id_moneda = "m48"
 
@@ -222,7 +222,7 @@ collision_mask = 16
 id_moneda = "m44"
 
 [node name="Coins34" parent="." unique_id=136555120 instance=ExtResource("8_270ks")]
-position = Vector2(383, 172)
+position = Vector2(383, 174)
 collision_mask = 16
 id_moneda = "m46"
 
@@ -380,16 +380,16 @@ position = Vector2(367, 418)
 position = Vector2(261, 181)
 
 [node name="CharacterBody2D12" parent="." unique_id=973437006 instance=ExtResource("13_ybmds")]
-position = Vector2(574, 178)
+position = Vector2(746, 178)
 
 [node name="CharacterBody2D14" parent="." unique_id=466227358 instance=ExtResource("13_ybmds")]
 position = Vector2(1117, 176)
 
 [node name="CharacterBody2D15" parent="." unique_id=1252233251 instance=ExtResource("13_ybmds")]
-position = Vector2(800, 179)
+position = Vector2(924, 177)
 
 [node name="CharacterBody2D18" parent="." unique_id=611650056 instance=ExtResource("13_ybmds")]
-position = Vector2(418, 179)
+position = Vector2(510, 181)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1139571358]
 position = Vector2(-1, 0)
