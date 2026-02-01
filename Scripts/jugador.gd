@@ -112,7 +112,7 @@ func curar(cantidad):
 func morir():
 	muerto = true
 	velocity = Vector2.ZERO
-	animated_sprite_2d.play("death")
+
 
 	await get_tree().create_timer(0.5).timeout
 
