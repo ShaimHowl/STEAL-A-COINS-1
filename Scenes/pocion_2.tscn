@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://v8y1dfet2jqj"]
+
+[ext_resource type="Script" uid="uid://cbfl0l6dbudj4" path="res://Scripts/pocion_2.gd" id="1_xasba"]
+[ext_resource type="Texture2D" uid="uid://dsni5s0p7vvpj" path="res://Assets/All Potions/Blue potions/poção azul.png" id="2_khf1q"]
+[ext_resource type="AudioStream" uid="uid://ddiqruvuk5wdp" path="res://Sounds/health-pickup-6860.mp3" id="2_xasba"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e1g4k"]
+atlas = ExtResource("2_khf1q")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ns31m"]
+atlas = ExtResource("2_khf1q")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l4724"]
+atlas = ExtResource("2_khf1q")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ken2"]
+atlas = ExtResource("2_khf1q")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kot7v"]
+atlas = ExtResource("2_khf1q")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4shfj"]
+atlas = ExtResource("2_khf1q")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fo1hl"]
+atlas = ExtResource("2_khf1q")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1a5ny"]
+atlas = ExtResource("2_khf1q")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_khf1q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e1g4k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ns31m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l4724")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ken2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kot7v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4shfj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fo1hl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1a5ny")
+}],
+"loop": true,
+"name": &"pocion",
+"speed": 20.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e1g4k"]
+radius = 35.057095
+
+[node name="pocion2" type="Area2D" unique_id=1598628101]
+script = ExtResource("1_xasba")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=577280826]
+position = Vector2(69, 64)
+scale = Vector2(3.0156248, 3.046875)
+sprite_frames = SubResource("SpriteFrames_khf1q")
+animation = &"pocion"
+autoplay = "pocion"
+frame_progress = 0.6644639
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1704168949]
+position = Vector2(69, 65)
+shape = SubResource("CircleShape2D_e1g4k")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1801058587]
+stream = ExtResource("2_xasba")
+volume_db = -0.525
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

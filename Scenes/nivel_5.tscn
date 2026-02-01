@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bqd7schgknnyt" path="res://Scenes/veneno.tscn" id="7_rclg7"]
 [ext_resource type="PackedScene" uid="uid://b4khxde14clru" path="res://Scenes/Vida.tscn" id="8_ngh0x"]
 [ext_resource type="PackedScene" uid="uid://cndw8ox6w8duc" path="res://Scenes/pocion.tscn" id="9_tv3d1"]
+[ext_resource type="PackedScene" uid="uid://v8y1dfet2jqj" path="res://Scenes/pocion_2.tscn" id="10_6hth4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sp4xh"]
 texture = ExtResource("2_m1mcw")
@@ -647,5 +648,9 @@ offset_top = 24.0
 offset_right = 1317.0
 offset_bottom = 72.0
 metadata/_edit_use_anchors_ = true
+
+[node name="pocion2" parent="." unique_id=1598628101 instance=ExtResource("10_6hth4")]
+position = Vector2(807, 563)
+collision_mask = 16
 
 [editable path="Vida"]
