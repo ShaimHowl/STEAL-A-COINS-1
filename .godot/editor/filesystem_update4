@@ -1,10 +1,2 @@
-res://Scenes/nivel_4.tscn
-res://Scenes/Vida.tscn
-res://Scripts/vida.gd
-res://Scenes/pinchos.tscn
-res://Scenes/nivel_2.tscn
-res://Scenes/nivel_3.tscn
-res://Scenes/jugador.tscn
-res://Scenes/mundo.tscn
-res://Assets/nivel_5.tscn
-res://Scenes/nivel_5.tscn
+res://Scripts/misionfallida.gd
+res://Scenes/misionfallida.tscn

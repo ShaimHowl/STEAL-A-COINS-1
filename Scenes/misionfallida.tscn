@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://c581f8ukk5lgo"]
+[gd_scene format=3 uid="uid://c581f8ukk5lgo"]
 
 [ext_resource type="Script" uid="uid://dhy8g354k18dh" path="res://Scripts/misionfallida.gd" id="1_opspj"]
 [ext_resource type="AudioStream" uid="uid://dx8rucdunm3do" path="res://Sounds/complete.wav" id="2_o1uvq"]
@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="3_fl284"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="4_dae75"]
 [ext_resource type="Texture2D" uid="uid://c60sxysj86lqj" path="res://Icono/Copilot_20260102_170116.png" id="5_nwugw"]
+[ext_resource type="Texture2D" uid="uid://cf1xg5gnr13rt" path="res://Icono/Copilot_20260102_174758.png" id="6_80bml"]
 [ext_resource type="Texture2D" uid="uid://ihloljqkc4jb" path="res://Assets/fondogris.png" id="6_fl284"]
 [ext_resource type="AudioStream" uid="uid://c7yregjerupmc" path="res://Sounds/game-over-417465.mp3" id="7_dae75"]
 [ext_resource type="Texture2D" uid="uid://dncuitfxjy7ng" path="res://Assets/Coins_16x16/PNG/Coin_One.png" id="9_80bml"]
@@ -142,15 +143,15 @@ _data = {
 &"mostrar_textos": SubResource("Animation_xjrh6")
 }
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[node name="CanvasLayer" type="CanvasLayer" unique_id=363863865]
 script = ExtResource("1_opspj")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=267079568]
 position = Vector2(679, 360.99997)
 scale = Vector2(0.9153645, 0.72851557)
 texture = ExtResource("2_t4ryu")
 
-[node name="LabelTitulo" type="Label" parent="."]
+[node name="LabelTitulo" type="Label" parent="." unique_id=619101170]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -170,7 +171,7 @@ text = "          MISION  COMPLETADA"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="LabelTexto" type="Label" parent="."]
+[node name="LabelTexto" type="Label" parent="." unique_id=1581067066]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -188,44 +189,54 @@ theme_override_font_sizes/font_size = 60
 text = "  Mision Completada
 "
 
-[node name="Button" type="Button" parent="."]
-offset_left = 565.0
-offset_top = 427.0
-offset_right = 809.0
-offset_bottom = 679.0
+[node name="Button" type="Button" parent="." unique_id=2066063597]
+offset_left = 807.0
+offset_top = 408.0
+offset_right = 1051.0
+offset_bottom = 660.0
 theme_override_colors/icon_pressed_color = Color(0.95, 0, 0, 1)
 theme_override_colors/icon_hover_color = Color(1, 0, 0, 1)
 icon = ExtResource("5_nwugw")
 expand_icon = true
 
-[node name="SonidoMision" type="AudioStreamPlayer" parent="."]
+[node name="Button2" type="Button" parent="." unique_id=2042870365]
+offset_left = 354.0
+offset_top = 404.0
+offset_right = 598.0
+offset_bottom = 656.0
+theme_override_colors/icon_pressed_color = Color(0.95, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(1, 0, 0, 1)
+icon = ExtResource("6_80bml")
+expand_icon = true
+
+[node name="SonidoMision" type="AudioStreamPlayer" parent="." unique_id=1902076452]
 stream = ExtResource("2_o1uvq")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=137118330]
 position = Vector2(107, 157)
 scale = Vector2(5.125, 3.375)
 sprite_frames = SubResource("SpriteFrames_qqcc8")
 autoplay = "default"
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=482012068]
 position = Vector2(1254, 156)
 scale = Vector2(5.125, 3.375)
 sprite_frames = SubResource("SpriteFrames_qqcc8")
 autoplay = "default"
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=540339226]
+visible = false
 position = Vector2(708, 372)
 scale = Vector2(1.7304688, 1)
 texture = ExtResource("6_fl284")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D2"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D2" unique_id=324700871]
 root_node = NodePath("../../Sprite2D")
-libraries = {
-&"": SubResource("AnimationLibrary_xjrh6")
-}
-autoplay = "mision"
+libraries/ = SubResource("AnimationLibrary_xjrh6")
+autoplay = &"mision"
 
-[node name="SonidoMisionF" type="AudioStreamPlayer" parent="."]
+[node name="SonidoMisionF" type="AudioStreamPlayer" parent="." unique_id=1766815745]
 stream = ExtResource("7_dae75")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
