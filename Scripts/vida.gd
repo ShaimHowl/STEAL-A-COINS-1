@@ -1,4 +1,4 @@
-extends CanvasLayer
+extends Node2D
 
 func _ready():
 	$health_ProgressBar.value = GameData.health

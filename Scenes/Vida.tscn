@@ -1,12 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://b4khxde14clru"]
+[gd_scene format=3 uid="uid://b4khxde14clru"]
 
 [ext_resource type="Script" uid="uid://dcs7o0rsa1s1n" path="res://Scripts/vida.gd" id="1_ayspy"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="2_ayspy"]
 
-[node name="Vida" type="CanvasLayer"]
+[node name="Vida" type="Node2D" unique_id=320206472]
 script = ExtResource("1_ayspy")
 
-[node name="health_ProgressBar" type="ProgressBar" parent="."]
+[node name="health_ProgressBar" type="ProgressBar" parent="." unique_id=1365168509]
 modulate = Color(0.039215688, 1, 0.039215688, 1)
 show_behind_parent = true
 offset_left = 566.0

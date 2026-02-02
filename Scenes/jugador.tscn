@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://dtse1o8wnri4f"]
+[gd_scene format=3 uid="uid://dtse1o8wnri4f"]
 
 [ext_resource type="Script" uid="uid://8mlt6f0j6nss" path="res://Scripts/jugador.gd" id="1_n4xcq"]
 [ext_resource type="Texture2D" uid="uid://ch5yc8gptoiym" path="res://Assets/template_free/individual_sheets/male_hero_template-idle.png" id="4_5nsjc"]
@@ -321,29 +321,30 @@ size = Vector2(34.783833, 50.17239)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iw3ti"]
 size = Vector2(43.3733, 43.285995)
 
-[node name="jugador" type="CharacterBody2D" groups=["jugador"]]
+[node name="jugador" type="CharacterBody2D" unique_id=913443093 groups=["jugador"]]
 rotation = -0.00519228
 scale = Vector2(0.9452705, 1.0164816)
 collision_layer = 16
 script = ExtResource("1_n4xcq")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2097044890]
+modulate = Color(0.7958679, 0.6582452, 0, 1)
 position = Vector2(66, -32)
 scale = Vector2(1.9218756, 1.6610931)
 sprite_frames = SubResource("SpriteFrames_gxv3l")
 animation = &"Idle"
 autoplay = "Idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1454459151]
 position = Vector2(65.15604, -31.666124)
 scale = Vector2(1.0000006, 1.0000002)
 shape = SubResource("RectangleShape2D_n4xcq")
 
-[node name="Damgedetection" type="Area2D" parent="."]
+[node name="Damgedetection" type="Area2D" parent="." unique_id=895151151]
 collision_layer = 16
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Damgedetection"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Damgedetection" unique_id=1839564687]
 position = Vector2(65.23022, -30.180258)
 scale = Vector2(1.0000006, 1.0000002)
 shape = SubResource("RectangleShape2D_iw3ti")
