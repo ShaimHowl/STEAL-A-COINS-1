@@ -1,2 +1,4 @@
-res://Scripts/misionfallida.gd
-res://Scenes/misionfallida.tscn
+res://Scenes/pinchos.tscn
+res://Scenes/nivel_4.tscn
+res://Scripts/pocion_2.gd
+res://Scenes/nivel_5.tscn

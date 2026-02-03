@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var cantidad_cura: int = 10
+@export var cantidad_cura: int = 15
 @onready var sonido = $AudioStreamPlayer2D
 
 func _ready():
