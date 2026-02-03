@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bwoajv3vauep7"]
+[gd_scene format=3 uid="uid://bwoajv3vauep7"]
 
 [ext_resource type="Script" uid="uid://diced736skmdb" path="res://Scripts/main_menu.gd" id="1_1ehe0"]
 [ext_resource type="Texture2D" uid="uid://bxer5f0ofogvi" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/1.png" id="2_yhxw7"]
@@ -8,31 +8,11 @@
 [ext_resource type="AudioStream" uid="uid://qs1e1botfnvq" path="res://Sounds/pixel-song-19-31953_junta.mp3" id="4_ce3w2"]
 [ext_resource type="Texture2D" uid="uid://dyitbdferobo1" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/4.png" id="5_vr1f0"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="6_trj04"]
+[ext_resource type="Texture2D" uid="uid://tfmywmj1wgp0" path="res://Assets/Background/menu.png" id="6_vr1f0"]
 [ext_resource type="Texture2D" uid="uid://b2sswmbou53rj" path="res://Assets/fondoazul.png" id="9_trj04"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="10_16hvj"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
-bg_color = Color(9.62615e-08, 0.22903469, 0.36272374, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fu7sn"]
-bg_color = Color(0.11854332, 0.22197574, 0.31985256, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jix8l"]
-bg_color = Color(0.13252696, 0.22294375, 0.30068696, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7vrkn"]
+[ext_resource type="PackedScene" uid="uid://ctd8gggp7pk26" path="res://Scenes/sueloveneno.tscn" id="12_t1dhk"]
+[ext_resource type="PackedScene" uid="uid://bnb34w848pgft" path="res://Scenes/fire.tscn" id="13_5egv6"]
 
 [sub_resource type="GDScript" id="GDScript_trj04"]
 
@@ -73,7 +53,30 @@ _data = {
 &"animacion": SubResource("Animation_opfnp")
 }
 
-[node name="MainMenu" type="Control"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
+bg_color = Color(9.62615e-08, 0.22903469, 0.36272374, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fu7sn"]
+bg_color = Color(0.11854332, 0.22197574, 0.31985256, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jix8l"]
+bg_color = Color(0.13252696, 0.22294375, 0.30068696, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7vrkn"]
+
+[node name="MainMenu" type="Control" unique_id=1690812792]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -82,89 +85,32 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_1ehe0")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=25754259]
 position = Vector2(682, 353.00003)
 scale = Vector2(2.3506944, 2.1851852)
 texture = ExtResource("2_yhxw7")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1808093622]
 position = Vector2(284, 477.99994)
 scale = Vector2(3.580729, 4.368383)
 texture = ExtResource("3_trj04")
 
-[node name="Sprite2D3" type="Sprite2D" parent="."]
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=631462011]
 position = Vector2(683, 486.00003)
 scale = Vector2(2.364583, 1.3580248)
 texture = ExtResource("4_16hvj")
 
-[node name="Sprite2D4" type="Sprite2D" parent="."]
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=1636949734]
 position = Vector2(682, 353.00003)
 scale = Vector2(2.3506944, 2.1851852)
 texture = ExtResource("5_vr1f0")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -242.25
-offset_top = -62.0
-offset_right = 242.25
-offset_bottom = 227.25
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 21
+[node name="Menu" type="Sprite2D" parent="." unique_id=926436088]
+position = Vector2(680.5, 355)
+scale = Vector2(0.8938802, 0.7089844)
+texture = ExtResource("6_vr1f0")
 
-[node name="Button" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0.12941177, 0.6, 0.36078432, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("6_trj04")
-theme_override_font_sizes/font_size = 38
-theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_fu7sn")
-theme_override_styles/hover = SubResource("StyleBoxFlat_jix8l")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_7vrkn")
-text = "Ver reglas"
-
-[node name="Button2" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0.12941177, 0.6, 0.36078432, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("6_trj04")
-theme_override_font_sizes/font_size = 38
-theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_fu7sn")
-theme_override_styles/hover = SubResource("StyleBoxFlat_jix8l")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_7vrkn")
-text = "Jugar ya
-"
-
-[node name="Button3" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0.12941177, 0.6, 0.36078432, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("6_trj04")
-theme_override_font_sizes/font_size = 41
-theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_fu7sn")
-theme_override_styles/hover = SubResource("StyleBoxFlat_jix8l")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_7vrkn")
-text = "Salir
-"
-
-[node name="Titulo" type="Label" parent="."]
+[node name="Titulo" type="Label" parent="." unique_id=183452755]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -177,7 +123,9 @@ offset_right = 300.0
 offset_bottom = -151.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_color = Color(1, 0.7176471, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.9647059, 0.28627452, 0, 1)
+theme_override_colors/font_outline_color = Color(0.42745098, 0.050980393, 0, 1)
 theme_override_constants/shadow_offset_y = -2
 theme_override_fonts/font = ExtResource("3_n45e2")
 theme_override_font_sizes/font_size = 116
@@ -186,26 +134,91 @@ horizontal_alignment = 1
 vertical_alignment = 1
 script = SubResource("GDScript_trj04")
 
-[node name="Audiomenu" type="AudioStreamPlayer" parent="."]
+[node name="Audiomenu" type="AudioStreamPlayer" parent="." unique_id=920907222]
 stream = ExtResource("4_ce3w2")
 volume_db = -10.0
 autoplay = true
 
-[node name="Sprite2D5" type="Sprite2D" parent="."]
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=661834091]
+visible = false
 position = Vector2(678, 361.5)
 scale = Vector2(1.3378906, 0.6982422)
 texture = ExtResource("9_trj04")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D5"]
-libraries = {
-&"": SubResource("AnimationLibrary_yhxw7")
-}
-autoplay = "animacion"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D5" unique_id=331847798]
+libraries/ = SubResource("AnimationLibrary_yhxw7")
+autoplay = &"animacion"
 
-[node name="Audio" type="AudioStreamPlayer" parent="."]
+[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1496443104]
 stream = ExtResource("10_16hvj")
 volume_db = 8.801
 
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_comenzar_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_opciones_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_salir_pressed"]
+[node name="Button" type="Button" parent="." unique_id=443343748]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 619.0
+offset_right = 429.0
+offset_bottom = 697.0
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_focus_color = Color(0.49411765, 0.07058824, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.99607843, 0.7137255, 0, 1)
+theme_override_fonts/font = ExtResource("6_trj04")
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fu7sn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jix8l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7vrkn")
+text = "Ver reglas"
+
+[node name="Button2" type="Button" parent="." unique_id=1508519700]
+layout_mode = 0
+offset_left = 483.0
+offset_top = 624.0
+offset_right = 849.0
+offset_bottom = 698.0
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 0.72156864, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_trj04")
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fu7sn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jix8l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7vrkn")
+text = "Jugar ya
+"
+
+[node name="Button3" type="Button" parent="." unique_id=2111168192]
+layout_mode = 0
+offset_left = 927.0
+offset_top = 618.0
+offset_right = 1282.0
+offset_bottom = 695.0
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 0.7176471, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_trj04")
+theme_override_font_sizes/font_size = 41
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fu7sn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jix8l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7vrkn")
+text = "Salir
+"
+
+[node name="sueloveneno" parent="." unique_id=1063590978 instance=ExtResource("12_t1dhk")]
+position = Vector2(1221, 400)
+scale = Vector2(11, 11)
+
+[node name="CharacterBody2D" parent="." unique_id=1975231683 instance=ExtResource("13_5egv6")]
+position = Vector2(122, 171)
+scale = Vector2(4, 4)
+
+[connection signal="pressed" from="Button" to="." method="_on_comenzar_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_salir_pressed"]
