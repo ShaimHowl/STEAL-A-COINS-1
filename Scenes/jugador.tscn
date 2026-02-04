@@ -316,7 +316,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4xcq"]
-size = Vector2(34.783833, 50.17239)
+size = Vector2(31.73101, 50.17239)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iw3ti"]
 size = Vector2(43.3733, 43.285995)
@@ -328,7 +328,6 @@ collision_layer = 16
 script = ExtResource("1_n4xcq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2097044890]
-modulate = Color(0.7958679, 0.6582452, 0, 1)
 position = Vector2(66, -32)
 scale = Vector2(1.9218756, 1.6610931)
 sprite_frames = SubResource("SpriteFrames_gxv3l")
@@ -336,7 +335,7 @@ animation = &"Idle"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1454459151]
-position = Vector2(65.15604, -31.666124)
+position = Vector2(64.709465, -31.666138)
 scale = Vector2(1.0000006, 1.0000002)
 shape = SubResource("RectangleShape2D_n4xcq")
 

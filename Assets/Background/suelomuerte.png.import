@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tfmywmj1wgp0"
-path="res://.godot/imported/menu.png-40fc78279724158dfc19d538b20f8447.ctex"
+uid="uid://co7sp2k8lfmgy"
+path="res://.godot/imported/suelomuerte.png-aae1e4e5cc3d892b05a9e41589340209.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Background/menu.png"
-dest_files=["res://.godot/imported/menu.png-40fc78279724158dfc19d538b20f8447.ctex"]
+source_file="res://Assets/Background/suelomuerte.png"
+dest_files=["res://.godot/imported/suelomuerte.png-aae1e4e5cc3d892b05a9e41589340209.ctex"]
 
 [params]
 

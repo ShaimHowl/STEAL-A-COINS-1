@@ -9,7 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://cf1xg5gnr13rt" path="res://Icono/Copilot_20260102_174758.png" id="6_80bml"]
 [ext_resource type="Texture2D" uid="uid://ihloljqkc4jb" path="res://Assets/fondogris.png" id="6_fl284"]
 [ext_resource type="AudioStream" uid="uid://c7yregjerupmc" path="res://Sounds/game-over-417465.mp3" id="7_dae75"]
+[ext_resource type="Texture2D" uid="uid://co7sp2k8lfmgy" path="res://Assets/Background/suelomuerte.png" id="9_7ikvd"]
 [ext_resource type="Texture2D" uid="uid://dncuitfxjy7ng" path="res://Assets/Coins_16x16/PNG/Coin_One.png" id="9_80bml"]
+[ext_resource type="Texture2D" uid="uid://i0l0ishmf0qh" path="res://Assets/Background/sueloo.png" id="10_7ikvd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k3bf4"]
 atlas = ExtResource("9_80bml")
@@ -158,9 +160,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -759.0
-offset_top = -234.0
+offset_top = -333.0
 offset_right = 769.5
-offset_bottom = -155.0
+offset_bottom = -254.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
@@ -177,10 +179,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -420.5
-offset_top = -54.5
-offset_right = 420.5
-offset_bottom = 54.5
+offset_left = -450.5
+offset_top = -199.0
+offset_right = 450.5
+offset_bottom = -90.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 0.019607844, 0.019607844, 1)
@@ -190,20 +192,20 @@ text = "  Mision Completada
 "
 
 [node name="Button" type="Button" parent="." unique_id=2066063597]
-offset_left = 807.0
-offset_top = 408.0
-offset_right = 1051.0
-offset_bottom = 660.0
+offset_left = 864.0
+offset_top = 294.0
+offset_right = 1067.0
+offset_bottom = 501.0
 theme_override_colors/icon_pressed_color = Color(0.95, 0, 0, 1)
 theme_override_colors/icon_hover_color = Color(1, 0, 0, 1)
 icon = ExtResource("5_nwugw")
 expand_icon = true
 
 [node name="Button2" type="Button" parent="." unique_id=2042870365]
-offset_left = 354.0
-offset_top = 404.0
-offset_right = 598.0
-offset_bottom = 656.0
+offset_left = 337.0
+offset_top = 279.0
+offset_right = 550.0
+offset_bottom = 501.0
 theme_override_colors/icon_pressed_color = Color(0.95, 0, 0, 1)
 theme_override_colors/icon_hover_color = Color(1, 0, 0, 1)
 icon = ExtResource("6_80bml")
@@ -213,19 +215,28 @@ expand_icon = true
 stream = ExtResource("2_o1uvq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=137118330]
-position = Vector2(107, 157)
+position = Vector2(101, 50)
 scale = Vector2(5.125, 3.375)
 sprite_frames = SubResource("SpriteFrames_qqcc8")
 autoplay = "default"
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=482012068]
-position = Vector2(1254, 156)
+position = Vector2(1248, 49)
 scale = Vector2(5.125, 3.375)
 sprite_frames = SubResource("SpriteFrames_qqcc8")
 autoplay = "default"
 
+[node name="Suelomuerte" type="Sprite2D" parent="." unique_id=916788547]
+position = Vector2(736, 754.5)
+scale = Vector2(1, 0.6982422)
+texture = ExtResource("9_7ikvd")
+
+[node name="Caido" type="Sprite2D" parent="." unique_id=931920485]
+position = Vector2(676, 494)
+scale = Vector2(0.6226934, 0.4315234)
+texture = ExtResource("10_7ikvd")
+
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=540339226]
-visible = false
 position = Vector2(708, 372)
 scale = Vector2(1.7304688, 1)
 texture = ExtResource("6_fl284")
