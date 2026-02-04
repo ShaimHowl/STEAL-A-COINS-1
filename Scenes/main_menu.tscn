@@ -16,6 +16,9 @@
 [ext_resource type="PackedScene" uid="uid://ctd8gggp7pk26" path="res://Scenes/sueloveneno.tscn" id="12_t1dhk"]
 [ext_resource type="PackedScene" uid="uid://bnb34w848pgft" path="res://Scenes/fire.tscn" id="13_5egv6"]
 [ext_resource type="PackedScene" uid="uid://dpqnh5sv8jh3b" path="res://Scenes/coins.tscn" id="14_vtepg"]
+[ext_resource type="Texture2D" uid="uid://b7ua0nsa53s83" path="res://Assets/Forest_Monsters_FREE/Mushroom/Mushroom without VFX/Mushroom-Run.png" id="17_wyh8j"]
+[ext_resource type="Texture2D" uid="uid://b52boxyxtk7wj" path="res://Assets/Animate Spikes/Animate Spikes/slimeWalk1.png" id="18_mkpwh"]
+[ext_resource type="Texture2D" uid="uid://ccuqxi4dtl36n" path="res://Assets/Animate Spikes/Animate Spikes/slimeWalk2.png" id="19_4nkqq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jp6yl"]
 atlas = ExtResource("3_m3bi6")
@@ -456,6 +459,92 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_287tu"]
+atlas = ExtResource("17_wyh8j")
+region = Rect2(0, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0830c"]
+atlas = ExtResource("17_wyh8j")
+region = Rect2(80, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghaa6"]
+atlas = ExtResource("17_wyh8j")
+region = Rect2(160, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1dp5w"]
+atlas = ExtResource("17_wyh8j")
+region = Rect2(240, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_auwsv"]
+atlas = ExtResource("17_wyh8j")
+region = Rect2(320, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8uf12"]
+atlas = ExtResource("17_wyh8j")
+region = Rect2(400, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_po0sg"]
+atlas = ExtResource("17_wyh8j")
+region = Rect2(480, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_haro7"]
+atlas = ExtResource("17_wyh8j")
+region = Rect2(560, 0, 80, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ujyyl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_287tu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0830c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ghaa6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1dp5w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_auwsv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8uf12")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_po0sg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_haro7")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1qqd"]
+atlas = ExtResource("18_mkpwh")
+region = Rect2(0, 0, 50, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v37lf"]
+atlas = ExtResource("19_4nkqq")
+region = Rect2(0, 0, 51, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ehtkc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1qqd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v37lf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="MainMenu" type="Control" unique_id=1690812792]
 layout_mode = 3
 anchors_preset = 15
@@ -607,6 +696,21 @@ scale = Vector2(12.004808, 8.397728)
 sprite_frames = SubResource("SpriteFrames_8dnnj")
 animation = &"Idle"
 autoplay = "Idle"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=760865713]
+texture_filter = 1
+position = Vector2(981, 497.00003)
+scale = Vector2(2, 2.446)
+sprite_frames = SubResource("SpriteFrames_ujyyl")
+animation = &"run"
+autoplay = "run"
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="." unique_id=1111183628]
+position = Vector2(406.99997, 551)
+scale = Vector2(1.42, 1.75)
+sprite_frames = SubResource("SpriteFrames_ehtkc")
+autoplay = "default"
+flip_h = true
 
 [connection signal="pressed" from="Button" to="." method="_on_comenzar_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_opciones_pressed"]

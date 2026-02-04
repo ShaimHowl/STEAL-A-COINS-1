@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c36ka6kmx2jog"]
+[gd_scene format=3 uid="uid://c36ka6kmx2jog"]
 
 [ext_resource type="Script" uid="uid://das316cwascos" path="res://Scripts/enemy_2.gd" id="1_aynp6"]
 [ext_resource type="Texture2D" uid="uid://b52boxyxtk7wj" path="res://Assets/Animate Spikes/Animate Spikes/slimeWalk1.png" id="1_k6nad"]
@@ -33,38 +33,38 @@ size = Vector2(43, 27)
 [sub_resource type="CircleShape2D" id="CircleShape2D_aynp6"]
 radius = 20.880613
 
-[node name="enemy2" type="CharacterBody2D"]
+[node name="enemy2" type="CharacterBody2D" unique_id=2004863140]
 collision_layer = 8
 script = ExtResource("1_aynp6")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=3284732]
 sprite_frames = SubResource("SpriteFrames_ihj7u")
-frame_progress = 0.047583498
+frame_progress = 0.43641436
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=464510134]
 position = Vector2(-2.5, 1.5)
 shape = SubResource("RectangleShape2D_aynp6")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." unique_id=1198116654]
 collision_layer = 2
 collision_mask = 16
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2073481770]
 position = Vector2(-4, 9)
 shape = SubResource("CircleShape2D_aynp6")
 
-[node name="rayo" type="Node2D" parent="."]
+[node name="rayo" type="Node2D" parent="." unique_id=914645336]
 
-[node name="rayo1" type="RayCast2D" parent="rayo"]
+[node name="rayo1" type="RayCast2D" parent="rayo" unique_id=7839401]
 target_position = Vector2(70, 0)
 
-[node name="rayo2" type="RayCast2D" parent="rayo"]
+[node name="rayo2" type="RayCast2D" parent="rayo" unique_id=1924359188]
 target_position = Vector2(-70, 0)
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=146240703]
 wait_time = 0.35
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1430272789]
 stream = ExtResource("3_2arym")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
