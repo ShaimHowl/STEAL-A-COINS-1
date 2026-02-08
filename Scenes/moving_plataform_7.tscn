@@ -2,6 +2,22 @@
 
 [ext_resource type="Texture2D" uid="uid://cqr6j3evgk3cn" path="res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png" id="1_achfc"]
 
+[sub_resource type="GDScript" id="GDScript_achfc"]
+
+[sub_resource type="GDScript" id="GDScript_t5o15"]
+script/source = "extends AnimatableBody2D
+
+var previous_position: Vector2
+var velocity: Vector2
+
+func _ready():
+	previous_position = global_position
+
+func _physics_process(delta):
+	velocity = (global_position - previous_position) / delta
+	previous_position = global_position
+"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t5o15"]
 texture = ExtResource("1_achfc")
 0:0/0 = 0
@@ -121,8 +137,10 @@ _data = {
 }
 
 [node name="moving_plataform_7" type="Node2D" unique_id=412995077]
+script = SubResource("GDScript_achfc")
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=10144447]
+script = SubResource("GDScript_t5o15")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="AnimatableBody2D" unique_id=2133065154]
 position = Vector2(-12, 0)
