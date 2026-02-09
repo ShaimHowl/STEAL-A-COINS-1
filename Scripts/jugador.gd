@@ -8,7 +8,7 @@ extends CharacterBody2D
 @export var start_facing_left := false   # ← NUEVO: elegir orientación en el inspector
 
 var health
-var gravity = 980
+var gravity = 940
 var muerto = false
 var mirando_izquierda = false
 
