@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c60sxysj86lqj"
-path="res://.godot/imported/Copilot_20260102_170116.png-0803304fdc64e065c22eff5ebfae91a8.ctex"
+uid="uid://b3rq3g6ng3vn0"
+path="res://.godot/imported/iconov.png-c8ebad63c4824121bf546dd5a5ae44d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Icono/Copilot_20260102_170116.png"
-dest_files=["res://.godot/imported/Copilot_20260102_170116.png-0803304fdc64e065c22eff5ebfae91a8.ctex"]
+source_file="res://Icono/iconov.png"
+dest_files=["res://.godot/imported/iconov.png-c8ebad63c4824121bf546dd5a5ae44d8.ctex"]
 
 [params]
 

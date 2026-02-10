@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bv0s11x5kmmck"]
+[gd_scene format=3 uid="uid://bv0s11x5kmmck"]
 
 [ext_resource type="Script" uid="uid://dgspoh2hx068g" path="res://Scripts/detalles.gd" id="1_i0yh6"]
 [ext_resource type="Texture2D" uid="uid://b2sswmbou53rj" path="res://Assets/fondoazul.png" id="1_iil4g"]
@@ -8,6 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://cjhfvcmnngt3e" path="res://Assets/Background/trampa2.png" id="6_wvp5v"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="7_d2vfm"]
 [ext_resource type="Texture2D" uid="uid://bixgwdxvp80hg" path="res://Assets/Background/portal.png" id="7_wvp5v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wvp5v"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+border_color = Color(1, 0.7372549, 0, 1)
 
 [sub_resource type="Animation" id="Animation_d2vfm"]
 length = 0.001
@@ -45,108 +49,122 @@ _data = {
 &"trampas1": SubResource("Animation_i0yh6")
 }
 
-[node name="Detalles" type="Node2D"]
+[node name="Detalles" type="Node2D" unique_id=1620015288]
 script = ExtResource("1_i0yh6")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1721135455]
 position = Vector2(675, 360.5)
 scale = Vector2(1.4355469, 0.7548828)
 texture = ExtResource("1_iil4g")
 
-[node name="Label" type="Label" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=572363677]
+offset_right = 1378.0
+offset_bottom = 720.0
+color = Color(0.24857926, 0, 0.0052586515, 1)
+
+[node name="Label" type="Label" parent="." unique_id=781428062]
 offset_left = 81.0
 offset_top = 44.0
 offset_right = 1386.0
 offset_bottom = 97.0
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_mqihf")
 theme_override_font_sizes/font_size = 55
 text = "Nivel 1:Primeras trampas"
 
-[node name="Label2" type="Label" parent="."]
+[node name="Label2" type="Label" parent="." unique_id=1002691567]
 offset_left = 56.0
 offset_top = 167.0
 offset_right = 971.0
 offset_bottom = 250.0
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_mqihf")
 theme_override_font_sizes/font_size = 30
 text = "15 de daño 
 cada toque"
 
-[node name="Label5" type="Label" parent="."]
+[node name="Label5" type="Label" parent="." unique_id=1210424778]
 offset_left = 56.0
 offset_top = 167.0
 offset_right = 971.0
 offset_bottom = 250.0
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_mqihf")
 theme_override_font_sizes/font_size = 30
 text = "15 de daño 
 cada toque"
 
-[node name="Label3" type="Label" parent="."]
+[node name="Label3" type="Label" parent="." unique_id=778807546]
 offset_left = 443.0
 offset_top = 160.0
 offset_right = 768.0
 offset_bottom = 243.0
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_mqihf")
 theme_override_font_sizes/font_size = 30
 text = "15 de daño 
 cada toque"
 
-[node name="Label4" type="Label" parent="."]
+[node name="Label4" type="Label" parent="." unique_id=2033636085]
 offset_left = 819.0
 offset_top = 157.0
 offset_right = 1295.0
 offset_bottom = 240.0
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_mqihf")
 theme_override_font_sizes/font_size = 30
 text = "Usa el portal para
 teletransportarte"
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=763749471]
 offset_left = 437.0
 offset_top = 575.0
 offset_right = 900.0
 offset_bottom = 673.0
-theme_override_colors/font_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_colors/font_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_colors/icon_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_colors/icon_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_focus_color = Color(0.49411765, 0.07058824, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("4_d2vfm")
 theme_override_font_sizes/font_size = 65
+theme_override_styles/normal = SubResource("StyleBoxFlat_wvp5v")
 text = "Comenzar"
 
-[node name="trampa1" type="Sprite2D" parent="."]
+[node name="trampa1" type="Sprite2D" parent="." unique_id=999247387]
 position = Vector2(191, 403.00003)
 scale = Vector2(0.812, 0.91628957)
 texture = ExtResource("3_mqihf")
 
-[node name="trampa2" type="Sprite2D" parent="."]
+[node name="trampa2" type="Sprite2D" parent="." unique_id=232205004]
 position = Vector2(589.00006, 406)
 scale = Vector2(1.952174, 2.443037)
 texture = ExtResource("6_wvp5v")
 
-[node name="trampa3" type="Sprite2D" parent="."]
+[node name="trampa3" type="Sprite2D" parent="." unique_id=1720981370]
 position = Vector2(1044, 395)
 scale = Vector2(1.952174, 2.443037)
 texture = ExtResource("7_wvp5v")
 
-[node name="transicion" type="Sprite2D" parent="."]
+[node name="transicion" type="Sprite2D" parent="." unique_id=230469878]
+visible = false
 position = Vector2(684, 380)
 scale = Vector2(1.4785156, 1)
 texture = ExtResource("1_iil4g")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion"]
-libraries = {
-&"": SubResource("AnimationLibrary_wvp5v")
-}
-autoplay = "trampas1"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion" unique_id=176532521]
+libraries/ = SubResource("AnimationLibrary_wvp5v")
+autoplay = &"trampas1"
 
-[node name="Audio" type="AudioStreamPlayer" parent="."]
+[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1948357260]
 stream = ExtResource("7_d2vfm")
 volume_db = -5.474
 

@@ -624,9 +624,9 @@ volume_db = 8.801
 
 [node name="Button" type="Button" parent="." unique_id=443343748]
 layout_mode = 0
-offset_left = 16.0
+offset_left = 44.0
 offset_top = 619.0
-offset_right = 429.0
+offset_right = 457.0
 offset_bottom = 697.0
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
@@ -642,9 +642,9 @@ text = "Ver reglas"
 
 [node name="Button2" type="Button" parent="." unique_id=1508519700]
 layout_mode = 0
-offset_left = 483.0
+offset_left = 509.0
 offset_top = 624.0
-offset_right = 849.0
+offset_right = 875.0
 offset_bottom = 698.0
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 0.72156864, 0, 1)
@@ -662,10 +662,10 @@ text = "Jugar ya
 
 [node name="Button3" type="Button" parent="." unique_id=2111168192]
 layout_mode = 0
-offset_left = 927.0
-offset_top = 618.0
-offset_right = 1282.0
-offset_bottom = 695.0
+offset_left = 937.0
+offset_top = 617.0
+offset_right = 1292.0
+offset_bottom = 694.0
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 0.7176471, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)

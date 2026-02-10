@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://u2v0v5g5has6"]
+[gd_scene format=3 uid="uid://u2v0v5g5has6"]
 
 [ext_resource type="Script" uid="uid://bghux001bc6pn" path="res://Scripts/regla.gd" id="1_huoo6"]
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_vy0c0"]
@@ -7,6 +7,13 @@
 [ext_resource type="Script" uid="uid://ry1p5lo8806u" path="res://Scripts/label_2.gd" id="4_x5iqr"]
 [ext_resource type="Script" uid="uid://dawbck2r440q" path="res://Scripts/label_3.gd" id="6_rhsot"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="6_yh6y6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhsot"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yh6y6"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+border_color = Color(1, 0.7372549, 0, 1)
 
 [sub_resource type="Animation" id="Animation_x5iqr"]
 length = 0.001
@@ -45,7 +52,7 @@ _data = {
 &"reglas": SubResource("Animation_huoo6")
 }
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" unique_id=284049512]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -54,92 +61,107 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_huoo6")
 
-[node name="portada" type="Sprite2D" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=636629624]
+layout_mode = 0
+offset_right = 1378.0
+offset_bottom = 720.0
+color = Color(0.1333332, 0, 1, 1)
+
+[node name="portada" type="Sprite2D" parent="." unique_id=1986516031]
 position = Vector2(675.5, 353.5)
 scale = Vector2(1.3271484, 0.6845703)
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=418025834]
 layout_mode = 0
 offset_left = 19.0
-offset_top = 28.0
+offset_top = 18.0
 offset_right = 363.0
-offset_bottom = 77.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_vy0c0")
 theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhsot")
 text = "Reglas:"
 
-[node name="Label2" type="Label" parent="."]
+[node name="Label2" type="Label" parent="." unique_id=1957333392]
 layout_mode = 0
-offset_left = 21.0
-offset_top = 119.0
-offset_right = 1313.0
-offset_bottom = 487.0
+offset_left = 62.0
+offset_top = 88.0
+offset_right = 1274.0
+offset_bottom = 418.0
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("3_huoo6")
 theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhsot")
 text = "1. Recoger todas las monedas (no importa 
 el orden)
 
 2. No morir ante las trampas o enemigos
 
+
 3. Llegar hasta la meta final
 
 "
+horizontal_alignment = 1
+vertical_alignment = 1
 script = ExtResource("4_x5iqr")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Label2"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Label2" unique_id=1574897626]
 stream = ExtResource("6_yh6y6")
 volume_db = -20.0
 
-[node name="Label3" type="Label" parent="."]
+[node name="Label3" type="Label" parent="." unique_id=1326436631]
 layout_mode = 0
-offset_left = 22.0
-offset_top = 378.0
-offset_right = 1497.0
-offset_bottom = 679.0
+offset_left = -45.0
+offset_top = 434.0
+offset_right = 1430.0
+offset_bottom = 669.0
 theme_override_colors/font_color = Color(0.54408157, 0.066962525, 0.068398684, 1)
 theme_override_fonts/font = ExtResource("2_vy0c0")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 33
 text = "AVISO: tienes solo 100% de vida
 
 Tu vida no se reiniciará al siguiente 
 nivel, el nivel no acab si no recoges
 todas las monedas. Cada trampa o 
 enemigo tiene su propio daño
-
-Suerteee"
+"
+horizontal_alignment = 1
 script = ExtResource("6_rhsot")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Label3"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Label3" unique_id=1756176322]
 stream = ExtResource("6_yh6y6")
 volume_db = -20.0
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=162326153]
 layout_mode = 0
-offset_left = 429.0
-offset_top = 629.0
-offset_right = 1194.0
-offset_bottom = 695.0
-theme_override_colors/font_color = Color(0.12941177, 0.6, 0.36078432, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+offset_left = 300.0
+offset_top = 633.0
+offset_right = 1065.0
+offset_bottom = 699.0
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_focus_color = Color(0.49411765, 0.07058824, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("3_huoo6")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_yh6y6")
 text = "Trampas o enemigos"
 
-[node name="Fondogris" type="Sprite2D" parent="."]
+[node name="Fondogris" type="Sprite2D" parent="." unique_id=1763469617]
 visible = false
 position = Vector2(667, 359.5)
 scale = Vector2(1.3496094, 0.6962891)
 texture = ExtResource("4_vy0c0")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Fondogris"]
-libraries = {
-&"": SubResource("AnimationLibrary_yh6y6")
-}
-autoplay = "reglas"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fondogris" unique_id=1050694483]
+libraries/ = SubResource("AnimationLibrary_yh6y6")
+autoplay = &"reglas"
 
-[node name="Audio" type="AudioStreamPlayer" parent="."]
+[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=704925059]
 stream = ExtResource("6_yh6y6")
 volume_db = -5.474
 

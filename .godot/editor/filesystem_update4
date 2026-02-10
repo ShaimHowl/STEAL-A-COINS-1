@@ -1,3 +1,5 @@
-res://Scenes/main_menu.tscn
-res://Scripts/misionfallida.gd
 res://Scenes/misionfallida.tscn
+res://Scenes/regla.tscn
+res://Scenes/main_menu.tscn
+res://Scenes/Detalles.tscn
+res://Scripts/misionfallida.gd

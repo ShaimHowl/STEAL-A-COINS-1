@@ -5,8 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://3em6nv3pxml6" path="res://Detallesf/misionf.png" id="2_t4ryu"]
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="3_fl284"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="4_dae75"]
-[ext_resource type="Texture2D" uid="uid://c60sxysj86lqj" path="res://Icono/Copilot_20260102_170116.png" id="5_nwugw"]
-[ext_resource type="Texture2D" uid="uid://cf1xg5gnr13rt" path="res://Icono/Copilot_20260102_174758.png" id="6_80bml"]
+[ext_resource type="Texture2D" uid="uid://b3rq3g6ng3vn0" path="res://Icono/iconov.png" id="5_7ikvd"]
+[ext_resource type="Texture2D" uid="uid://c6026bdnis2og" path="res://Icono/home.png" id="6_7ikvd"]
 [ext_resource type="Texture2D" uid="uid://ihloljqkc4jb" path="res://Assets/fondogris.png" id="6_fl284"]
 [ext_resource type="AudioStream" uid="uid://c7yregjerupmc" path="res://Sounds/game-over-417465.mp3" id="7_dae75"]
 [ext_resource type="Texture2D" uid="uid://co7sp2k8lfmgy" path="res://Assets/Background/suelomuerte.png" id="9_7ikvd"]
@@ -198,17 +198,17 @@ offset_right = 1067.0
 offset_bottom = 501.0
 theme_override_colors/icon_pressed_color = Color(0.95, 0, 0, 1)
 theme_override_colors/icon_hover_color = Color(1, 0, 0, 1)
-icon = ExtResource("5_nwugw")
+icon = ExtResource("5_7ikvd")
 expand_icon = true
 
 [node name="Button2" type="Button" parent="." unique_id=2042870365]
-offset_left = 337.0
+offset_left = 338.0
 offset_top = 279.0
-offset_right = 550.0
+offset_right = 551.0
 offset_bottom = 501.0
 theme_override_colors/icon_pressed_color = Color(0.95, 0, 0, 1)
 theme_override_colors/icon_hover_color = Color(1, 0, 0, 1)
-icon = ExtResource("6_80bml")
+icon = ExtResource("6_7ikvd")
 expand_icon = true
 
 [node name="SonidoMision" type="AudioStreamPlayer" parent="." unique_id=1902076452]
