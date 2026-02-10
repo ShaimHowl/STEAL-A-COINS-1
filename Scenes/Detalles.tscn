@@ -6,6 +6,8 @@
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="4_d2vfm"]
 [ext_resource type="Texture2D" uid="uid://bnrc8581650m5" path="res://Assets/Trap and Weapon/Suriken.png" id="6_i0yh6"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="7_d2vfm"]
+[ext_resource type="Texture2D" uid="uid://c5brnqq2eh0o4" path="res://Assets/Animate Spikes/Animate Spikes/spikes.png" id="7_wvp5v"]
+[ext_resource type="Texture2D" uid="uid://cegy1spat8aj0" path="res://Assets/32x32 Portal Asset Pack/32x32 Portal Asset Pack/portal1_spritesheet.png" id="8_ehmkb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wvp5v"]
 bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
@@ -109,6 +111,70 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 15.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oi2tk"]
+atlas = ExtResource("8_ehmkb")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dashy"]
+atlas = ExtResource("8_ehmkb")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwyjv"]
+atlas = ExtResource("8_ehmkb")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cqy4h"]
+atlas = ExtResource("8_ehmkb")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8lpw3"]
+atlas = ExtResource("8_ehmkb")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vcl8t"]
+atlas = ExtResource("8_ehmkb")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bt0xm"]
+atlas = ExtResource("8_ehmkb")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ghjs"]
+atlas = ExtResource("8_ehmkb")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rev87"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oi2tk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dashy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uwyjv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cqy4h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8lpw3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vcl8t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bt0xm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ghjs")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
 }]
 
 [node name="Detalles" type="Node2D" unique_id=1620015288]
@@ -219,6 +285,18 @@ volume_db = -5.474
 position = Vector2(205, 396.00003)
 scale = Vector2(5.75, 4.9375)
 sprite_frames = SubResource("SpriteFrames_d2vfm")
+autoplay = "default"
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=590454128]
+texture_filter = 1
+position = Vector2(589.00006, 383.00003)
+scale = Vector2(2.3285713, 1.5928572)
+texture = ExtResource("7_wvp5v")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=2089907081]
+position = Vector2(1041, 393)
+scale = Vector2(5.3125, 5.3125)
+sprite_frames = SubResource("SpriteFrames_rev87")
 autoplay = "default"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
