@@ -8,8 +8,13 @@
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="6_1x2mp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfapw"]
-bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+bg_color = Color(0.50980395, 0.05490196, 0.039215688, 1)
+border_width_left = 19
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 17
 border_color = Color(1, 0.7372549, 0, 1)
+border_blend = true
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_287tu"]
 atlas = ExtResource("4_cfapw")
@@ -114,17 +119,46 @@ _data = {
 [node name="Detalles2" type="Node2D" unique_id=2051676936]
 script = ExtResource("1_h6pr8")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=457264732]
-offset_right = 1378.0
-offset_bottom = 720.0
-color = Color(0.45489603, 0, 0.013774564, 1)
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2109434151]
+offset_top = -13.0
+offset_right = 1358.0
+offset_bottom = 73.0
+color = Color(0, 0.64, 0.0853334, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1527351104]
+offset_left = 2.0
+offset_top = 73.0
+offset_right = 1360.0
+offset_bottom = 130.0
+color = Color(0, 0.64, 0.0853334, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=266770490]
+offset_left = 2.0
+offset_top = 127.0
+offset_right = 1360.0
+offset_bottom = 230.0
+color = Color(0.719511, 0.3863731, 0.07306207, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="." unique_id=41332521]
+offset_top = 222.0
+offset_right = 1365.0
+offset_bottom = 494.0
+color = Color(0, 0.64, 0.0853334, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="." unique_id=882049225]
+offset_top = 478.0
+offset_right = 1374.0
+offset_bottom = 721.0
+color = Color(0.719511, 0.3863731, 0.07306207, 1)
 
 [node name="Label" type="Label" parent="." unique_id=84625485]
 offset_left = 81.0
 offset_top = 44.0
 offset_right = 1386.0
 offset_bottom = 97.0
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_h6pr8")
 theme_override_font_sizes/font_size = 55
 text = "Nivel 2: primer enemigo"
@@ -134,7 +168,9 @@ offset_left = 355.0
 offset_top = 163.0
 offset_right = 1270.0
 offset_bottom = 246.0
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_h6pr8")
 theme_override_font_sizes/font_size = 45
 text = "10 de daño/0.45s"
@@ -155,14 +191,13 @@ text = "Seguir
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=68608900]
 texture_filter = 1
-position = Vector2(642, 318)
-scale = Vector2(6.275, 6.174)
+position = Vector2(621, 278)
+scale = Vector2(5.75, 5.4776254)
 sprite_frames = SubResource("SpriteFrames_h6pr8")
 animation = &"run"
 autoplay = "run"
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=1061887604]
-visible = false
 position = Vector2(684, 380)
 scale = Vector2(1.4785156, 1)
 texture = ExtResource("1_cfapw")

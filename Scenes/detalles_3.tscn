@@ -1,11 +1,21 @@
-[gd_scene load_steps=10 format=3 uid="uid://gwb5i32jkgwf"]
+[gd_scene format=3 uid="uid://gwb5i32jkgwf"]
 
 [ext_resource type="Script" uid="uid://cgf5px1afqtia" path="res://Scripts/detalles_3.gd" id="1_05c0f"]
 [ext_resource type="Texture2D" uid="uid://b2sswmbou53rj" path="res://Assets/fondoazul.png" id="1_f3kh8"]
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_05c0f"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_c0yc2"]
-[ext_resource type="Texture2D" uid="uid://chhnq3a3lbvrq" path="res://Detallesf/detallesf3.png" id="5_05c0f"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="5_rmeiq"]
+[ext_resource type="Texture2D" uid="uid://b52boxyxtk7wj" path="res://Assets/Animate Spikes/Animate Spikes/slimeWalk1.png" id="6_c0yc2"]
+[ext_resource type="Texture2D" uid="uid://ccuqxi4dtl36n" path="res://Assets/Animate Spikes/Animate Spikes/slimeWalk2.png" id="7_7wcxl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c0yc2"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+border_width_left = 18
+border_width_top = 14
+border_width_right = 18
+border_width_bottom = 14
+border_color = Color(1, 0.7372549, 0, 1)
+border_blend = true
 
 [sub_resource type="Animation" id="Animation_cfapw"]
 length = 0.001
@@ -43,30 +53,77 @@ _data = {
 &"trampas1": SubResource("Animation_i0yh6")
 }
 
-[node name="detalles_3" type="Node2D"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1qqd"]
+atlas = ExtResource("6_c0yc2")
+region = Rect2(0, 0, 50, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v37lf"]
+atlas = ExtResource("7_7wcxl")
+region = Rect2(0, 0, 51, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rmeiq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1qqd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v37lf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="detalles_3" type="Node2D" unique_id=1419563569]
 script = ExtResource("1_05c0f")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(675, 360.5)
-scale = Vector2(1.4355469, 0.7548828)
-texture = ExtResource("1_f3kh8")
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1862617182]
+offset_top = -13.0
+offset_right = 1358.0
+offset_bottom = 128.0
+color = Color(0.88364655, 0.00054291484, 0.8677355, 1)
 
-[node name="Label" type="Label" parent="."]
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=180659775]
+offset_top = 128.0
+offset_right = 1358.0
+offset_bottom = 271.0
+color = Color(0.99999994, 0.45215052, 0.97368807, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=1279427681]
+offset_left = -16.0
+offset_top = 270.0
+offset_right = 1363.0
+offset_bottom = 492.0
+color = Color(0.88364655, 0.00054291484, 0.8677355, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="." unique_id=1057856281]
+offset_left = -7.0
+offset_top = 478.0
+offset_right = 1368.0
+offset_bottom = 715.0
+color = Color(0.99999994, 0.45215052, 0.97368807, 1)
+
+[node name="Label" type="Label" parent="." unique_id=534726861]
 offset_left = 81.0
 offset_top = 44.0
 offset_right = 1386.0
 offset_bottom = 97.0
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_05c0f")
 theme_override_font_sizes/font_size = 55
 text = "Nivel 3: Segundo enemigo"
 
-[node name="Label2" type="Label" parent="."]
+[node name="Label2" type="Label" parent="." unique_id=1470787913]
 offset_left = 186.0
 offset_top = 166.0
 offset_right = 1101.0
 offset_bottom = 249.0
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_05c0f")
 theme_override_font_sizes/font_size = 45
 text = "10 de daño/0.4s
@@ -74,38 +131,38 @@ text = "10 de daño/0.4s
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=555659553]
 offset_left = 409.0
 offset_top = 559.0
 offset_right = 872.0
 offset_bottom = 657.0
-theme_override_colors/font_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_colors/font_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_colors/icon_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_colors/icon_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_focus_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("3_c0yc2")
 theme_override_font_sizes/font_size = 65
+theme_override_styles/normal = SubResource("StyleBoxFlat_c0yc2")
 text = "Seguir
 "
 
-[node name="trampa1" type="Sprite2D" parent="."]
-position = Vector2(630, 429)
-scale = Vector2(0.26055157, 0.19518486)
-texture = ExtResource("5_05c0f")
-
-[node name="transicion" type="Sprite2D" parent="."]
+[node name="transicion" type="Sprite2D" parent="." unique_id=929742219]
+visible = false
 position = Vector2(684, 380)
 scale = Vector2(1.4785156, 1)
 texture = ExtResource("1_f3kh8")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion"]
-libraries = {
-&"": SubResource("AnimationLibrary_wvp5v")
-}
-autoplay = "trampas1"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion" unique_id=311922067]
+libraries/ = SubResource("AnimationLibrary_wvp5v")
+autoplay = &"trampas1"
 
-[node name="Audio" type="AudioStreamPlayer" parent="."]
+[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=657469329]
 stream = ExtResource("5_rmeiq")
 volume_db = -5.474
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1718616820]
+position = Vector2(639, 395)
+scale = Vector2(3.9600003, 3.2321427)
+sprite_frames = SubResource("SpriteFrames_rmeiq")
+autoplay = "default"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
