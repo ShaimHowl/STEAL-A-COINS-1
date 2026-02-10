@@ -1,11 +1,34 @@
-[gd_scene load_steps=10 format=3 uid="uid://dy4njb4hubtu6"]
+[gd_scene format=3 uid="uid://dy4njb4hubtu6"]
 
 [ext_resource type="Script" uid="uid://dr232cidgrgqe" path="res://Scripts/detalles_4.gd" id="1_3cusv"]
-[ext_resource type="Texture2D" uid="uid://b2sswmbou53rj" path="res://Assets/fondoazul.png" id="1_7ws8b"]
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_3cusv"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_6kwtb"]
-[ext_resource type="Texture2D" uid="uid://cn31jt72m1v6d" path="res://Assets/Background/fuego-removebg-preview.png" id="4_7ws8b"]
+[ext_resource type="PackedScene" uid="uid://bnb34w848pgft" path="res://Scenes/fire.tscn" id="4_3cusv"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="5_hv2ts"]
+[ext_resource type="PackedScene" uid="uid://v8y1dfet2jqj" path="res://Scenes/pocion_2.tscn" id="7_6kwtb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6kwtb"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 9
+border_width_bottom = 9
+border_color = Color(1, 0.7372549, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3cusv"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+border_width_left = 23
+border_width_top = 18
+border_width_right = 23
+border_width_bottom = 23
+border_color = Color(0.9882353, 0.73333335, 0, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hv2ts"]
+bg_color = Color(0.7607843, 0.10980392, 0.08235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jyo6o"]
+bg_color = Color(1, 0.7372549, 0, 1)
 
 [sub_resource type="Animation" id="Animation_cfapw"]
 length = 0.001
@@ -43,79 +66,114 @@ _data = {
 &"trampas1": SubResource("Animation_i0yh6")
 }
 
-[node name="detalles_4" type="Node2D"]
+[node name="detalles_4" type="Node2D" unique_id=74427337]
 script = ExtResource("1_3cusv")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(675, 360.5)
-scale = Vector2(1.4355469, 0.7548828)
-texture = ExtResource("1_7ws8b")
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1052559624]
+offset_right = 1361.0
+offset_bottom = 128.0
+color = Color(0.8564939, 3.657937e-06, 8.663535e-07, 1)
 
-[node name="Label" type="Label" parent="."]
-offset_left = 122.0
-offset_top = 28.0
-offset_right = 1427.0
-offset_bottom = 81.0
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=758695550]
+offset_left = -44.0
+offset_top = 120.0
+offset_right = 1364.0
+offset_bottom = 257.0
+color = Color(0.9875682, 0.024087949, 4.428029e-06, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=1266988951]
+offset_top = 257.0
+offset_right = 1367.0
+offset_bottom = 508.0
+color = Color(0.8564939, 3.657937e-06, 8.663535e-07, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="." unique_id=1767454630]
+offset_left = -35.0
+offset_top = 503.0
+offset_right = 1373.0
+offset_bottom = 746.0
+color = Color(0.9875682, 0.024087949, 4.428029e-06, 1)
+
+[node name="Label" type="Label" parent="." unique_id=228801709]
+offset_left = 69.0
+offset_top = 38.0
+offset_right = 1374.0
+offset_bottom = 91.0
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_3cusv")
-theme_override_font_sizes/font_size = 55
+theme_override_font_sizes/font_size = 60
 text = "Nivel 4: tercera trampa"
 
-[node name="Label2" type="Label" parent="."]
-offset_left = 309.0
-offset_top = 307.0
-offset_right = 1224.0
-offset_bottom = 390.0
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+[node name="Label2" type="Label" parent="." unique_id=1315262347]
+offset_left = 51.0
+offset_top = 142.0
+offset_right = 621.0
+offset_bottom = 243.0
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_3cusv")
 theme_override_font_sizes/font_size = 45
-text = "15 de daño/0.4s"
+theme_override_styles/normal = SubResource("StyleBoxFlat_6kwtb")
+text = "15 de daño
+cada 0.4s"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label3" type="Label" parent="."]
-offset_left = 58.0
-offset_top = 168.0
-offset_right = 1333.0
-offset_bottom = 337.0
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+[node name="Label3" type="Label" parent="." unique_id=446306495]
+offset_left = 688.0
+offset_top = 139.0
+offset_right = 1258.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_3cusv")
-theme_override_font_sizes/font_size = 40
-text = "  Si cojes antes la ultima moneda 
-antes que las otras no podras volver
-												atras"
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_6kwtb")
+text = "Curacion 
+15 de vida"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=1930822210]
 offset_left = 409.0
 offset_top = 584.0
 offset_right = 872.0
 offset_bottom = 682.0
-theme_override_colors/font_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_colors/font_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_colors/icon_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_colors/icon_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/font_color = Color(0.9882353, 0.73333335, 0, 1)
+theme_override_colors/font_focus_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_pressed_color = Color(0.9843137, 0.8, 0, 1)
 theme_override_fonts/font = ExtResource("3_6kwtb")
 theme_override_font_sizes/font_size = 65
+theme_override_styles/normal = SubResource("StyleBoxFlat_3cusv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hv2ts")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jyo6o")
 text = "Seguir
 "
 
-[node name="trampa1" type="Sprite2D" parent="."]
-position = Vector2(610.5, 483.51923)
-scale = Vector2(6.649999, 4.854074)
-texture = ExtResource("4_7ws8b")
+[node name="Fuego" parent="." unique_id=432058131 instance=ExtResource("4_3cusv")]
+position = Vector2(333, 408.00003)
+scale = Vector2(3.5000002, 3.5)
 
-[node name="transicion" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(684, 380)
-scale = Vector2(1.4785156, 1)
-texture = ExtResource("1_7ws8b")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion"]
-libraries = {
-&"": SubResource("AnimationLibrary_wvp5v")
-}
-autoplay = "trampas1"
-
-[node name="Audio" type="AudioStreamPlayer" parent="."]
+[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1054284192]
 stream = ExtResource("5_hv2ts")
 volume_db = -5.474
+
+[node name="Cura" parent="." unique_id=1598628101 instance=ExtResource("7_6kwtb")]
+position = Vector2(770.00006, 219.00002)
+scale = Vector2(2.6, 2.6)
+
+[node name="Transicion" type="ColorRect" parent="." unique_id=1527817518]
+visible = false
+offset_right = 1425.0
+offset_bottom = 779.0
+color = Color(1, 0.7372549, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Transicion" unique_id=1498929886]
+libraries/ = SubResource("AnimationLibrary_wvp5v")
+autoplay = &"trampas1"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,3 +1,7 @@
 res://Scenes/Detalles.tscn
+res://Scenes/trampa.tscn
 res://Scenes/detalles_2.tscn
 res://Scenes/detalles_3.tscn
+res://Scenes/detalles_4.tscn
+res://Scenes/coins.tscn
+res://Scripts/detalles_4.gd

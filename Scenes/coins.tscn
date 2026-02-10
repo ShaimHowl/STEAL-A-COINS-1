@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://dpqnh5sv8jh3b"]
+[gd_scene format=3 uid="uid://dpqnh5sv8jh3b"]
 
 [ext_resource type="Script" uid="uid://j00dtf6yovjl" path="res://Scripts/coins.gd" id="1_ojwyu"]
 [ext_resource type="Texture2D" uid="uid://dncuitfxjy7ng" path="res://Assets/Coins_16x16/PNG/Coin_One.png" id="2_m2shm"]
@@ -99,20 +99,20 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_3vsty"]
 radius = 17.0
 
-[node name="Coins" type="Area2D" groups=["moneda"]]
+[node name="Coins" type="Area2D" unique_id=426282340 groups=["moneda"]]
 script = ExtResource("1_ojwyu")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=510899414]
 position = Vector2(-7, 5)
 scale = Vector2(1.875, 1.625)
 sprite_frames = SubResource("SpriteFrames_pvyqf")
 autoplay = "default"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=520653186]
 position = Vector2(-7, 5)
 shape = SubResource("CircleShape2D_3vsty")
 
-[node name="PickupSound" type="AudioStreamPlayer" parent="."]
+[node name="PickupSound" type="AudioStreamPlayer" parent="." unique_id=1678666969]
 stream = ExtResource("3_m2shm")
 volume_db = -16.0
 

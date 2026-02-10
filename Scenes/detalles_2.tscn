@@ -5,7 +5,16 @@
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_h6pr8"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_00gb8"]
 [ext_resource type="Texture2D" uid="uid://b7ua0nsa53s83" path="res://Assets/Forest_Monsters_FREE/Mushroom/Mushroom without VFX/Mushroom-Run.png" id="4_cfapw"]
+[ext_resource type="Texture2D" uid="uid://djy2auiwgxm6e" path="res://Assets/AnimatedPotions 16x16/Dark Green Potion/Potion.png" id="5_h6pr8"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="6_1x2mp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h6pr8"]
+bg_color = Color(0.50980395, 0.05490196, 0.039215688, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 0.7372549, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfapw"]
 bg_color = Color(0.50980395, 0.05490196, 0.039215688, 1)
@@ -15,6 +24,9 @@ border_width_right = 15
 border_width_bottom = 17
 border_color = Color(1, 0.7372549, 0, 1)
 border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_00gb8"]
+bg_color = Color(1, 0.7372549, 0, 1)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_287tu"]
 atlas = ExtResource("4_cfapw")
@@ -78,6 +90,49 @@ animations = [{
 "loop": true,
 "name": &"run",
 "speed": 10.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u7c62"]
+atlas = ExtResource("5_h6pr8")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_djcxh"]
+atlas = ExtResource("5_h6pr8")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yw7g8"]
+atlas = ExtResource("5_h6pr8")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_683q3"]
+atlas = ExtResource("5_h6pr8")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a18sp"]
+atlas = ExtResource("5_h6pr8")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vfdky"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u7c62")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_djcxh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yw7g8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_683q3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a18sp")
+}],
+"loop": true,
+"name": &"pocion",
+"speed": 5.0
 }]
 
 [sub_resource type="Animation" id="Animation_cfapw"]
@@ -151,11 +206,11 @@ offset_right = 1374.0
 offset_bottom = 721.0
 color = Color(0.719511, 0.3863731, 0.07306207, 1)
 
-[node name="Label" type="Label" parent="." unique_id=84625485]
-offset_left = 81.0
-offset_top = 44.0
-offset_right = 1386.0
-offset_bottom = 97.0
+[node name="Titulo" type="Label" parent="." unique_id=84625485]
+offset_left = 137.0
+offset_top = 41.0
+offset_right = 1442.0
+offset_bottom = 94.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
@@ -163,17 +218,37 @@ theme_override_fonts/font = ExtResource("2_h6pr8")
 theme_override_font_sizes/font_size = 55
 text = "Nivel 2: primer enemigo"
 
-[node name="Label2" type="Label" parent="." unique_id=2003430847]
-offset_left = 355.0
-offset_top = 163.0
-offset_right = 1270.0
-offset_bottom = 246.0
+[node name="Subtitulo Hongo" type="Label" parent="." unique_id=2003430847]
+offset_left = 77.0
+offset_top = 127.0
+offset_right = 627.0
+offset_bottom = 223.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_h6pr8")
 theme_override_font_sizes/font_size = 45
-text = "10 de daño/0.45s"
+theme_override_styles/normal = SubResource("StyleBoxFlat_h6pr8")
+text = "10 de daño
+cada /0.45s"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Subtitulo Curacion" type="Label" parent="." unique_id=384456614]
+offset_left = 705.0
+offset_top = 127.0
+offset_right = 1255.0
+offset_bottom = 220.0
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
+theme_override_fonts/font = ExtResource("2_h6pr8")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_h6pr8")
+text = "Curacion
+5 de vida"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Button" type="Button" parent="." unique_id=1933920636]
 offset_left = 409.0
@@ -186,18 +261,28 @@ theme_override_colors/font_pressed_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("3_00gb8")
 theme_override_font_sizes/font_size = 65
 theme_override_styles/normal = SubResource("StyleBoxFlat_cfapw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_00gb8")
 text = "Seguir
 "
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=68608900]
+[node name="Hongo" type="AnimatedSprite2D" parent="." unique_id=68608900]
 texture_filter = 1
-position = Vector2(621, 278)
+position = Vector2(345, 282)
 scale = Vector2(5.75, 5.4776254)
 sprite_frames = SubResource("SpriteFrames_h6pr8")
 animation = &"run"
 autoplay = "run"
 
+[node name="Curacion" type="AnimatedSprite2D" parent="." unique_id=789507392]
+position = Vector2(957, 359.00003)
+scale = Vector2(9, 9.092)
+sprite_frames = SubResource("SpriteFrames_vfdky")
+animation = &"pocion"
+autoplay = "pocion"
+frame_progress = 0.17383368
+
 [node name="transicion" type="Sprite2D" parent="." unique_id=1061887604]
+visible = false
 position = Vector2(684, 380)
 scale = Vector2(1.4785156, 1)
 texture = ExtResource("1_cfapw")

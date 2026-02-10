@@ -8,14 +8,28 @@
 [ext_resource type="Texture2D" uid="uid://b52boxyxtk7wj" path="res://Assets/Animate Spikes/Animate Spikes/slimeWalk1.png" id="6_c0yc2"]
 [ext_resource type="Texture2D" uid="uid://ccuqxi4dtl36n" path="res://Assets/Animate Spikes/Animate Spikes/slimeWalk2.png" id="7_7wcxl"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7wcxl"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+border_width_left = 11
+border_width_top = 11
+border_width_right = 11
+border_width_bottom = 11
+border_color = Color(1, 0.7372549, 0, 1)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c0yc2"]
 bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
-border_width_left = 18
+border_width_left = 21
 border_width_top = 14
-border_width_right = 18
+border_width_right = 21
 border_width_bottom = 14
 border_color = Color(1, 0.7372549, 0, 1)
 border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rmeiq"]
+bg_color = Color(0.75963026, 0.10848156, 0.081031196, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_82la8"]
+bg_color = Color(1, 0.7372549, 0, 1)
 
 [sub_resource type="Animation" id="Animation_cfapw"]
 length = 0.001
@@ -117,15 +131,16 @@ theme_override_font_sizes/font_size = 55
 text = "Nivel 3: Segundo enemigo"
 
 [node name="Label2" type="Label" parent="." unique_id=1470787913]
-offset_left = 186.0
-offset_top = 166.0
-offset_right = 1101.0
-offset_bottom = 249.0
+offset_left = 188.0
+offset_top = 140.0
+offset_right = 1103.0
+offset_bottom = 266.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_05c0f")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_7wcxl")
 text = "10 de daño/0.4s
 (se mueve mas rapido)"
 horizontal_alignment = 1
@@ -142,6 +157,8 @@ theme_override_colors/font_pressed_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("3_c0yc2")
 theme_override_font_sizes/font_size = 65
 theme_override_styles/normal = SubResource("StyleBoxFlat_c0yc2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rmeiq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_82la8")
 text = "Seguir
 "
 
@@ -159,7 +176,7 @@ autoplay = &"trampas1"
 stream = ExtResource("5_rmeiq")
 volume_db = -5.474
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1718616820]
+[node name="Slime" type="AnimatedSprite2D" parent="." unique_id=1718616820]
 position = Vector2(639, 395)
 scale = Vector2(3.9600003, 3.2321427)
 sprite_frames = SubResource("SpriteFrames_rmeiq")
