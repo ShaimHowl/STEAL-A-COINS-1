@@ -614,8 +614,8 @@ libraries/ = SubResource("AnimationLibrary_yhxw7")
 autoplay = &"animacion"
 
 [node name="Suelomuerte" type="Sprite2D" parent="." unique_id=383591951]
-position = Vector2(768, 873.00006)
-scale = Vector2(1, 0.9658203)
+position = Vector2(768, 890.00006)
+scale = Vector2(1, 1.0395508)
 texture = ExtResource("7_4nkqq")
 
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1496443104]
