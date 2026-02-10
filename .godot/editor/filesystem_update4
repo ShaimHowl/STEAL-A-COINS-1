@@ -1,4 +1,1 @@
-res://Scenes/nivel_5.tscn
-res://Scenes/nivel_2.tscn
-res://Scenes/mundo.tscn
-res://Scripts/jugador.gd
+res://Scenes/main_menu.tscn
