@@ -23,3 +23,8 @@ func animar_texto():
 	for i in texto_completo.length():
 		texto.text += texto_completo[i]
 		await get_tree().create_timer(velocidad).timeout
+
+
+
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/mundo.tscn")
