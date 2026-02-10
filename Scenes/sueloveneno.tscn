@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://ctd8gggp7pk26"]
+[gd_scene format=3 uid="uid://ctd8gggp7pk26"]
 
 [ext_resource type="Script" uid="uid://b4ry3l063ijk8" path="res://Scripts/sueloveneno.gd" id="1_04tfd"]
 [ext_resource type="Script" uid="uid://dfnt8dohc5767" path="res://Scripts/pinchos.gd" id="1_5cy6o"]
@@ -56,40 +56,40 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rra1t"]
-size = Vector2(14, 38)
+size = Vector2(14, 45.600002)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_npa4f"]
 size = Vector2(11, 35.199997)
 
-[node name="sueloveneno" type="CharacterBody2D"]
+[node name="sueloveneno" type="CharacterBody2D" unique_id=321802248]
 scale = Vector2(2.5, 2.5)
 script = ExtResource("1_04tfd")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." unique_id=254868208]
 collision_layer = 2
 collision_mask = 16
 script = ExtResource("1_5cy6o")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
-position = Vector2(0, -4.3999996)
-scale = Vector2(1, 1.275)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D" unique_id=597691873]
+position = Vector2(0, -8.800001)
+scale = Vector2(1, 1.5500001)
 sprite_frames = SubResource("SpriteFrames_0ysys")
 autoplay = "default"
 frame_progress = 0.23075303
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0.9999998, -4.999999)
-scale = Vector2(0.99999994, 0.99999994)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1548470115]
+position = Vector2(0.99999976, -8.799998)
+scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("RectangleShape2D_rra1t")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1995871316]
 stream = ExtResource("3_xy0g5")
 volume_db = -1.284
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=1339319764]
 wait_time = 0.3
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=342983058]
 position = Vector2(1.4999998, -5.5999985)
 scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("RectangleShape2D_npa4f")
