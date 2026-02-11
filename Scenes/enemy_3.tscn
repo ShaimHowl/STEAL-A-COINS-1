@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://bema4wuk3sbqd"]
+
+[ext_resource type="AudioStream" uid="uid://druswm8b1d213" path="res://Sounds/homemadeoof-47509.mp3" id="1_ipo15"]
+[ext_resource type="Script" uid="uid://dleckjcrnxw5j" path="res://Scripts/enemy_3.gd" id="1_k1fo6"]
+[ext_resource type="Texture2D" uid="uid://cpledsu3tcnp6" path="res://Assets/Platformer Slimes v1.3/Platformer Slimes v1.3/Green Slime Spritesheet.png" id="2_upxgb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_250ly"]
+size = Vector2(21.5, 5.5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1fo6"]
+atlas = ExtResource("2_upxgb")
+region = Rect2(330, 96, 30, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_upxgb"]
+atlas = ExtResource("2_upxgb")
+region = Rect2(300, 96, 30, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_amsws"]
+atlas = ExtResource("2_upxgb")
+region = Rect2(270, 96, 30, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23p4j"]
+atlas = ExtResource("2_upxgb")
+region = Rect2(240, 96, 30, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gv4o1"]
+atlas = ExtResource("2_upxgb")
+region = Rect2(210, 96, 30, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pyg0a"]
+atlas = ExtResource("2_upxgb")
+region = Rect2(180, 96, 30, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nfxc2"]
+atlas = ExtResource("2_upxgb")
+region = Rect2(150, 96, 30, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jb6j8"]
+atlas = ExtResource("2_upxgb")
+region = Rect2(120, 96, 30, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nypmv"]
+atlas = ExtResource("2_upxgb")
+region = Rect2(90, 96, 30, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jtdi"]
+atlas = ExtResource("2_upxgb")
+region = Rect2(60, 96, 30, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k1fo6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1fo6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_upxgb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_amsws")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23p4j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gv4o1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pyg0a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nfxc2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jb6j8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nypmv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jtdi")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_upxgb"]
+size = Vector2(14, 15)
+
+[node name="enemy3" type="CharacterBody2D" unique_id=1377757021]
+scale = Vector2(2, 2)
+script = ExtResource("1_k1fo6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=838902045]
+position = Vector2(2, -4)
+shape = SubResource("RectangleShape2D_250ly")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1674679242]
+texture_filter = 1
+position = Vector2(3, -15)
+scale = Vector2(1, 1.223)
+sprite_frames = SubResource("SpriteFrames_k1fo6")
+animation = &"run"
+autoplay = "run"
+frame_progress = 0.6331245
+
+[node name="Area2D" type="Area2D" parent="." unique_id=787227734]
+position = Vector2(0, 2)
+collision_layer = 2
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=300141112]
+position = Vector2(2, -14)
+shape = SubResource("RectangleShape2D_upxgb")
+
+[node name="rayo" type="Node2D" parent="." unique_id=1954129532]
+position = Vector2(1, -10)
+
+[node name="rayo1" type="RayCast2D" parent="rayo" unique_id=425477798]
+target_position = Vector2(70, 0)
+
+[node name="rayo2" type="RayCast2D" parent="rayo" unique_id=1928245878]
+target_position = Vector2(-70, 0)
+
+[node name="Timer" type="Timer" parent="." unique_id=1282523782]
+wait_time = 0.4
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=15149430]
+stream = ExtResource("1_ipo15")

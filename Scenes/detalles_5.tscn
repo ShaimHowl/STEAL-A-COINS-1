@@ -4,9 +4,31 @@
 [ext_resource type="Script" uid="uid://cn73umben57tm" path="res://Scripts/detalles_5.gd" id="1_hdicr"]
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_hdicr"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_tsjc1"]
-[ext_resource type="Texture2D" uid="uid://cmyxqqc85qfcc" path="res://Assets/Background/portalv.png" id="5_tsjc1"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="5_whcjo"]
-[ext_resource type="Texture2D" uid="uid://bjgl10nrxajvx" path="res://Assets/Background/acid.png" id="6_tsjc1"]
+[ext_resource type="PackedScene" uid="uid://ctd8gggp7pk26" path="res://Scenes/sueloveneno.tscn" id="6_hdicr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_whcjo"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 9
+border_width_bottom = 9
+border_color = Color(0.9882353, 0.73333335, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hdicr"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+border_width_left = 16
+border_width_top = 14
+border_width_right = 15
+border_width_bottom = 17
+border_color = Color(0.9882353, 0.73333335, 0, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tsjc1"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5an60"]
+bg_color = Color(0.9882353, 0.73333335, 0, 1)
 
 [sub_resource type="Animation" id="Animation_cfapw"]
 length = 0.001
@@ -47,65 +69,75 @@ _data = {
 [node name="detalles_5" type="Node2D" unique_id=2009570502]
 script = ExtResource("1_hdicr")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=658531872]
-position = Vector2(675, 360.5)
-scale = Vector2(1.4355469, 0.7548828)
-texture = ExtResource("1_07x4x")
+[node name="ColorRect" type="ColorRect" parent="." unique_id=387791596]
+offset_right = 1361.0
+offset_bottom = 127.0
+color = Color(0.0925, 0.37, 0, 1)
 
-[node name="Label" type="Label" parent="." unique_id=1583135111]
-offset_left = 122.0
-offset_top = 28.0
-offset_right = 1427.0
-offset_bottom = 81.0
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_fonts/font = ExtResource("2_hdicr")
-theme_override_font_sizes/font_size = 55
-text = "Nivel 5: quarta trampa"
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=2031060111]
+offset_top = 125.0
+offset_right = 1361.0
+offset_bottom = 265.0
+color = Color(0.1175, 0.47, 0, 1)
 
-[node name="Label2" type="Label" parent="." unique_id=1625861455]
-offset_left = 107.0
-offset_top = 163.0
-offset_right = 1022.0
-offset_bottom = 246.0
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=1136279547]
+offset_left = 3.0
+offset_top = 264.0
+offset_right = 1364.0
+offset_bottom = 528.0
+color = Color(0.0925, 0.37, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="." unique_id=1464118864]
+offset_top = 517.0
+offset_right = 1361.0
+offset_bottom = 720.0
+color = Color(0.1175, 0.47, 0, 1)
+
+[node name="sueloveneno" parent="." unique_id=321802248 instance=ExtResource("6_hdicr")]
+position = Vector2(688, 427.00003)
+rotation = -1.5707964
+scale = Vector2(6, 6)
+
+[node name="Titulo" type="Label" parent="." unique_id=512915348]
+offset_left = 69.0
+offset_top = 38.0
+offset_right = 1374.0
+offset_bottom = 91.0
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(3.7803085, 0, 0.18648337, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_hdicr")
-theme_override_font_sizes/font_size = 38
+theme_override_font_sizes/font_size = 60
+text = "Nivel 5: Quarta trampa"
+
+[node name="Subtitulo" type="Label" parent="." unique_id=1625861455]
+offset_left = 339.0
+offset_top = 167.0
+offset_right = 971.0
+offset_bottom = 225.0
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.3019608, 0.10980392, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
+theme_override_fonts/font = ExtResource("2_hdicr")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_whcjo")
 text = "15 de daño/0.4s"
-
-[node name="Label3" type="Label" parent="." unique_id=1677566116]
-offset_left = 873.0
-offset_top = 159.0
-offset_right = 1788.0
-offset_bottom = 242.0
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_fonts/font = ExtResource("2_hdicr")
-theme_override_font_sizes/font_size = 38
-text = "???"
 
 [node name="Button" type="Button" parent="." unique_id=1488575084]
 offset_left = 409.0
 offset_top = 584.0
 offset_right = 872.0
 offset_bottom = 682.0
-theme_override_colors/font_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_colors/font_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_colors/icon_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_colors/icon_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_focus_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("3_tsjc1")
 theme_override_font_sizes/font_size = 65
+theme_override_styles/normal = SubResource("StyleBoxFlat_hdicr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tsjc1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5an60")
 text = "Seguir
 "
-
-[node name="trampa1" type="Sprite2D" parent="." unique_id=331581353]
-position = Vector2(343.00003, 378.99997)
-rotation = 1.553343
-scale = Vector2(2.6836948, 2.0175133)
-texture = ExtResource("5_tsjc1")
-
-[node name="trampa2" type="Sprite2D" parent="." unique_id=1577054906]
-position = Vector2(935, 350)
-scale = Vector2(0.6629167, 0.8009058)
-texture = ExtResource("6_tsjc1")
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=591549967]
 visible = false

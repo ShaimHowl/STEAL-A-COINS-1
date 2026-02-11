@@ -1,3 +1,4 @@
+CharacterBody2D
 ColorRect
 AnimatedSprite2D
 VideoStreamPlayer
@@ -10,5 +11,4 @@ Control
 Area2D
 AudioStreamPlayer2D
 CanvasLayer
-CharacterBody2D
 Timer

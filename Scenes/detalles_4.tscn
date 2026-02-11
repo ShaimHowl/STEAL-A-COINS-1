@@ -7,6 +7,14 @@
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="5_hv2ts"]
 [ext_resource type="PackedScene" uid="uid://v8y1dfet2jqj" path="res://Scenes/pocion_2.tscn" id="7_6kwtb"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bm7o6"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 9
+border_width_bottom = 9
+border_color = Color(1, 0.7372549, 0, 1)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6kwtb"]
 bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
 border_width_left = 9
@@ -116,7 +124,7 @@ theme_override_colors/font_shadow_color = Color(0.54509807, 0.0627451, 0.0431372
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_3cusv")
 theme_override_font_sizes/font_size = 45
-theme_override_styles/normal = SubResource("StyleBoxFlat_6kwtb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_bm7o6")
 text = "15 de daño
 cada 0.4s"
 horizontal_alignment = 1
