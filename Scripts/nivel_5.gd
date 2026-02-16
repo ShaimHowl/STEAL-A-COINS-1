@@ -38,6 +38,6 @@ func reproducir_alerta():
 
 func terminar_mision():
 	await get_tree().create_timer(0.10).timeout  # ⏳ medio segundo de retraso
-	get_tree().change_scene_to_file("res://Scenes/mision3.tscn")
+	get_tree().change_scene_to_file("res://Scenes/mision5.tscn")
 func _cuando_termina_el_tiempo():
 	get_tree().change_scene_to_file("res://Scenes/misionfallida.tscn")
