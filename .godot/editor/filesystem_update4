@@ -1,1 +1,2 @@
-res://Scenes/jugador.tscn
+res://Scenes/nivel_5.tscn
+res://Scripts/nivel_5.gd
