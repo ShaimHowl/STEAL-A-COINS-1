@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://c54g0kh4h1giw" path="res://Assets/template_free/individual_sheets/male_hero_template-run.png" id="6_ujyyl"]
 [ext_resource type="Texture2D" uid="uid://co7sp2k8lfmgy" path="res://Assets/Background/suelomuerte.png" id="7_4nkqq"]
 [ext_resource type="Texture2D" uid="uid://cajjv4cu0oogn" path="res://Assets/template_free/individual_sheets/male_hero_template-walk.png" id="7_mkpwh"]
-[ext_resource type="Texture2D" uid="uid://b2sswmbou53rj" path="res://Assets/fondoazul.png" id="9_trj04"]
+[ext_resource type="Texture2D" uid="uid://cegy1spat8aj0" path="res://Assets/32x32 Portal Asset Pack/32x32 Portal Asset Pack/portal1_spritesheet.png" id="9_trj04"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="10_16hvj"]
 [ext_resource type="PackedScene" uid="uid://ctd8gggp7pk26" path="res://Scenes/sueloveneno.tscn" id="12_t1dhk"]
 [ext_resource type="PackedScene" uid="uid://bnb34w848pgft" path="res://Scenes/fire.tscn" id="13_5egv6"]
