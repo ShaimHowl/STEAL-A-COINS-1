@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://b1dplj0r6bey2"]
+[gd_scene format=4 uid="uid://b1dplj0r6bey2"]
 
 [ext_resource type="Texture2D" uid="uid://cqr6j3evgk3cn" path="res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png" id="1_hcwg8"]
 [ext_resource type="Texture2D" uid="uid://w7byuhqmyod1" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="2_gn0ti"]
@@ -940,21 +940,20 @@ _data = {
 &"arriba": SubResource("Animation_b8ima")
 }
 
-[node name="moving_plataform_6" type="Node2D"]
+[node name="moving_plataform_6" type="Node2D" unique_id=346405363]
 
-[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=1648016972]
 
-[node name="TileMapLayer" type="TileMapLayer" parent="AnimatableBody2D"]
+[node name="TileMapLayer" type="TileMapLayer" parent="AnimatableBody2D" unique_id=171780749]
 position = Vector2(-3, 0)
 tile_map_data = PackedByteArray("AABmADEAAAAAAAQAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAEAAAACAAAAAAAAAAEAAAADAAAAAAAAAAEAAAAEAAAAAAAAAAEAAAA=")
 tile_set = SubResource("TileSet_58br3")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=1503524515]
 position = Vector2(35.5, 7.5)
 shape = SubResource("RectangleShape2D_4yos6")
+one_way_collision = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D"]
-libraries = {
-&"": SubResource("AnimationLibrary_x5t5r")
-}
-autoplay = "RESET"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=1482420076]
+libraries/ = SubResource("AnimationLibrary_x5t5r")
+autoplay = &"RESET"

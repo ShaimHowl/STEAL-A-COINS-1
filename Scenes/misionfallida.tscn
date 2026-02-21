@@ -7,11 +7,12 @@
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="4_dae75"]
 [ext_resource type="Texture2D" uid="uid://b3rq3g6ng3vn0" path="res://Icono/iconov.png" id="5_7ikvd"]
 [ext_resource type="Texture2D" uid="uid://c6026bdnis2og" path="res://Icono/home.png" id="6_7ikvd"]
-[ext_resource type="Texture2D" uid="uid://ihloljqkc4jb" path="res://Assets/fondogris.png" id="6_fl284"]
 [ext_resource type="AudioStream" uid="uid://c7yregjerupmc" path="res://Sounds/game-over-417465.mp3" id="7_dae75"]
 [ext_resource type="Texture2D" uid="uid://co7sp2k8lfmgy" path="res://Assets/Background/suelomuerte.png" id="9_7ikvd"]
 [ext_resource type="Texture2D" uid="uid://dncuitfxjy7ng" path="res://Assets/Coins_16x16/PNG/Coin_One.png" id="9_80bml"]
 [ext_resource type="Texture2D" uid="uid://i0l0ishmf0qh" path="res://Assets/Background/sueloo.png" id="10_7ikvd"]
+[ext_resource type="Texture2D" uid="uid://huemn6fs8kn0" path="res://Assets/Background/fondogris.png" id="11_7ikvd"]
+[ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="13_5iqhi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k3bf4"]
 atlas = ExtResource("9_80bml")
@@ -237,10 +238,9 @@ scale = Vector2(0.6226934, 0.4315234)
 texture = ExtResource("10_7ikvd")
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=540339226]
-visible = false
 position = Vector2(708, 372)
 scale = Vector2(1.7304688, 1)
-texture = ExtResource("6_fl284")
+texture = ExtResource("11_7ikvd")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D2" unique_id=324700871]
 root_node = NodePath("../../Sprite2D")
@@ -249,6 +249,10 @@ autoplay = &"mision"
 
 [node name="SonidoMisionF" type="AudioStreamPlayer" parent="." unique_id=1766815745]
 stream = ExtResource("7_dae75")
+
+[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=577095762]
+stream = ExtResource("13_5iqhi")
+volume_db = 13.193
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

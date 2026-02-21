@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://bj0hwgxymth7r"]
 
-[ext_resource type="Texture2D" uid="uid://b2sswmbou53rj" path="res://Assets/fondoazul.png" id="1_07x4x"]
 [ext_resource type="Script" uid="uid://cn73umben57tm" path="res://Scripts/detalles_5.gd" id="1_hdicr"]
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_hdicr"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_tsjc1"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="5_whcjo"]
 [ext_resource type="PackedScene" uid="uid://ctd8gggp7pk26" path="res://Scenes/sueloveneno.tscn" id="6_hdicr"]
+[ext_resource type="Texture2D" uid="uid://huemn6fs8kn0" path="res://Assets/Background/fondogris.png" id="6_tsjc1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_whcjo"]
 bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
@@ -60,7 +60,7 @@ tracks/0/keys = {
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_wvp5v"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5an60"]
 _data = {
 &"RESET": SubResource("Animation_cfapw"),
 &"trampas1": SubResource("Animation_i0yh6")
@@ -139,18 +139,17 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_5an60")
 text = "Seguir
 "
 
-[node name="transicion" type="Sprite2D" parent="." unique_id=591549967]
-visible = false
-position = Vector2(684, 380)
-scale = Vector2(1.4785156, 1)
-texture = ExtResource("1_07x4x")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion" unique_id=1826336075]
-libraries/ = SubResource("AnimationLibrary_wvp5v")
-autoplay = &"trampas1"
-
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=119814299]
 stream = ExtResource("5_whcjo")
 volume_db = -5.474
+
+[node name="transicion" type="Sprite2D" parent="." unique_id=953316526]
+position = Vector2(684, 380)
+scale = Vector2(1.4785156, 1)
+texture = ExtResource("6_tsjc1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion" unique_id=1810551942]
+libraries/ = SubResource("AnimationLibrary_5an60")
+autoplay = &"trampas1"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

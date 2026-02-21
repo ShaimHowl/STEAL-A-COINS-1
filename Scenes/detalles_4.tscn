@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bnb34w848pgft" path="res://Scenes/fire.tscn" id="4_3cusv"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="5_hv2ts"]
 [ext_resource type="PackedScene" uid="uid://v8y1dfet2jqj" path="res://Scenes/pocion_2.tscn" id="7_6kwtb"]
+[ext_resource type="Texture2D" uid="uid://huemn6fs8kn0" path="res://Assets/Background/fondogris.png" id="7_jyo6o"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bm7o6"]
 bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
@@ -68,7 +69,7 @@ tracks/0/keys = {
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_wvp5v"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hv2ts"]
 _data = {
 &"RESET": SubResource("Animation_cfapw"),
 &"trampas1": SubResource("Animation_i0yh6")
@@ -174,14 +175,14 @@ volume_db = -5.474
 position = Vector2(770.00006, 219.00002)
 scale = Vector2(2.6, 2.6)
 
-[node name="Transicion" type="ColorRect" parent="." unique_id=1527817518]
+[node name="transicion" type="Sprite2D" parent="." unique_id=146815204]
 visible = false
-offset_right = 1425.0
-offset_bottom = 779.0
-color = Color(1, 0.7372549, 0, 1)
+position = Vector2(684, 380)
+scale = Vector2(1.4785156, 1)
+texture = ExtResource("7_jyo6o")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Transicion" unique_id=1498929886]
-libraries/ = SubResource("AnimationLibrary_wvp5v")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion" unique_id=984122201]
+libraries/ = SubResource("AnimationLibrary_hv2ts")
 autoplay = &"trampas1"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cnbyv8plphfm"]
+[gd_scene format=3 uid="uid://cnbyv8plphfm"]
 
 [ext_resource type="Texture2D" uid="uid://cqr6j3evgk3cn" path="res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png" id="1_1fixo"]
 
@@ -116,20 +116,19 @@ _data = {
 &"mover": SubResource("Animation_2f4ch")
 }
 
-[node name="MovingPlataform" type="Node2D"]
+[node name="MovingPlataform" type="Node2D" unique_id=443053263]
 
-[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=530273283]
 
-[node name="TileMapLayer" type="TileMapLayer" parent="AnimatableBody2D"]
+[node name="TileMapLayer" type="TileMapLayer" parent="AnimatableBody2D" unique_id=864003276]
 tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 2, 0, 0, 0)
 tile_set = SubResource("TileSet_kpvej")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=1805261632]
 position = Vector2(7, 39)
 shape = SubResource("RectangleShape2D_1fixo")
+one_way_collision = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D"]
-libraries = {
-&"": SubResource("AnimationLibrary_3tkj6")
-}
-autoplay = "mover"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=556407618]
+libraries/ = SubResource("AnimationLibrary_3tkj6")
+autoplay = &"mover"

@@ -1,4 +1,5 @@
 extends Node2D
+@onready var tecla_audio: AudioStreamPlayer = $Audio
 
 func _input(_event: InputEvent) -> void:
 	# ESC → abrir/cerrar pausa
@@ -18,9 +19,11 @@ func _input(_event: InputEvent) -> void:
 
 
 func _on_button_2_pressed() -> void:
+	tecla_audio.play()
 	_volver_al_menu()
 
 func _on_button_pressed() -> void:
+	tecla_audio.play()
 	_reiniciar_mundo()
 
 

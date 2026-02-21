@@ -3,6 +3,7 @@ extends CanvasLayer
 @onready var titulo = $LabelTitulo
 @onready var texto = $LabelTexto
 @onready var sonidoF = $SonidoMisionF
+@onready var tecla_audio: AudioStreamPlayer = $Audio
 
 var texto_completo := ""
 var velocidad := 0.05 # cuanto menor, más rápido
@@ -27,6 +28,7 @@ func animar_texto():
 
 
 func _on_button_pressed() -> void:
+	tecla_audio.play()
 	get_tree().change_scene_to_file("res://Scenes/mundo.tscn")
 	GameData.health = GameData.max_health
 	GameData.monedas = 0
@@ -35,6 +37,7 @@ func _on_button_pressed() -> void:
 
 
 func _on_button_2_pressed() -> void:
+	tecla_audio.play()
 	get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")
 	GameData.health = GameData.max_health
 	GameData.monedas = 0

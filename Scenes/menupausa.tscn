@@ -1,21 +1,38 @@
-[gd_scene load_steps=4 format=3 uid="uid://dw68xlihcg8fd"]
+[gd_scene format=3 uid="uid://dw68xlihcg8fd"]
 
 [ext_resource type="Script" uid="uid://c346yxrfk0pa1" path="res://Scripts/menupausa.gd" id="1_dbfgq"]
 [ext_resource type="FontFile" uid="uid://boisxvh4qu2yb" path="res://Fuentes/dogica/OTF/dogicabold.otf" id="2_xe2t2"]
 [ext_resource type="FontFile" uid="uid://bg45b1dy3jdg" path="res://Fuentes/dogica/OTF/dogicapixelbold.otf" id="3_yu0yr"]
+[ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="4_yu0yr"]
 
-[node name="Menupausa" type="Node2D"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xe2t2"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+border_width_left = 10
+border_width_top = 5
+border_width_right = 10
+border_width_bottom = 5
+border_color = Color(1, 0.7372549, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yu0yr"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+border_width_left = 10
+border_width_top = 5
+border_width_right = 10
+border_width_bottom = 5
+border_color = Color(1, 0.7372549, 0, 1)
+
+[node name="Menupausa" type="Node2D" unique_id=1821771297]
 script = ExtResource("1_dbfgq")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1317046054]
 visible = false
 offset_left = 333.0
 offset_top = 216.0
 offset_right = 1110.0
 offset_bottom = 406.0
-color = Color(0.27752772, 0.27752772, 0.27752772, 1)
+color = Color(0.54509807, 0.0627451, 0.043137256, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=320845081]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -24,35 +41,43 @@ anchor_bottom = 0.5
 offset_left = 346.0
 offset_top = 243.0
 offset_right = 1096.0
-offset_bottom = 399.0
+offset_bottom = 385.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1663856875]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.0381391, 0.25872955, 0.14521992, 1)
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_xe2t2")
 theme_override_font_sizes/font_size = 50
 text = "     Pausa"
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=395320088]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.078582786, 0.40067717, 0.23542315, 1)
-theme_override_colors/font_pressed_color = Color(0.078431375, 0.4, 0.23529412, 1)
-theme_override_colors/font_hover_color = Color(0.078431375, 0.4, 0.23529412, 1)
+theme_override_colors/font_color = Color(0.9882353, 0.73333335, 0, 1)
+theme_override_colors/font_focus_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_pressed_color = Color(0.9882353, 0.73333335, 0, 1)
 theme_override_fonts/font = ExtResource("3_yu0yr")
 theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_xe2t2")
 text = "Reiniciar"
 
-[node name="Button2" type="Button" parent="VBoxContainer"]
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1076346233]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.078582786, 0.40067717, 0.23542315, 1)
-theme_override_colors/font_pressed_color = Color(0.078431375, 0.4, 0.23529412, 1)
-theme_override_colors/font_hover_color = Color(0.078431375, 0.4, 0.23529412, 1)
+theme_override_colors/font_color = Color(0.9882353, 0.73333335, 0, 1)
+theme_override_colors/font_focus_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_pressed_color = Color(0.9882353, 0.73333335, 0, 1)
 theme_override_fonts/font = ExtResource("3_yu0yr")
 theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_yu0yr")
 text = "Volver al menu
 "
+
+[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=634016184]
+stream = ExtResource("4_yu0yr")
+volume_db = -5.474
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

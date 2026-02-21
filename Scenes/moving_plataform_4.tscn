@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cdu1t1lpecbyw"]
+[gd_scene format=3 uid="uid://cdu1t1lpecbyw"]
 
 [ext_resource type="Texture2D" uid="uid://cqr6j3evgk3cn" path="res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png" id="1_bumi3"]
 [ext_resource type="Texture2D" uid="uid://c6vnhr60h30pi" path="res://14-TileSets/Terrain (32x32).png" id="2_akuvr"]
@@ -499,20 +499,19 @@ _data = {
 &"arriba": SubResource("Animation_b8ima")
 }
 
-[node name="moving_plataform4" type="Node2D"]
+[node name="moving_plataform4" type="Node2D" unique_id=914922248]
 
-[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=220878129]
 
-[node name="TileMapLayer" type="TileMapLayer" parent="AnimatableBody2D"]
+[node name="TileMapLayer" type="TileMapLayer" parent="AnimatableBody2D" unique_id=297390663]
 tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
 tile_set = SubResource("TileSet_qi17g")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=1342820724]
 position = Vector2(30.5, 9.5)
 shape = SubResource("RectangleShape2D_t6e4h")
+one_way_collision = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D"]
-libraries = {
-&"": SubResource("AnimationLibrary_x5t5r")
-}
-autoplay = "RESET"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=1564845335]
+libraries/ = SubResource("AnimationLibrary_x5t5r")
+autoplay = &"RESET"

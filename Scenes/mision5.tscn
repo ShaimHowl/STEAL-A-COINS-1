@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://d2227p22qrqpt"]
+[gd_scene format=3 uid="uid://d2227p22qrqpt"]
 
 [ext_resource type="Script" uid="uid://bkt4ewwqejng5" path="res://Scripts/mision_5.gd" id="1_iiqci"]
 [ext_resource type="Texture2D" uid="uid://cx52r06ujoqb0" path="res://Assets/mc.png" id="1_uup4r"]
@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cmo6rlgoleck3" path="res://Icono/Copilot_20260102_165125.png" id="4_wmatl"]
 [ext_resource type="Texture2D" uid="uid://cf1xg5gnr13rt" path="res://Icono/Copilot_20260102_174758.png" id="5_81rc6"]
 [ext_resource type="AudioStream" uid="uid://dx8rucdunm3do" path="res://Sounds/complete.wav" id="6_feqif"]
-[ext_resource type="Texture2D" uid="uid://b2sswmbou53rj" path="res://Assets/fondoazul.png" id="7_jk7vc"]
+[ext_resource type="Texture2D" uid="uid://huemn6fs8kn0" path="res://Assets/Background/fondogris.png" id="8_iiqci"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="8_non5e"]
 
 [sub_resource type="Animation" id="Animation_qrfpl"]
@@ -50,15 +50,15 @@ _data = {
 &"mostrar_textos": SubResource("Animation_xjrh6")
 }
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[node name="CanvasLayer" type="CanvasLayer" unique_id=489225922]
 script = ExtResource("1_iiqci")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=912008046]
 position = Vector2(670, 351)
 scale = Vector2(0.9244791, 0.7363281)
 texture = ExtResource("1_uup4r")
 
-[node name="LabelTitulo" type="Label" parent="."]
+[node name="LabelTitulo" type="Label" parent="." unique_id=121209755]
 offset_left = 116.0
 offset_top = 57.0
 offset_right = 1289.0
@@ -68,7 +68,7 @@ theme_override_fonts/font = ExtResource("2_iiqci")
 theme_override_font_sizes/font_size = 70
 text = "MISION  COMPLETADA"
 
-[node name="LabelTexto" type="Label" parent="."]
+[node name="LabelTexto" type="Label" parent="." unique_id=1832721237]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -85,7 +85,7 @@ theme_override_fonts/font = ExtResource("3_f5us4")
 theme_override_font_sizes/font_size = 60
 text = "Mision Completada"
 
-[node name="Button3" type="Button" parent="."]
+[node name="Button3" type="Button" parent="." unique_id=1707764470]
 offset_left = 321.0
 offset_top = 433.0
 offset_right = 549.0
@@ -95,7 +95,7 @@ theme_override_colors/icon_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
 icon = ExtResource("5_81rc6")
 expand_icon = true
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=22378084]
 offset_left = 781.0
 offset_top = 445.0
 offset_right = 1006.0
@@ -105,23 +105,20 @@ theme_override_colors/icon_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
 icon = ExtResource("4_wmatl")
 expand_icon = true
 
-[node name="SonidoMision" type="AudioStreamPlayer" parent="."]
+[node name="SonidoMision" type="AudioStreamPlayer" parent="." unique_id=1374966735]
 stream = ExtResource("6_feqif")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-visible = false
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=511381797]
 position = Vector2(708, 372)
 scale = Vector2(1.7304688, 1)
-texture = ExtResource("7_jk7vc")
+texture = ExtResource("8_iiqci")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D2"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D2" unique_id=967693030]
 root_node = NodePath("../../Sprite2D")
-libraries = {
-&"": SubResource("AnimationLibrary_xjrh6")
-}
-autoplay = "mision"
+libraries/ = SubResource("AnimationLibrary_xjrh6")
+autoplay = &"mision"
 
-[node name="Audio" type="AudioStreamPlayer" parent="."]
+[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1367295385]
 stream = ExtResource("8_non5e")
 volume_db = -5.474
 

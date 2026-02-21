@@ -150,6 +150,7 @@ tile_set = SubResource("TileSet_dcbgi")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=685254821]
 position = Vector2(40, 7.5)
 shape = SubResource("RectangleShape2D_rj6yj")
+one_way_collision = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=453123224]
 libraries/ = SubResource("AnimationLibrary_x5t5r")
