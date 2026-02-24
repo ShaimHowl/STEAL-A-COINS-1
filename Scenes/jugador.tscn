@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dtse1o8wnri4f"]
 
 [ext_resource type="Script" uid="uid://8mlt6f0j6nss" path="res://Scripts/jugador.gd" id="1_n4xcq"]
+[ext_resource type="Texture2D" uid="uid://ee2lf3hutgn3" path="res://Assets/template_free/individual_sheets/male_hero_template-combo_1.png" id="4_3cdix"]
 [ext_resource type="Texture2D" uid="uid://ch5yc8gptoiym" path="res://Assets/template_free/individual_sheets/male_hero_template-idle.png" id="4_5nsjc"]
 [ext_resource type="Texture2D" uid="uid://cdhoflubr8g2r" path="res://Assets/template_free/individual_sheets/male_hero_template-fall.png" id="5_6vc6x"]
 [ext_resource type="Texture2D" uid="uid://fl5ro2jj0461" path="res://Assets/template_free/individual_sheets/male_hero_template-jump.png" id="6_3cdix"]
@@ -46,6 +47,18 @@ region = Rect2(1024, 0, 128, 128)
 [sub_resource type="AtlasTexture" id="AtlasTexture_s0mfl"]
 atlas = ExtResource("4_5nsjc")
 region = Rect2(1152, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i3eul"]
+atlas = ExtResource("4_3cdix")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5b1iu"]
+atlas = ExtResource("4_3cdix")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dblgq"]
+atlas = ExtResource("4_3cdix")
+region = Rect2(256, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aw8s2"]
 atlas = ExtResource("5_6vc6x")
@@ -206,6 +219,20 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_i3eul")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5b1iu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dblgq")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_aw8s2")
 }, {
 "duration": 1.0,
@@ -321,7 +348,7 @@ size = Vector2(31.73101, 51.166397)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iw3ti"]
 size = Vector2(43.3733, 43.285995)
 
-[node name="jugador" type="CharacterBody2D" unique_id=913443093 groups=["jugador"]]
+[node name="jugador" type="CharacterBody2D" unique_id=913443093 groups=["enemy", "jugador"]]
 rotation = -0.00519228
 scale = Vector2(0.9452705, 1.0164816)
 collision_layer = 16
@@ -331,8 +358,10 @@ script = ExtResource("1_n4xcq")
 position = Vector2(66, -32)
 scale = Vector2(1.9218756, 1.6610931)
 sprite_frames = SubResource("SpriteFrames_gxv3l")
-animation = &"walk"
+animation = &"attack"
 autoplay = "Idle"
+frame = 2
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1454459151]
 position = Vector2(64.70948, -31.169138)

@@ -47,7 +47,7 @@ func _physics_process(_delta):
 	move_and_slide()
 
 func _on_area_enter(body: Node2D) -> void:
-	if body.is_in_group("jugador"):
+	if body.is_in_group("enemy"):
 		jugador_en_area = body
 		jugador_en_area.recibir_daño(10) # daño inicial
 		audio_hit.play()

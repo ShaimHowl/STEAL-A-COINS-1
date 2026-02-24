@@ -1,0 +1,12 @@
+res://Scenes/mundo.tscn
+res://Scenes/nivel_2.tscn
+res://Scenes/nivel_6.tscn
+res://Scenes/nivel_5.tscn
+res://Scenes/jugador.tscn
+res://Scripts/jugador.gd
+res://Scenes/nivel_3.tscn
+res://enemy4.gd
+res://Scripts/character_body_2d.tscn
+res://Scenes/Vida.tscn
+res://Scripts/enemy_2.gd
+res://Scripts/enemy_3.gd

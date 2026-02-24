@@ -64,7 +64,8 @@ func _hacer_salto():
 		sprite.play("jump")
 
 func _on_area_enter(body: Node2D) -> void:
-	if body.is_in_group("jugador"):
+	if body.is_in_group("enemy
+	"):
 		jugador_en_area = body
 		jugador_en_area.recibir_daño(100)
 		audio_hit.play()
