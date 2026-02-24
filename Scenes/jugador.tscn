@@ -348,6 +348,9 @@ size = Vector2(31.73101, 51.166397)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iw3ti"]
 size = Vector2(43.3733, 43.285995)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3cdix"]
+size = Vector2(69.8752, 24.599411)
+
 [node name="jugador" type="CharacterBody2D" unique_id=913443093 groups=["enemy", "jugador"]]
 rotation = -0.00519228
 scale = Vector2(0.9452705, 1.0164816)
@@ -376,5 +379,12 @@ collision_mask = 2
 position = Vector2(65.23022, -30.180258)
 scale = Vector2(1.0000006, 1.0000002)
 shape = SubResource("RectangleShape2D_iw3ti")
+
+[node name="Espada" type="Area2D" parent="." unique_id=171296397]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Espada" unique_id=1098421220]
+position = Vector2(123.84938, -14.59209)
+scale = Vector2(1.0000006, 1.0000002)
+shape = SubResource("RectangleShape2D_3cdix")
 
 [connection signal="area_shape_entered" from="Damgedetection" to="." method="_on_damgedetection_area_shape_entered"]
