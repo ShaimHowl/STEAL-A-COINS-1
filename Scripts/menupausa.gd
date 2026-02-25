@@ -2,7 +2,7 @@ extends Node2D
 @onready var tecla_audio: AudioStreamPlayer = $Audio
 
 func _input(_event: InputEvent) -> void:
-	# ESC → abrir/cerrar pausa
+
 	if Input.is_action_just_pressed("ui_accept"):
 		
 		# Si el menú NO está visible → abrir pausa

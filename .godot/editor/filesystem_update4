@@ -1,13 +1,4 @@
-res://Scenes/enemy.tscn
-res://Scripts/enemy.gd
-res://Scenes/enemy2.tscn
-res://Scripts/enemy_2.gd
-res://Scripts/jugador.gd
-res://Scenes/jugador.tscn
-res://Scripts/espada.gd
-res://Scenes/nivel_2.tscn
-res://Scenes/nivel_5.tscn
-res://Scripts/tile_map_layer_2.gd
 res://Scenes/mundo.tscn
-res://Scenes/nivel_4.tscn
-res://Scenes/nivel_3.tscn
+res://Scenes/regla.tscn
+res://Scenes/misionfallida.tscn
+res://Scripts/menupausa.gd
