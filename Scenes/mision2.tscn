@@ -1,14 +1,19 @@
 [gd_scene format=3 uid="uid://eosfhlbo3y2j"]
 
 [ext_resource type="Script" uid="uid://bk7435d4tfac7" path="res://Scripts/mision2.gd" id="1_jge5o"]
-[ext_resource type="Texture2D" uid="uid://cx52r06ujoqb0" path="res://Assets/mc.png" id="2_ldi1y"]
+[ext_resource type="Texture2D" uid="uid://pftanm8lm6ru" path="res://Assets/misiones/cumplidarojo.jpg" id="2_lohm3"]
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_xhy14"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_3pcna"]
 [ext_resource type="Texture2D" uid="uid://cmo6rlgoleck3" path="res://Icono/Copilot_20260102_165125.png" id="5_xdc5r"]
+[ext_resource type="Texture2D" uid="uid://c6026bdnis2og" path="res://Icono/home.png" id="6_lohm3"]
 [ext_resource type="AudioStream" uid="uid://dx8rucdunm3do" path="res://Sounds/complete.wav" id="6_qdl1e"]
-[ext_resource type="Texture2D" uid="uid://cf1xg5gnr13rt" path="res://Icono/Copilot_20260102_174758.png" id="7_lohm3"]
 [ext_resource type="Texture2D" uid="uid://huemn6fs8kn0" path="res://Assets/Background/fondogris.png" id="8_lohm3"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="9_lohm3"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_dd303"]
+color = Color(0.6509804, 0, 0, 1)
+grow_begin = 300.0
+grow_end = 230.0
 
 [sub_resource type="Animation" id="Animation_qrfpl"]
 length = 0.001
@@ -54,9 +59,9 @@ _data = {
 script = ExtResource("1_jge5o")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1697079387]
-position = Vector2(670, 351)
-scale = Vector2(0.9244791, 0.7363281)
-texture = ExtResource("2_ldi1y")
+position = Vector2(687.5, 357)
+scale = Vector2(1.6454328, 0.5705128)
+texture = ExtResource("2_lohm3")
 
 [node name="LabelTitulo" type="Label" parent="." unique_id=1434011123]
 offset_left = 116.0
@@ -66,6 +71,7 @@ offset_bottom = 153.0
 theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
 theme_override_fonts/font = ExtResource("2_xhy14")
 theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxLine_dd303")
 text = "MISION  COMPLETADA"
 
 [node name="LabelTexto" type="Label" parent="." unique_id=1395308554]
@@ -87,9 +93,9 @@ text = "Mision Completada"
 
 [node name="Button" type="Button" parent="." unique_id=1414210721]
 offset_left = 781.0
-offset_top = 445.0
+offset_top = 436.0
 offset_right = 1006.0
-offset_bottom = 660.0
+offset_bottom = 651.0
 theme_override_colors/icon_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
 theme_override_colors/icon_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
 icon = ExtResource("5_xdc5r")
@@ -102,13 +108,14 @@ offset_right = 549.0
 offset_bottom = 648.0
 theme_override_colors/icon_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
 theme_override_colors/icon_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
-icon = ExtResource("7_lohm3")
+icon = ExtResource("6_lohm3")
 expand_icon = true
 
 [node name="SonidoMision" type="AudioStreamPlayer" parent="." unique_id=1875506942]
 stream = ExtResource("6_qdl1e")
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1259730026]
+visible = false
 position = Vector2(708, 372)
 scale = Vector2(1.7304688, 1)
 texture = ExtResource("8_lohm3")

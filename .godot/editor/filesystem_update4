@@ -1,4 +1,4 @@
-res://Scenes/mundo.tscn
-res://Scenes/regla.tscn
-res://Scenes/misionfallida.tscn
-res://Scripts/menupausa.gd
+res://Scenes/mision2.tscn
+res://Scenes/mision4.tscn
+res://Scenes/mision5.tscn
+res://Scenes/mision.tscn

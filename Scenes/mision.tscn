@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cx52r06ujoqb0" path="res://Assets/mc.png" id="2_qrfpl"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_th0rk"]
 [ext_resource type="Texture2D" uid="uid://cmo6rlgoleck3" path="res://Icono/Copilot_20260102_165125.png" id="5_uf8uv"]
-[ext_resource type="Texture2D" uid="uid://cf1xg5gnr13rt" path="res://Icono/Copilot_20260102_174758.png" id="7_84o0k"]
+[ext_resource type="Texture2D" uid="uid://c6026bdnis2og" path="res://Icono/home.png" id="6_84o0k"]
 [ext_resource type="Texture2D" uid="uid://huemn6fs8kn0" path="res://Assets/Background/fondogris.png" id="8_84o0k"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="9_84o0k"]
 
@@ -123,7 +123,7 @@ offset_right = 288.0
 offset_bottom = 451.0
 theme_override_colors/icon_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
 theme_override_colors/icon_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
-icon = ExtResource("7_84o0k")
+icon = ExtResource("6_84o0k")
 expand_icon = true
 metadata/_edit_use_anchors_ = true
 
@@ -131,6 +131,7 @@ metadata/_edit_use_anchors_ = true
 stream = ExtResource("2_4yo66")
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1709945621]
+visible = false
 position = Vector2(708, 372)
 scale = Vector2(1.7304688, 1)
 texture = ExtResource("8_84o0k")
