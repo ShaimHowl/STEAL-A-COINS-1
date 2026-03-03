@@ -4,17 +4,21 @@ extends CharacterBody2D
 @export var run_speed = 260
 @export var jump = -360
 @export var max_health = 100
-
 @export var start_facing_left := false
+
+# --- NUEVO ---
+@export var tiempo_invulnerable := 0.5
+@export var tiempo_flash := 0.07
 
 var health
 var gravity = 940
 var muerto = false
 var mirando_izquierda = false
-
-var atacando = false  # Controla si está atacando
+var atacando = false
+var invulnerable = false
 
 @onready var animated_sprite_2d = $AnimatedSprite2D
+
 
 func _ready():
 	health = GameData.health
@@ -22,7 +26,6 @@ func _ready():
 
 	mirando_izquierda = start_facing_left
 	animated_sprite_2d.flip_h = mirando_izquierda
-
 	animated_sprite_2d.connect("animation_finished", Callable(self, "_on_animation_finished"))
 
 
@@ -31,33 +34,26 @@ func _physics_process(delta):
 		return
 
 	# ============================
-	# ATAQUE (un solo clic, incluso en el aire)
+	# ATAQUE
 	# ============================
 	if Input.is_action_just_pressed("attack") and not atacando:
 		_iniciar_ataque()
 
-	# ============================
-	# SI ESTÁ ATACANDO
-	# ============================
 	if atacando:
-		# Mantener gravedad y movimiento aéreo
 		if not is_on_floor():
 			velocity.y += gravity * delta
 
-		# Permitir movimiento horizontal en el aire
 		var direction = Input.get_axis("move_left", "move_right")
 		velocity.x = direction * speed
 
-		# Mantener orientación
 		if direction < 0:
 			mirando_izquierda = true
 		elif direction > 0:
 			mirando_izquierda = false
 
 		animated_sprite_2d.flip_h = mirando_izquierda
-
 		move_and_slide()
-		return  # No reproducir otras animaciones
+		return
 
 
 	# ============================
@@ -67,8 +63,9 @@ func _physics_process(delta):
 		mirando_izquierda = !mirando_izquierda
 		animated_sprite_2d.flip_h = mirando_izquierda
 
+
 	# ============================
-	# MOVIMIENTO Y GRAVEDAD
+	# MOVIMIENTO
 	# ============================
 	if not is_on_floor():
 		velocity.y += gravity * delta
@@ -82,7 +79,6 @@ func _physics_process(delta):
 	if Input.is_action_pressed("run") and direction != 0:
 		current_speed = run_speed
 
-	# Dirección automática
 	if direction < 0:
 		mirando_izquierda = true
 	elif direction > 0:
@@ -107,7 +103,6 @@ func _physics_process(delta):
 		else:
 			animated_sprite_2d.play("fall")
 
-	# Movimiento horizontal
 	if direction:
 		velocity.x = direction * current_speed
 	else:
@@ -122,7 +117,7 @@ func _physics_process(delta):
 
 func _iniciar_ataque():
 	atacando = true
-	animated_sprite_2d.play("attack")  # IMPORTANTE: sin loop
+	animated_sprite_2d.play("attack")
 
 
 func _on_animation_finished():
@@ -135,15 +130,33 @@ func _on_animation_finished():
 # ===============================
 
 func recibir_daño(cantidad):
-	if muerto:
+	if muerto or invulnerable:
 		return
 
 	health -= cantidad
 	GameData.health = health
 	print("Vida:", health)
 
+	activar_invulnerabilidad()
+
 	if health <= 0:
 		morir()
+
+
+func activar_invulnerabilidad():
+	invulnerable = true
+	var tiempo := 0.0
+
+	while tiempo < tiempo_invulnerable:
+		animated_sprite_2d.modulate = Color(1, 0, 0) # rojo
+		await get_tree().create_timer(tiempo_flash).timeout
+
+		animated_sprite_2d.modulate = Color(1, 1, 1) # normal
+		await get_tree().create_timer(tiempo_flash).timeout
+
+		tiempo += tiempo_flash * 2
+
+	invulnerable = false
 
 
 func curar(cantidad):
@@ -151,7 +164,6 @@ func curar(cantidad):
 		return
 
 	health += cantidad
-
 	if health > max_health:
 		health = max_health
 
@@ -162,6 +174,8 @@ func curar(cantidad):
 func morir():
 	muerto = true
 	velocity = Vector2.ZERO
+	animated_sprite_2d.modulate = Color(1, 1, 1)
+	animated_sprite_2d.play("death") # ← ANIMACIÓN DE MUERTE
 
-	await get_tree().create_timer(0.5).timeout
+	await get_tree().create_timer(1.0).timeout
 	get_tree().change_scene_to_file("res://Scenes/misionfallida.tscn")

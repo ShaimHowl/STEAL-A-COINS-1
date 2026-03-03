@@ -1,4 +1,4 @@
-res://Scenes/mision2.tscn
-res://Scenes/mision4.tscn
-res://Scenes/mision5.tscn
-res://Scenes/mision.tscn
+res://Scenes/jugador.tscn
+res://Scripts/jugador.gd
+res://Scenes/nivel_3.tscn
+res://Scenes/pinchos.tscn

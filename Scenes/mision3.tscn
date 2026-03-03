@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_00ljf"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_pcqls"]
 [ext_resource type="Texture2D" uid="uid://cmo6rlgoleck3" path="res://Icono/Copilot_20260102_165125.png" id="4_p8764"]
-[ext_resource type="Texture2D" uid="uid://cf1xg5gnr13rt" path="res://Icono/Copilot_20260102_174758.png" id="5_qk30j"]
+[ext_resource type="Texture2D" uid="uid://c6026bdnis2og" path="res://Icono/home.png" id="6_00ljf"]
 [ext_resource type="AudioStream" uid="uid://dx8rucdunm3do" path="res://Sounds/complete.wav" id="6_wawrx"]
 [ext_resource type="Texture2D" uid="uid://huemn6fs8kn0" path="res://Assets/Background/fondogris.png" id="8_00ljf"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="8_8qtbn"]
@@ -102,13 +102,14 @@ offset_right = 549.0
 offset_bottom = 648.0
 theme_override_colors/icon_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
 theme_override_colors/icon_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
-icon = ExtResource("5_qk30j")
+icon = ExtResource("6_00ljf")
 expand_icon = true
 
 [node name="SonidoMision" type="AudioStreamPlayer" parent="." unique_id=496863273]
 stream = ExtResource("6_wawrx")
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=448093773]
+visible = false
 position = Vector2(708, 372)
 scale = Vector2(1.7304688, 1)
 texture = ExtResource("8_00ljf")
