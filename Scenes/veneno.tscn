@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bqd7schgknnyt"]
+[gd_scene format=3 uid="uid://bqd7schgknnyt"]
 
 [ext_resource type="Script" uid="uid://chiu1cgvoqten" path="res://Scripts/veneno.gd" id="1_6ls7a"]
 [ext_resource type="Texture2D" uid="uid://c8txapfff2qu8" path="res://Assets/AnimatedPotions 16x16/Acid Potion/Potion.png" id="2_6ls7a"]
@@ -70,10 +70,10 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_mhs06"]
 radius = 18.027756
 
-[node name="veneno" type="Area2D"]
+[node name="veneno" type="Area2D" unique_id=330998453]
 script = ExtResource("1_6ls7a")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=939607927]
 position = Vector2(60.9375, 70.6875)
 scale = Vector2(2.0078123, 2.2109375)
 sprite_frames = SubResource("SpriteFrames_4qdca")
@@ -81,7 +81,7 @@ animation = &"veneno"
 autoplay = "veneno"
 frame_progress = 0.7240538
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2089745274]
 position = Vector2(61, 73)
 shape = SubResource("CircleShape2D_mhs06")
 

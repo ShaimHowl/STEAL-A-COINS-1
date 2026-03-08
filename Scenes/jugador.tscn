@@ -3,20 +3,10 @@
 [ext_resource type="Script" uid="uid://8mlt6f0j6nss" path="res://Scripts/jugador.gd" id="1_n4xcq"]
 [ext_resource type="Texture2D" uid="uid://ee2lf3hutgn3" path="res://Assets/template_free/individual_sheets/male_hero_template-combo_1.png" id="4_3cdix"]
 [ext_resource type="Texture2D" uid="uid://ch5yc8gptoiym" path="res://Assets/template_free/individual_sheets/male_hero_template-idle.png" id="4_5nsjc"]
-[ext_resource type="Texture2D" uid="uid://b6bqw4t2ne0uh" path="res://muerte/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_frames/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_001.png" id="4_bnm2g"]
 [ext_resource type="Texture2D" uid="uid://cdhoflubr8g2r" path="res://Assets/template_free/individual_sheets/male_hero_template-fall.png" id="5_6vc6x"]
-[ext_resource type="Texture2D" uid="uid://duxqh32k7olq4" path="res://muerte/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_frames/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_002.png" id="5_wu5nh"]
 [ext_resource type="Texture2D" uid="uid://fl5ro2jj0461" path="res://Assets/template_free/individual_sheets/male_hero_template-jump.png" id="6_3cdix"]
 [ext_resource type="Texture2D" uid="uid://cajjv4cu0oogn" path="res://Assets/template_free/individual_sheets/male_hero_template-walk.png" id="6_iw3ti"]
-[ext_resource type="Texture2D" uid="uid://vc6ef5i4o40s" path="res://muerte/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_frames/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_003.png" id="6_y2gsv"]
-[ext_resource type="Texture2D" uid="uid://cnpq7yyrowuw3" path="res://muerte/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_frames/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_004.png" id="7_hf4tf"]
 [ext_resource type="Texture2D" uid="uid://c54g0kh4h1giw" path="res://Assets/template_free/individual_sheets/male_hero_template-run.png" id="7_x1a6r"]
-[ext_resource type="Texture2D" uid="uid://bwsaebtnm352" path="res://muerte/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_frames/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_005.png" id="8_c2yei"]
-[ext_resource type="Texture2D" uid="uid://c4780c4ebfie" path="res://muerte/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_frames/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_006.png" id="9_s0mfl"]
-[ext_resource type="Texture2D" uid="uid://dvj1smrn3vth7" path="res://muerte/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_frames/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_007.png" id="10_aw8s2"]
-[ext_resource type="Texture2D" uid="uid://bx57aix3f6rf1" path="res://muerte/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_frames/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_008.png" id="11_0gs4x"]
-[ext_resource type="Texture2D" uid="uid://010uuahpb18q" path="res://muerte/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_frames/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_009.png" id="12_1csxk"]
-[ext_resource type="Texture2D" uid="uid://dswvs05la5f1w" path="res://muerte/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_frames/grok-video-89af0acf-f53a-4cb9-95a8-b280a7ea04b2_010.png" id="13_kk0o3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oua2g"]
 atlas = ExtResource("4_5nsjc")
@@ -243,41 +233,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_bnm2g")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_wu5nh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_y2gsv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_hf4tf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_c2yei")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_s0mfl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_aw8s2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_0gs4x")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_1csxk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_kk0o3")
-}],
-"loop": true,
-"name": &"death",
-"speed": 7.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_aw8s2")
 }, {
 "duration": 1.0,
@@ -406,7 +361,7 @@ script = ExtResource("1_n4xcq")
 position = Vector2(66, -32)
 scale = Vector2(1.9218756, 1.6610931)
 sprite_frames = SubResource("SpriteFrames_gxv3l")
-animation = &"death"
+animation = &"Idle"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1454459151]

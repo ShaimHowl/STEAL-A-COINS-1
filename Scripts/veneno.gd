@@ -2,7 +2,7 @@ extends Area2D
 
 @export var daño_por_tick := 1
 @export var daño_total := 100
-@export var tiempo_entre_ticks := 0.6
+@export var tiempo_entre_ticks := 0.3
 
 var daño_acumulado := 0
 var objetivo: Node = null
@@ -27,10 +27,8 @@ func _on_body_entered(body):
 		objetivo = body
 		daño_acumulado = 0
 
-		# 👻 Desaparecer veneno del mapa
 		hide()
 
-		# Desactivar colisión para que no vuelva a activarse
 		if has_node("CollisionShape2D"):
 			$CollisionShape2D.disabled = true
 
@@ -45,7 +43,8 @@ func _on_timer_timeout():
 
 	if daño_acumulado < daño_total:
 		if objetivo.has_method("recibir_daño"):
-			objetivo.recibir_daño(daño_por_tick)
+			# IGNORA INVULNERABILIDAD PERO SÍ HACE PARPADEO
+			objetivo.recibir_daño(daño_por_tick, true)
 			daño_acumulado += daño_por_tick
 	else:
 		timer.stop()
