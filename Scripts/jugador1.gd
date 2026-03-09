@@ -10,7 +10,7 @@ extends CharacterBody2D
 @export var tiempo_flash := 0.07
 
 var health
-var gravity = 340
+var gravity = 240
 var muerto = false
 var mirando_izquierda = false
 var atacando = false
