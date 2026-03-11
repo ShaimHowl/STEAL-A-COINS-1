@@ -10,11 +10,14 @@ func _ready():
 	# Contar cuántas monedas hay en la escena
 	GameData.monedas_totales = get_tree().get_nodes_in_group("moneda").size()
 
+	# --- GRAVEDAD ESPECIAL SOLO PARA NIVEL 6 ---
+	var jugador = get_tree().get_first_node_in_group("jugador")
+	if jugador:
+		jugador.gravity = 240   # ← gravedad especial
+
 func terminar_mision():
-	# Pequeño retraso opcional
 	await get_tree().create_timer(0.10).timeout
 	get_tree().change_scene_to_file("res://Scenes/mision3.tscn")
 
 func _cuando_termina_el_tiempo():
-	# Ya no se usa, pero lo dejo por si lo llamas manualmente
 	get_tree().change_scene_to_file(escena_final)

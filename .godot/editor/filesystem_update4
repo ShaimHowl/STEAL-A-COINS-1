@@ -1,9 +1,4 @@
 res://Scenes/nivel_6.tscn
-res://Scripts/veneno.gd
-res://Scripts/jugador1.gd
-res://Scripts/pinchos.gd
-res://Scripts/pocion_2.gd
-res://Scenes/veneno.tscn
-res://Scenes/coins.tscn
-res://Scripts/coins.gd
 res://Scripts/nivel_6.gd
+res://Scripts/veneno.gd
+res://Scripts/jugador.gd

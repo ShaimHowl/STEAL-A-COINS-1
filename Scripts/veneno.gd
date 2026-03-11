@@ -8,7 +8,6 @@ var daño_acumulado := 0
 var objetivo: Node = null
 var timer: Timer
 
-
 func _ready():
 	timer = Timer.new()
 	timer.wait_time = tiempo_entre_ticks
@@ -17,7 +16,6 @@ func _ready():
 	timer.timeout.connect(_on_timer_timeout)
 
 	body_entered.connect(_on_body_entered)
-
 
 func _on_body_entered(body):
 	if objetivo != null:
@@ -34,7 +32,6 @@ func _on_body_entered(body):
 
 		timer.start()
 
-
 func _on_timer_timeout():
 	if objetivo == null:
 		timer.stop()
@@ -43,7 +40,6 @@ func _on_timer_timeout():
 
 	if daño_acumulado < daño_total:
 		if objetivo.has_method("recibir_daño"):
-			# IGNORA INVULNERABILIDAD PERO SÍ HACE PARPADEO
 			objetivo.recibir_daño(daño_por_tick, true)
 			daño_acumulado += daño_por_tick
 	else:

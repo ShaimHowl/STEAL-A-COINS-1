@@ -6,7 +6,6 @@ extends CharacterBody2D
 @export var max_health = 100
 @export var start_facing_left := false
 
-# --- NUEVO ---
 @export var tiempo_invulnerable := 0.5
 @export var tiempo_flash := 0.07
 
@@ -19,7 +18,6 @@ var invulnerable = false
 
 @onready var animated_sprite_2d = $AnimatedSprite2D
 
-
 func _ready():
 	health = GameData.health
 	add_to_group("jugador")
@@ -28,14 +26,10 @@ func _ready():
 	animated_sprite_2d.flip_h = mirando_izquierda
 	animated_sprite_2d.connect("animation_finished", Callable(self, "_on_animation_finished"))
 
-
 func _physics_process(delta):
 	if muerto:
 		return
 
-	# ============================
-	# ATAQUE
-	# ============================
 	if Input.is_action_just_pressed("attack") and not atacando:
 		_iniciar_ataque()
 
@@ -55,18 +49,10 @@ func _physics_process(delta):
 		move_and_slide()
 		return
 
-
-	# ============================
-	# GIRO MANUAL
-	# ============================
 	if Input.is_action_just_pressed("flip"):
 		mirando_izquierda = !mirando_izquierda
 		animated_sprite_2d.flip_h = mirando_izquierda
 
-
-	# ============================
-	# MOVIMIENTO
-	# ============================
 	if not is_on_floor():
 		velocity.y += gravity * delta
 
@@ -86,9 +72,6 @@ func _physics_process(delta):
 
 	animated_sprite_2d.flip_h = mirando_izquierda
 
-	# ============================
-	# ANIMACIONES
-	# ============================
 	if is_on_floor():
 		if direction == 0:
 			animated_sprite_2d.play("Idle")
@@ -110,7 +93,6 @@ func _physics_process(delta):
 
 	move_and_slide()
 
-
 # ===============================
 # ATAQUE
 # ===============================
@@ -119,45 +101,46 @@ func _iniciar_ataque():
 	atacando = true
 	animated_sprite_2d.play("attack")
 
-
 func _on_animation_finished():
 	if animated_sprite_2d.animation == "attack":
 		atacando = false
-
 
 # ===============================
 # DAÑO Y MUERTE
 # ===============================
 
-func recibir_daño(cantidad):
-	if muerto or invulnerable:
+func recibir_daño(cantidad, ignorar_invulnerabilidad := false):
+	if muerto:
+		return
+
+	# Si está invulnerable y NO queremos ignorarlo, no recibe daño
+	if invulnerable and not ignorar_invulnerabilidad:
 		return
 
 	health -= cantidad
 	GameData.health = health
 	print("Vida:", health)
 
+	# Sigue haciendo parpadeo aunque ignore invulnerabilidad
 	activar_invulnerabilidad()
 
 	if health <= 0:
 		morir()
-
 
 func activar_invulnerabilidad():
 	invulnerable = true
 	var tiempo := 0.0
 
 	while tiempo < tiempo_invulnerable:
-		animated_sprite_2d.modulate = Color(1, 0, 0) # rojo
+		animated_sprite_2d.modulate = Color(1, 0, 0)
 		await get_tree().create_timer(tiempo_flash).timeout
 
-		animated_sprite_2d.modulate = Color(1, 1, 1) # normal
+		animated_sprite_2d.modulate = Color(1, 1, 1)
 		await get_tree().create_timer(tiempo_flash).timeout
 
 		tiempo += tiempo_flash * 2
 
 	invulnerable = false
-
 
 func curar(cantidad):
 	if muerto:
@@ -170,12 +153,11 @@ func curar(cantidad):
 	GameData.health = health
 	print("Curado. Vida actual:", health)
 
-
 func morir():
 	muerto = true
 	velocity = Vector2.ZERO
 	animated_sprite_2d.modulate = Color(1, 1, 1)
-	animated_sprite_2d.play("death") # ← ANIMACIÓN DE MUERTE
+	animated_sprite_2d.play("death")
 
 	await get_tree().create_timer(1.0).timeout
 	get_tree().change_scene_to_file("res://Scenes/misionfallida.tscn")
