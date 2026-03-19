@@ -17,7 +17,7 @@ func _ready():
 
 func terminar_mision():
 	await get_tree().create_timer(0.10).timeout
-	get_tree().change_scene_to_file("res://Scenes/mision3.tscn")
+	get_tree().change_scene_to_file("res://Scenes/mision6.tscn")
 
 func _cuando_termina_el_tiempo():
 	get_tree().change_scene_to_file(escena_final)

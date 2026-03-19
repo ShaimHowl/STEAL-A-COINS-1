@@ -136,7 +136,6 @@ func activar_invulnerabilidad():
 		await get_tree().create_timer(tiempo_flash).timeout
 
 		animated_sprite_2d.modulate = Color(1, 1, 1)
-		await get_tree().create_timer(tiempo_flash).timeout
 
 		tiempo += tiempo_flash * 2
 

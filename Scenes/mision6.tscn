@@ -1,0 +1,127 @@
+[gd_scene format=3 uid="uid://bafybnk68ksrm"]
+
+[ext_resource type="Texture2D" uid="uid://cx52r06ujoqb0" path="res://Assets/mc.png" id="1_4svl3"]
+[ext_resource type="Script" uid="uid://b1e62uuybnjuq" path="res://Scripts/mision_6.gd" id="1_mbqsu"]
+[ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_mbqsu"]
+[ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_5a7tb"]
+[ext_resource type="Texture2D" uid="uid://b3rq3g6ng3vn0" path="res://Icono/iconov.png" id="5_mbqsu"]
+[ext_resource type="Texture2D" uid="uid://c6026bdnis2og" path="res://Icono/home.png" id="5_vdvn3"]
+[ext_resource type="AudioStream" uid="uid://dx8rucdunm3do" path="res://Sounds/complete.wav" id="6_tbgxt"]
+[ext_resource type="Texture2D" uid="uid://huemn6fs8kn0" path="res://Assets/Background/fondogris.png" id="7_jbg3v"]
+[ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="8_8h0a1"]
+
+[sub_resource type="Animation" id="Animation_qrfpl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_84o0k"]
+resource_name = "mision"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_xjrh6"]
+resource_name = "mostrar_textos"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rbxf0"]
+_data = {
+&"RESET": SubResource("Animation_qrfpl"),
+&"mision": SubResource("Animation_84o0k"),
+&"mostrar_textos": SubResource("Animation_xjrh6")
+}
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1079281919]
+script = ExtResource("1_mbqsu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1386884057]
+position = Vector2(670, 351)
+scale = Vector2(0.9244791, 0.7363281)
+texture = ExtResource("1_4svl3")
+
+[node name="LabelTitulo" type="Label" parent="." unique_id=488758215]
+offset_left = 116.0
+offset_top = 57.0
+offset_right = 1289.0
+offset_bottom = 153.0
+theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_fonts/font = ExtResource("2_mbqsu")
+theme_override_font_sizes/font_size = 70
+text = "MISION  COMPLETADA"
+
+[node name="LabelTexto" type="Label" parent="." unique_id=1508077240]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -420.0
+offset_top = -64.0
+offset_right = 421.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_fonts/font = ExtResource("3_5a7tb")
+theme_override_font_sizes/font_size = 60
+text = "Mision Completada"
+
+[node name="Button" type="Button" parent="." unique_id=527132306]
+offset_left = 781.0
+offset_top = 445.0
+offset_right = 1006.0
+offset_bottom = 660.0
+theme_override_colors/icon_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/icon_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
+icon = ExtResource("5_mbqsu")
+expand_icon = true
+
+[node name="Button3" type="Button" parent="." unique_id=1938871585]
+offset_left = 321.0
+offset_top = 433.0
+offset_right = 549.0
+offset_bottom = 648.0
+theme_override_colors/icon_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/icon_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
+icon = ExtResource("5_vdvn3")
+expand_icon = true
+
+[node name="SonidoMision" type="AudioStreamPlayer" parent="." unique_id=1871795458]
+stream = ExtResource("6_tbgxt")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1863913646]
+visible = false
+position = Vector2(708, 372)
+scale = Vector2(1.7304688, 1)
+texture = ExtResource("7_jbg3v")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D2" unique_id=2134664946]
+root_node = NodePath("../../Sprite2D")
+libraries/ = SubResource("AnimationLibrary_rbxf0")
+autoplay = &"mision"
+
+[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=657621003]
+stream = ExtResource("8_8h0a1")
+volume_db = -5.474
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

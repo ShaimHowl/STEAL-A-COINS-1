@@ -1,4 +1,4 @@
 res://Scenes/nivel_6.tscn
-res://Scripts/nivel_6.gd
-res://Scripts/veneno.gd
+res://Scenes/mision6.tscn
+res://Scripts/mision_6.gd
 res://Scripts/jugador.gd
