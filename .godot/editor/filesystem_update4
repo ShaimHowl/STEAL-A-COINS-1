@@ -1,4 +1,3 @@
-res://Scenes/nivel_6.tscn
-res://Scenes/mision6.tscn
-res://Scripts/mision_6.gd
-res://Scripts/jugador.gd
+res://Scenes/regla.tscn
+res://Scenes/coins.tscn
+res://Scripts/regla.gd

@@ -102,7 +102,6 @@ el orden)
 
 2. No morir ante las trampas o enemigos
 
-
 3. Llegar hasta la meta final
 
 "
@@ -118,11 +117,11 @@ volume_db = -20.0
 layout_mode = 0
 offset_left = -45.0
 offset_top = 434.0
-offset_right = 1430.0
-offset_bottom = 669.0
+offset_right = 1477.0
+offset_bottom = 655.0
 theme_override_colors/font_color = Color(0.54408157, 0.066962525, 0.068398684, 1)
 theme_override_fonts/font = ExtResource("2_vy0c0")
-theme_override_font_sizes/font_size = 33
+theme_override_font_sizes/font_size = 30
 text = "AVISO: tienes solo 100% de vida
 
 Tu vida no se reiniciará al siguiente 
@@ -152,6 +151,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_yh6y6")
 text = "Trampas o enemigos"
 
 [node name="Fondogris" type="Sprite2D" parent="." unique_id=1763469617]
+visible = false
 position = Vector2(667, 359.5)
 scale = Vector2(1.3496094, 0.6962891)
 texture = ExtResource("7_yh6y6")
