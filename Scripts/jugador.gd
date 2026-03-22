@@ -113,7 +113,6 @@ func recibir_daño(cantidad, ignorar_invulnerabilidad := false):
 	if muerto:
 		return
 
-	# Si está invulnerable y NO queremos ignorarlo, no recibe daño
 	if invulnerable and not ignorar_invulnerabilidad:
 		return
 
@@ -121,11 +120,15 @@ func recibir_daño(cantidad, ignorar_invulnerabilidad := false):
 	GameData.health = health
 	print("Vida:", health)
 
-	# Sigue haciendo parpadeo aunque ignore invulnerabilidad
+	# Parpadeo al recibir daño
 	activar_invulnerabilidad()
 
 	if health <= 0:
 		morir()
+
+# ===============================
+# PARPADEO CON AWAIT
+# ===============================
 
 func activar_invulnerabilidad():
 	invulnerable = true
@@ -136,10 +139,15 @@ func activar_invulnerabilidad():
 		await get_tree().create_timer(tiempo_flash).timeout
 
 		animated_sprite_2d.modulate = Color(1, 1, 1)
+		await get_tree().create_timer(tiempo_flash).timeout
 
 		tiempo += tiempo_flash * 2
 
 	invulnerable = false
+
+# ===============================
+# CURAR
+# ===============================
 
 func curar(cantidad):
 	if muerto:
@@ -151,6 +159,10 @@ func curar(cantidad):
 
 	GameData.health = health
 	print("Curado. Vida actual:", health)
+
+# ===============================
+# MUERTE
+# ===============================
 
 func morir():
 	muerto = true
