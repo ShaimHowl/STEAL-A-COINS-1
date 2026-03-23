@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c346yxrfk0pa1" path="res://Scripts/menupausa.gd" id="1_dbfgq"]
 [ext_resource type="FontFile" uid="uid://boisxvh4qu2yb" path="res://Fuentes/dogica/OTF/dogicabold.otf" id="2_xe2t2"]
 [ext_resource type="FontFile" uid="uid://bg45b1dy3jdg" path="res://Fuentes/dogica/OTF/dogicapixelbold.otf" id="3_yu0yr"]
+[ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="4_wlf8h"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="4_yu0yr"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xe2t2"]
@@ -14,6 +15,14 @@ border_width_bottom = 5
 border_color = Color(1, 0.7372549, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yu0yr"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+border_width_left = 10
+border_width_top = 5
+border_width_right = 10
+border_width_bottom = 5
+border_color = Color(1, 0.7372549, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wlf8h"]
 bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
 border_width_left = 10
 border_width_top = 5
@@ -75,9 +84,20 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_yu0yr")
 text = "Volver al menu
 "
 
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=307016481]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9882353, 0.73333335, 0, 1)
+theme_override_colors/font_focus_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_pressed_color = Color(0.9882353, 0.73333335, 0, 1)
+theme_override_fonts/font = ExtResource("4_wlf8h")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_wlf8h")
+text = "Salir"
+
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=634016184]
 stream = ExtResource("4_yu0yr")
 volume_db = -5.474
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]

@@ -41,3 +41,10 @@ func _volver_al_menu():
 	GameData.health = GameData.max_health
 	GameData.monedas = 0
 	GameData.monedas_recogidas.clear()
+
+
+func _on_button_3_pressed() -> void:
+	get_tree().quit()
+	GameData.health = GameData.max_health
+	GameData.monedas = 0
+	GameData.monedas_recogidas.clear()
