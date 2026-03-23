@@ -1,3 +1,2 @@
 res://Scenes/nivel_6.tscn
-res://Scripts/jugador.gd
-res://Scenes/coins.tscn
+res://Scripts/veneno.gd
