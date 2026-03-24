@@ -141,7 +141,7 @@ func morir():
 	muerto = true
 	velocity = Vector2.ZERO
 	animated_sprite_2d.modulate = Color(1, 1, 1)
-	animated_sprite_2d.play("death")
+	animated_sprite_2d.play("")
 
 	await get_tree().create_timer(1.0).timeout
 	get_tree().change_scene_to_file("res://Scenes/misionfallida.tscn")
