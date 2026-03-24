@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774287431
+::res://::1774366755
 barra_salud.tscn::PackedScene::787703600351861078::1766322100::0::1::::<><><>0<>0<><>::
 control.gd::GDScript::1215726667227415089::1766245874::0::1::::<>Control<><>0<>0<><>::
 Copilot_20260209_120041.png::CompressedTexture2D::5690945676836497062::1771453388::1771683987::1::::<><><>0<>0<>a57f453f2862c59151779f93d70ee382<>res://.godot/imported/Copilot_20260209_120041.png-7091d8cd7624ba014917378ed34ce9cb.ctex::
@@ -4622,7 +4622,8 @@ ticking-clock-412042.mp3::AudioStreamMP3::3304556140986671233::1768674280::17686
 treachery.mp3::AudioStreamMP3::1523880700541527338::1764610247::1764610338::1::::<><><>0<>0<>f0ea6d63948b9b52e8a2d4d0747d6efe<>res://.godot/imported/treachery.mp3-9bf7125075df57f26d7c73ef65ac566f.mp3str::
 Vibe Mountain - Operatic 3 NO COPYRIGHT 8-bit Music.mp3::AudioStreamMP3::2211180058544931264::1769253389::1769449617::1::::<><><>0<>0<>5eb13fa95f786f025e29f60223b4c51f<>res://.godot/imported/Vibe Mountain - Operatic 3 NO COPYRIGHT 8-bit Music.mp3-20f3dfde06b565c43384c79d1af18ac6.mp3str::
 woo-hoo-82843.mp3::AudioStreamMP3::2427032744741506408::1766767527::1767477816::1::::<><><>0<>0<>976f27eaee383382d67b564aa1da218d<>res://.godot/imported/woo-hoo-82843.mp3-2687f9458abc1891a314fb917f14826f.mp3str::
-::res://Sounds/coin_sounds/::1770740078
+::res://Sounds/coin_sounds/::1774366768
+._coin2.wav::AudioStreamWAV::212851075513572463::1766226839::1774366775::1::::<><><>0<>0<>fa9c47101470351296f40184b26782d9<>res://.godot/imported/._coin2.wav-fd15375a95073fbb4dfa112850c06dca.sample::
 coin1.wav::AudioStreamWAV::6653049122917734397::1766226839::1766226878::1::::<><><>0<>0<>0721ed2fe7d5896c40916ae6f27fc5c5<>res://.godot/imported/coin1.wav-72fcdfdcf45a97483def17aabbea674d.sample::
 coin2.wav::AudioStreamWAV::2922038009836957686::1766226839::1766226878::1::::<><><>0<>0<>9663064b35ef6a118ec4db751fe5bb5b<>res://.godot/imported/coin2.wav-c90a230f1f048677c2a76533a555a884.sample::
 coin3.wav::AudioStreamWAV::6483975413235526791::1766226839::1766226878::1::::<><><>0<>0<>e57723723293dccee72175b10c0d601f<>res://.godot/imported/coin3.wav-7ef4bf846e72919e992c4dd15e19a5c5.sample::
@@ -4632,17 +4633,6 @@ coin6.wav::AudioStreamWAV::203910824190673268::1766226839::1766226878::1::::<><>
 coin7.wav::AudioStreamWAV::8642322963631343855::1766226839::1766226878::1::::<><><>0<>0<>389872ccbc27588862c458e050a7e4d4<>res://.godot/imported/coin7.wav-7f8a95852c44764bae35e14a658bcc31.sample::
 coin8.wav::AudioStreamWAV::6560711033064771499::1766226839::1766226878::1::::<><><>0<>0<>1122d30418f85cfaba70090beba47790<>res://.godot/imported/coin8.wav-738d28956e14a1f8f49cc57291b597ad.sample::
 coin9.wav::AudioStreamWAV::4476539531485601750::1766226839::1766226878::1::::<><><>0<>0<>95de232999921f4e4d577f9329168435<>res://.godot/imported/coin9.wav-7b254dfc4ef8f5bb9552bb79d692dccf.sample::
-::res://Sounds/coin_sounds/__MACOSX/::1774288259
-._coin1.wav::AudioStreamWAV::1760558840594026204::1766226839::1774288642::1::::<><><>0<>0<>555b53edc01942c3120096a5d27bedee<>res://.godot/imported/._coin1.wav-37580861f0588b1ec1113189af6ced3c.sample::
-._coin2.wav::AudioStreamWAV::212851075513572463::1766226839::1774288642::1::::<><><>0<>0<>026bd296dc682f3aea7894b653342808<>res://.godot/imported/._coin2.wav-bfb14ca5ed444a05de1ce16656f5a486.sample::
-._coin3.wav::AudioStreamWAV::776522645017529592::1766226839::1774288642::1::::<><><>0<>0<>6989d5e1056117fdc64fd31399e31e27<>res://.godot/imported/._coin3.wav-bc903c970ab6d32769d79a7198e7d99e.sample::
-._coin4.wav::AudioStreamWAV::1256045744774809374::1766226839::1774288642::1::::<><><>0<>0<>a542a7f65d17fd0f1b79bbf3effc4f92<>res://.godot/imported/._coin4.wav-f77763426e288dc3f9297c6e40e9e88c.sample::
-._coin5.wav::AudioStreamWAV::537308786933861571::1766226839::1774288642::1::::<><><>0<>0<>243d4621dcbaf9fac72383f321bab78a<>res://.godot/imported/._coin5.wav-db8f1dcd927e58aa98a83bf96777b6bc.sample::
-._coin6.wav::AudioStreamWAV::5380206583858592231::1766226839::1774288642::1::::<><><>0<>0<>13dfeab5026c70d4ba7fa96fdc0fb4c5<>res://.godot/imported/._coin6.wav-11640287fc704b21f65b5cb1ce93594f.sample::
-._coin7.wav::AudioStreamWAV::7520225375490459125::1766226839::1774288642::1::::<><><>0<>0<>9d3d6fe0458282d486c81eb01a61bd84<>res://.godot/imported/._coin7.wav-6d65d9724592e4d0b55f632d19b1ca8a.sample::
-._coin8.wav::AudioStreamWAV::568185633209236134::1766226839::1774288642::1::::<><><>0<>0<>47d669ff798303b9093f112d8394f899<>res://.godot/imported/._coin8.wav-6ae39f6ba2b3b18674c1bf7e21be274f.sample::
-._coin9.wav::AudioStreamWAV::1968422766065285499::1766226839::1774288642::1::::<><><>0<>0<>8e8808c2a46de63f891fd09bb55ddca9<>res://.godot/imported/._coin9.wav-7ee3364aa4ef8173ae5c66b9e18b8a00.sample::
-._coin10.wav::AudioStreamWAV::7765728958911407059::1766226839::1774288642::1::::<><><>0<>0<>e209767ac36fa4ef93a81c4ba5fc128b<>res://.godot/imported/._coin10.wav-43f94e6405dba53e20ab1b781b200255.sample::
 ::res://Trap and Weapon/::1768676126
 ::res://Trap and Weapon/Trap and Weapon/::1769861480
 Bomb.png::CompressedTexture2D::6328587170916806976::1766416482::1766416499::1::::<><><>0<>0<>c5a525605bc5bba299fbebc130a503b7<>res://.godot/imported/Bomb.png-b3c0098883172dcbd8de4b5814dcc6bb.ctex::

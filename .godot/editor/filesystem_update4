@@ -1,14 +1,1 @@
-res://Scenes/mision.tscn
-res://Scripts/ResultadoMision.gd
-res://Scenes/mision2.tscn
-res://Scripts/mision2.gd
-res://Scenes/mision3.tscn
-res://Scripts/mision_3.gd
-res://Scenes/mision4.tscn
-res://Scripts/mision_4.gd
-res://Scenes/mision5.tscn
-res://Scripts/mision_5.gd
-res://Scenes/mision6.tscn
-res://Scripts/mision_6.gd
-res://Scenes/menupausa.tscn
-res://Scripts/menupausa.gd
+res://Scenes/coins.tscn
