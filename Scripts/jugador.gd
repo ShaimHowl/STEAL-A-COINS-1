@@ -13,7 +13,6 @@ var health
 var gravity = 940
 var muerto = false
 var mirando_izquierda = false
-var atacando = false
 var invulnerable = false
 
 @onready var animated_sprite_2d = $AnimatedSprite2D
@@ -24,47 +23,32 @@ func _ready():
 
 	mirando_izquierda = start_facing_left
 	animated_sprite_2d.flip_h = mirando_izquierda
-	animated_sprite_2d.connect("animation_finished", Callable(self, "_on_animation_finished"))
 
 func _physics_process(delta):
 	if muerto:
 		return
 
-	if Input.is_action_just_pressed("attack") and not atacando:
-		_iniciar_ataque()
-
-	if atacando:
-		if not is_on_floor():
-			velocity.y += gravity * delta
-
-		var direction = Input.get_axis("move_left", "move_right")
-		velocity.x = direction * speed
-
-		if direction < 0:
-			mirando_izquierda = true
-		elif direction > 0:
-			mirando_izquierda = false
-
-		animated_sprite_2d.flip_h = mirando_izquierda
-		move_and_slide()
-		return
-
+	# Flip manual
 	if Input.is_action_just_pressed("flip"):
 		mirando_izquierda = !mirando_izquierda
 		animated_sprite_2d.flip_h = mirando_izquierda
 
+	# Gravedad
 	if not is_on_floor():
 		velocity.y += gravity * delta
 
+	# Saltar
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump
 
+	# Movimiento horizontal
 	var direction = Input.get_axis("move_left", "move_right")
 
 	var current_speed = speed
 	if Input.is_action_pressed("run") and direction != 0:
 		current_speed = run_speed
 
+	# Mirar izquierda/derecha
 	if direction < 0:
 		mirando_izquierda = true
 	elif direction > 0:
@@ -72,6 +56,7 @@ func _physics_process(delta):
 
 	animated_sprite_2d.flip_h = mirando_izquierda
 
+	# Animaciones
 	if is_on_floor():
 		if direction == 0:
 			animated_sprite_2d.play("Idle")
@@ -86,24 +71,13 @@ func _physics_process(delta):
 		else:
 			animated_sprite_2d.play("fall")
 
+	# Aplicar movimiento
 	if direction:
 		velocity.x = direction * current_speed
 	else:
 		velocity.x = 0
 
 	move_and_slide()
-
-# ===============================
-# ATAQUE
-# ===============================
-
-func _iniciar_ataque():
-	atacando = true
-	animated_sprite_2d.play("attack")
-
-func _on_animation_finished():
-	if animated_sprite_2d.animation == "attack":
-		atacando = false
 
 # ===============================
 # DAÑO Y MUERTE
@@ -120,7 +94,6 @@ func recibir_daño(cantidad, ignorar_invulnerabilidad := false):
 	GameData.health = health
 	print("Vida:", health)
 
-	# Parpadeo al recibir daño
 	activar_invulnerabilidad()
 
 	if health <= 0:
