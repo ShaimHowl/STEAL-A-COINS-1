@@ -100,7 +100,7 @@ func recibir_daño(cantidad, ignorar_invulnerabilidad := false):
 		morir()
 
 # ===============================
-# PARPADEO CON AWAIT
+# PARPADEO CON AWAIT (CORREGIDO)
 # ===============================
 
 func activar_invulnerabilidad():
@@ -109,10 +109,12 @@ func activar_invulnerabilidad():
 
 	while tiempo < tiempo_invulnerable:
 		animated_sprite_2d.modulate = Color(1, 0, 0)
-		await get_tree().create_timer(tiempo_flash).timeout
+		var t1 = get_tree().create_timer(tiempo_flash)
+		await t1.timeout
 
 		animated_sprite_2d.modulate = Color(1, 1, 1)
-		await get_tree().create_timer(tiempo_flash).timeout
+		var t2 = get_tree().create_timer(tiempo_flash)
+		await t2.timeout
 
 		tiempo += tiempo_flash * 2
 
@@ -143,5 +145,7 @@ func morir():
 	animated_sprite_2d.modulate = Color(1, 1, 1)
 	animated_sprite_2d.play("")
 
-	await get_tree().create_timer(1.0).timeout
+	var t = get_tree().create_timer(1.0)
+	await t.timeout
+
 	get_tree().change_scene_to_file("res://Scenes/misionfallida.tscn")

@@ -1,0 +1,164 @@
+[gd_scene format=3 uid="uid://c4s73f8pmgti1"]
+
+[ext_resource type="Script" uid="uid://cjthmisr424oi" path="res://Scripts/detalles_6.gd" id="1_hdi38"]
+[ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_s0c7q"]
+[ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_b5t4b"]
+[ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="4_g2ntk"]
+[ext_resource type="Texture2D" uid="uid://huemn6fs8kn0" path="res://Assets/Background/fondogris.png" id="5_uim55"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5fmoo"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 9
+border_width_bottom = 9
+border_color = Color(0.9882353, 0.73333335, 0, 1)
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2rns"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+border_width_left = 16
+border_width_top = 14
+border_width_right = 15
+border_width_bottom = 17
+border_color = Color(0.9882353, 0.73333335, 0, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7rddw"]
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6cbc2"]
+bg_color = Color(0.9882353, 0.73333335, 0, 1)
+
+[sub_resource type="Animation" id="Animation_cfapw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_i0yh6"]
+resource_name = "trampas1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_iixit"]
+_data = {
+&"RESET": SubResource("Animation_cfapw"),
+&"trampas1": SubResource("Animation_i0yh6")
+}
+
+[node name="detalles_6" type="Node2D" unique_id=773978681]
+script = ExtResource("1_hdi38")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=959619340]
+offset_right = 1361.0
+offset_bottom = 127.0
+color = Color(0.1254902, 0.1254902, 0.13333334, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=2002221641]
+offset_right = 1361.0
+offset_bottom = 711.0
+color = Color(0.1254902, 0.1254902, 0.13333334, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1142870706]
+offset_top = 126.0
+offset_right = 1361.0
+offset_bottom = 535.0
+color = Color(0.23529412, 0.23529412, 0.23529412, 1)
+
+[node name="Titulo" type="Label" parent="." unique_id=76083789]
+offset_left = 9.0
+offset_top = 38.0
+offset_right = 1314.0
+offset_bottom = 109.0
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(3.7803085, 0, 0.18648337, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
+theme_override_fonts/font = ExtResource("2_s0c7q")
+theme_override_font_sizes/font_size = 81
+text = "Nivel 6"
+horizontal_alignment = 1
+
+[node name="Subtitulo" type="Label" parent="." unique_id=1259948063]
+offset_left = 339.0
+offset_top = 167.0
+offset_right = 971.0
+offset_bottom = 225.0
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.3019608, 0.10980392, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
+theme_override_fonts/font = ExtResource("2_s0c7q")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_5fmoo")
+text = "-1 de vida/0.3"
+
+[node name="Subtitulo2" type="Label" parent="." unique_id=628313008]
+offset_left = 60.0
+offset_top = 252.0
+offset_right = 1292.0
+offset_bottom = 505.0
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.3019608, 0.10980392, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
+theme_override_fonts/font = ExtResource("2_s0c7q")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_5fmoo")
+text = "En este ultimo nivel no habrá trampas
+
+solo pinchos pero tu vida ira bajando 
+
+de 1 en 1, mas vale que lo acabes pronto
+
+¡¡¡Buena Suerte!!!"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1010612238]
+offset_left = 409.0
+offset_top = 584.0
+offset_right = 872.0
+offset_bottom = 682.0
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_focus_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.7372549, 0, 1)
+theme_override_fonts/font = ExtResource("3_b5t4b")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/normal = SubResource("StyleBoxFlat_x2rns")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7rddw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6cbc2")
+text = "Seguir
+"
+
+[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=780621268]
+stream = ExtResource("4_g2ntk")
+volume_db = -5.474
+
+[node name="transicion" type="Sprite2D" parent="." unique_id=1934651516]
+visible = false
+position = Vector2(684, 380)
+scale = Vector2(1.4785156, 1)
+texture = ExtResource("5_uim55")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion" unique_id=1598321289]
+libraries/ = SubResource("AnimationLibrary_iixit")
+autoplay = &"trampas1"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

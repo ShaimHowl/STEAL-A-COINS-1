@@ -1,2 +1,8 @@
 res://Scenes/nivel_5.tscn
+res://Scripts/nivel_5.gd
+res://Scenes/detalles_5.tscn
+res://Scenes/detalles_6.tscn
+res://Scenes/nivel_6.tscn
+res://Scripts/veneno.gd
+res://Scripts/detalles_6.gd
 res://Scripts/jugador.gd

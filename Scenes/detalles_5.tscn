@@ -144,6 +144,7 @@ stream = ExtResource("5_whcjo")
 volume_db = -5.474
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=953316526]
+visible = false
 position = Vector2(684, 380)
 scale = Vector2(1.4785156, 1)
 texture = ExtResource("6_tsjc1")

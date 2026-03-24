@@ -2,7 +2,7 @@ extends Area2D
 
 @export var daño_por_tick := 1
 @export var daño_total := 160
-@export var tiempo_entre_ticks := 0.25
+@export var tiempo_entre_ticks := 0.3
 
 var daño_acumulado := 0
 var objetivo: Node = null
@@ -15,7 +15,7 @@ func _ready():
 	add_child(timer)
 	timer.timeout.connect(_on_timer_timeout)
 
-	body_entered.connect(_on_body_entered)
+
 
 func _on_body_entered(body):
 	if objetivo != null:
@@ -28,7 +28,8 @@ func _on_body_entered(body):
 		hide()
 
 		if has_node("CollisionShape2D"):
-			$CollisionShape2D.disabled = true
+			$CollisionShape2D.set_deferred("disabled", true)
+
 
 		timer.start()
 
