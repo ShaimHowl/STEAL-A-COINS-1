@@ -1,0 +1,159 @@
+[gd_scene format=3 uid="uid://chwi0a0xqe7hj"]
+
+[ext_resource type="Texture2D" uid="uid://bnrc8581650m5" path="res://Assets/Trap and Weapon/Suriken.png" id="2_pxnwa"]
+[ext_resource type="AudioStream" uid="uid://druswm8b1d213" path="res://Sounds/homemadeoof-47509.mp3" id="3_rqdue"]
+
+[sub_resource type="GDScript" id="GDScript_bnn2i"]
+script/source = "extends CharacterBody2D
+
+var SPEED = 220
+const RAY_FLOOR_POSITION_X = 30
+const RAY_WALL_TARGET_POSITION_X = 29
+var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
+
+@export var empieza_a_la_derecha: bool = true
+
+var jugador_en_contacto: Node2D = null
+var tiempo_entre_daño := 0.4
+var temporizador_daño := 0.0
+
+func _ready():
+	if empieza_a_la_derecha:
+		velocity.x = SPEED
+		$detection_floor.position.x = RAY_FLOOR_POSITION_X
+		$detection_wall.target_position.x = RAY_WALL_TARGET_POSITION_X
+	else:
+		velocity.x = -SPEED
+		$detection_floor.position.x = -RAY_FLOOR_POSITION_X
+		$detection_wall.target_position.x = -RAY_WALL_TARGET_POSITION_X
+
+func _physics_process(delta):
+	if not is_on_floor():
+		velocity.y += gravity * delta
+
+	if not $detection_floor.is_colliding() or $detection_wall.is_colliding():
+		velocity.x *= -1
+		$detection_floor.position.x *= -1
+		$detection_wall.target_position.x *= -1
+
+	if jugador_en_contacto != null:
+		temporizador_daño -= delta
+		if temporizador_daño <= 0.0:
+			if jugador_en_contacto.has_method(\"recibir_daño\"):
+				jugador_en_contacto.recibir_daño(100)
+				$AudioStreamPlayer.play()
+			temporizador_daño = tiempo_entre_daño
+
+	move_and_slide()
+
+func _on_damage_body_entered(body: Node2D) -> void:
+	if body.name == \"jugador\":
+		jugador_en_contacto = body
+		temporizador_daño = 0.0
+
+func _on_damage_body_exited(body: Node2D) -> void:
+	if body == jugador_en_contacto:
+		jugador_en_contacto = null
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jp6yl"]
+atlas = ExtResource("2_pxnwa")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_syb6t"]
+atlas = ExtResource("2_pxnwa")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sr3h5"]
+atlas = ExtResource("2_pxnwa")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oet3e"]
+atlas = ExtResource("2_pxnwa")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mbaom"]
+atlas = ExtResource("2_pxnwa")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynh0k"]
+atlas = ExtResource("2_pxnwa")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ckpvg"]
+atlas = ExtResource("2_pxnwa")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h0w0c"]
+atlas = ExtResource("2_pxnwa")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rqrpb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jp6yl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_syb6t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sr3h5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oet3e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mbaom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynh0k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ckpvg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h0w0c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kee3k"]
+size = Vector2(25, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iside"]
+size = Vector2(47, 23)
+
+[node name="trampa1" type="CharacterBody2D" unique_id=336879392]
+collision_layer = 16
+script = SubResource("GDScript_bnn2i")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=992763726]
+position = Vector2(3.5, -9.256001)
+scale = Vector2(2.09375, 1.859)
+sprite_frames = SubResource("SpriteFrames_rqrpb")
+autoplay = "default"
+
+[node name="floor" type="CollisionShape2D" parent="." unique_id=1249132560]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_kee3k")
+
+[node name="detection_floor" type="RayCast2D" parent="." unique_id=73164955]
+position = Vector2(30, -9)
+target_position = Vector2(0, 16)
+
+[node name="detection_wall" type="RayCast2D" parent="." unique_id=2059420271]
+target_position = Vector2(29, 0)
+
+[node name="Damage" type="Area2D" parent="." unique_id=1775894612]
+collision_layer = 2
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Damage" unique_id=610195004]
+position = Vector2(2.5, -15.5)
+shape = SubResource("RectangleShape2D_iside")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1043796834]
+stream = ExtResource("3_rqdue")

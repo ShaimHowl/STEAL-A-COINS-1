@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var SPEED = 180
+var SPEED = 220
 const RAY_FLOOR_POSITION_X = 30
 const RAY_WALL_TARGET_POSITION_X = 29
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -8,7 +8,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @export var empieza_a_la_derecha: bool = true
 
 var jugador_en_contacto: Node2D = null
-var tiempo_entre_daño := 0.4
+var tiempo_entre_daño := 0.25
 var temporizador_daño := 0.0
 
 func _ready():

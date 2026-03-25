@@ -1,6 +1,6 @@
+CharacterBody2D
 Button
 CanvasLayer
-CharacterBody2D
 AnimatedSprite2D
 TileMapLayer
 CollisionShape2D

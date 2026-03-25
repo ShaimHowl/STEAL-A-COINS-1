@@ -1,2 +1,12 @@
 res://Scenes/nivel_6.tscn
 res://Scripts/veneno.gd
+res://Scenes/nivel_5.tscn
+res://Scenes/mundo.tscn
+res://Scenes/sueloveneno.tscn
+res://Scripts/sueloveneno.gd
+res://Scripts/mundo.gd
+res://Scripts/trampa.gd
+res://Scenes/enemy_3.tscn
+res://Scenes/mundo_1.tscn
+res://Scenes/trampa_1.tscn
+res://Scripts/trampa_1.gd
