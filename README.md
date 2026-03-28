@@ -49,11 +49,11 @@ Prepárate para sobrevivir a distintos obstáculos:
 
 ### ▶️ Pasos para probar el juego  
 
-1. Clona el repositorio:  
-
+1. Clona el repositorio en la terminal:  
+git@github.com:ShaimHowl/STEAL-A-COINS-1.git
 2. Abre el proyecto en Godot Engine o ejecuta el juego desde la carpeta del proyecto.  
 
-3. Ejecuta la escena principal (`Menu.tscn`).  
+3. Ejecuta la escena principal (`main_menu.tscn`).  
 
 4. ¡Empieza a jugar! 🪙🚀 
 ## 🎮 Controles y menú  
