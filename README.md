@@ -42,15 +42,17 @@ Prepárate para sobrevivir a distintos obstáculos:
 
 ### 📋 Requisitos  
 
-- Godot Engine Version 4.6
-- GitHub
+- [Godot Engine](https://godotengine.org/) (recomendado: última versión estable 4.6)  
+- Git  
 
 ---
 
 ### ▶️ Pasos para probar el juego  
 
-1. Clona el repositorio en la terminal:  
-git@github.com:ShaimHowl/STEAL-A-COINS-1.git
+1. Clona el repositorio:
+
+```bash
+git clone https://github.com/TU-USUARIO/Collect-the-Coins.git
 2. Abre el proyecto en Godot Engine o ejecuta el juego desde la carpeta del proyecto.  
 
 3. Ejecuta la escena principal (`main_menu.tscn`).  
