@@ -18,23 +18,21 @@ Cada nivel presenta nuevos desafíos, enemigos y entornos, haciendo que cada par
 
 ## ⚙️ Mecánicas principales  
 
-- 🪙 **Recolección de monedas**: Debes recoger todas las monedas para completar el nivel.  
-- ⏳ **Cuenta atrás**: El tiempo es limitado, así que tendrás que actuar rápido.  
-- ❤️ **Sistema de vida (100%)**: Empiezas con vida completa, pero cuidado… perderás vida con cada daño.  
-- 🔄 **Progresión de niveles**: Al completar un nivel, pasas al siguiente **sin recuperar la vida**.  
-- 🗺️ **Interfaz por mapa**: Cada nivel cuenta con su propia interfaz adaptada.  
+- 🪙 **Recolección de monedas**  
+- ⏳ **Cuenta atrás**  
+- ❤️ **Sistema de vida (100%)**  
+- 🔄 **Progresión sin regenerar vida**  
+- 🗺️ **Interfaz por mapa**  
 
 ---
 
 ## ☠️ Peligros y enemigos  
 
-Prepárate para sobrevivir a distintos obstáculos:  
-
-- 🪚 **Sierras**: Mortales al contacto.  
-- 👾 **Enemigos móviles**: Se desplazan de derecha a izquierda y te dañan al tocarte.  
-- 🌵 **Pinchos**: Colocados en el suelo, castigan cualquier error.  
-- ☠️ **Veneno**: Zonas peligrosas que reducen tu vida.  
-- 🔥 **Fuego**: Obstáculos que infligen daño constante.  
+- 🪚 Sierras  
+- 👾 Enemigos móviles  
+- 🌵 Pinchos  
+- ☠️ Veneno  
+- 🔥 Fuego  
 
 ---
 
@@ -52,17 +50,22 @@ Prepárate para sobrevivir a distintos obstáculos:
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/TU-USUARIO/Collect-the-Coins.git
+git clone https://github.com/ShaimHowl/STEAL-A-COINS-1.git
+```
+
 2. Abre el proyecto en Godot Engine o ejecuta el juego desde la carpeta del proyecto.  
 
 3. Ejecuta la escena principal (`main_menu.tscn`).  
 
-4. ¡Empieza a jugar! 🪙🚀 
+4. ¡Empieza a jugar! 🪙🚀  
+
+---
+
 ## 🎮 Controles y menú  
 
 - ⌨️ **ESC – Menú de pausa**  
 
-Al pausar el juego tendrás las siguientes opciones:  
+Opciones:  
 
 - 🔄 Reiniciar nivel  
 - 🏠 Volver al menú  
@@ -72,59 +75,53 @@ Al pausar el juego tendrás las siguientes opciones:
 
 ## 📁 Estructura del proyecto  
 
-- `scenes/`: Escenas principales del juego (niveles, menú, UI).  
-- `scripts/`: Lógica del juego en GDScript.  
-- `assets/`: Sprites, sonidos y recursos visuales, personaje, basicamente todo.  
-- `ui/`: Interfaces de usuario.  
+- `scenes/` → niveles, menú, UI  
+- `scripts/` → lógica del juego  
+- `assets/` → sprites, sonidos, personaje  
+- `ui/` → interfaces  
 
 ---
 
 ## 🎯 Ejemplo de partida  
 
-- Empiezas con 100% de vida y el tiempo en marcha.  
-- Recorres el mapa esquivando enemigos y trampas.  
-- Recoges todas las monedas antes de que se acabe el tiempo.  
-- Si sobrevives… pasas al siguiente nivel con la vida restante.  
+- Empiezas con 100% de vida  
+- Esquivas enemigos y trampas  
+- Recoges todas las monedas  
+- Pasas de nivel sin recuperar vida  
 
 ---
 
 ## 🔧 Personalización y expansión  
 
-El proyecto está diseñado para ser fácilmente ampliable:  
-
-- Añadir nuevos niveles desde `scenes/`.  
-- Crear nuevos enemigos y trampas en `scripts/`.  
-- Modificar la interfaz de cada mapa.  
-- Ajustar dificultad (tiempo, daño, velocidad, etc.).  
+- Añadir niveles  
+- Crear enemigos  
+- Modificar UI  
+- Ajustar dificultad  
 
 ---
 
 ## 🙌 Contribuciones  
 
-¡Las contribuciones son bienvenidas!  
-
-Si quieres mejorar el juego:  
-
-1. Haz un fork del repositorio  
+1. Haz un fork  
 2. Crea una rama (`git checkout -b mejora-nueva`)  
-3. Realiza tus cambios  
-4. Envía un pull request  
+3. Haz cambios  
+4. Envía pull request  
 
 ---
 
 ## 📝 Roadmap  
 
-- Añadir más niveles  
-- Nuevos enemigos y obstáculos  
+- Más niveles  
+- Nuevos enemigos  
 - Sistema de puntuación  
-- Mejora de efectos visuales y sonido  
-- Posible modo contrarreloj avanzado  
+- Mejora visual y sonora  
+- Modo contrarreloj  
 
 ---
 
 ## 👤 Autor  
 
-Desarrollado por **Shaim Howlader/Jansen Ureña**  
+Desarrollado por **Shaim Howlader / Jansen Ureña**  
 
 ---
 
