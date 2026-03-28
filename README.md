@@ -38,6 +38,24 @@ Prepárate para sobrevivir a distintos obstáculos:
 
 ---
 
+## 🛠️ Instalación y uso  
+
+### 📋 Requisitos  
+
+- Godot Engine Version 4.6
+- GitHub
+
+---
+
+### ▶️ Pasos para probar el juego  
+
+1. Clona el repositorio:  
+
+2. Abre el proyecto en Godot Engine o ejecuta el juego desde la carpeta del proyecto.  
+
+3. Ejecuta la escena principal (`Menu.tscn`).  
+
+4. ¡Empieza a jugar! 🪙🚀 
 ## 🎮 Controles y menú  
 
 - ⌨️ **ESC – Menú de pausa**  
