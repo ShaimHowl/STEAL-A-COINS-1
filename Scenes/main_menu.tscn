@@ -16,10 +16,10 @@
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="10_16hvj"]
 [ext_resource type="PackedScene" uid="uid://ctd8gggp7pk26" path="res://Scenes/sueloveneno.tscn" id="12_t1dhk"]
 [ext_resource type="PackedScene" uid="uid://bnb34w848pgft" path="res://Scenes/fire.tscn" id="13_5egv6"]
-[ext_resource type="PackedScene" uid="uid://dpqnh5sv8jh3b" path="res://Scenes/coins.tscn" id="14_vtepg"]
 [ext_resource type="Texture2D" uid="uid://b7ua0nsa53s83" path="res://Assets/Forest_Monsters_FREE/Mushroom/Mushroom without VFX/Mushroom-Run.png" id="17_wyh8j"]
 [ext_resource type="Texture2D" uid="uid://b52boxyxtk7wj" path="res://Assets/Animate Spikes/Animate Spikes/slimeWalk1.png" id="18_mkpwh"]
 [ext_resource type="Texture2D" uid="uid://ccuqxi4dtl36n" path="res://Assets/Animate Spikes/Animate Spikes/slimeWalk2.png" id="19_4nkqq"]
+[ext_resource type="Texture2D" uid="uid://dncuitfxjy7ng" path="res://Assets/Coins_16x16/PNG/Coin_One.png" id="20_4nkqq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jp6yl"]
 atlas = ExtResource("3_m3bi6")
@@ -546,6 +546,98 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_nolx5"]
+atlas = ExtResource("20_4nkqq")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_voadd"]
+atlas = ExtResource("20_4nkqq")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xgac7"]
+atlas = ExtResource("20_4nkqq")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4i61g"]
+atlas = ExtResource("20_4nkqq")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgoy0"]
+atlas = ExtResource("20_4nkqq")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sq6wh"]
+atlas = ExtResource("20_4nkqq")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mfwgu"]
+atlas = ExtResource("20_4nkqq")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kkw3d"]
+atlas = ExtResource("20_4nkqq")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_snbde"]
+atlas = ExtResource("20_4nkqq")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6877r"]
+atlas = ExtResource("20_4nkqq")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_meaht"]
+atlas = ExtResource("20_4nkqq")
+region = Rect2(160, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6y6oo"]
+atlas = ExtResource("20_4nkqq")
+region = Rect2(176, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6dk6o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nolx5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_voadd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xgac7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4i61g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgoy0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sq6wh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mfwgu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kkw3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_snbde")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6877r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_meaht")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6y6oo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 11.0
+}]
+
 [node name="MainMenu" type="Control" unique_id=1690812792]
 layout_mode = 3
 anchors_preset = 15
@@ -581,9 +673,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -309.0
-offset_top = -297.0
-offset_right = 300.0
+offset_left = -312.0
+offset_top = -302.0
+offset_right = 297.0
 offset_bottom = -151.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -592,8 +684,8 @@ theme_override_colors/font_shadow_color = Color(0.9647059, 0.28627452, 0, 1)
 theme_override_colors/font_outline_color = Color(0.42745098, 0.050980393, 0, 1)
 theme_override_constants/shadow_offset_y = -2
 theme_override_fonts/font = ExtResource("3_n45e2")
-theme_override_font_sizes/font_size = 116
-text = "Steal a Coins"
+theme_override_font_sizes/font_size = 150
+text = "C.T.C"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = SubResource("GDScript_trj04")
@@ -681,20 +773,12 @@ text = "Salir
 "
 
 [node name="sueloveneno" parent="." unique_id=1063590978 instance=ExtResource("12_t1dhk")]
-position = Vector2(1217, 434.00003)
-scale = Vector2(11, 11)
+position = Vector2(1211, 465)
+scale = Vector2(8, 8)
 
 [node name="CharacterBody2D" parent="." unique_id=1975231683 instance=ExtResource("13_5egv6")]
 position = Vector2(221, 536)
 scale = Vector2(4, 4)
-
-[node name="Coins" parent="." unique_id=995462630 instance=ExtResource("14_vtepg")]
-position = Vector2(1308, 53)
-scale = Vector2(3, 3)
-
-[node name="Coins2" parent="." unique_id=1824731519 instance=ExtResource("14_vtepg")]
-position = Vector2(101, 53.000004)
-scale = Vector2(3, 3)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1024446499]
 position = Vector2(710, 470)
@@ -717,6 +801,18 @@ scale = Vector2(2.4500008, 2.125)
 sprite_frames = SubResource("SpriteFrames_ehtkc")
 autoplay = "default"
 flip_h = true
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="." unique_id=11686922]
+position = Vector2(108, 103.000015)
+scale = Vector2(5, 4.333)
+sprite_frames = SubResource("SpriteFrames_6dk6o")
+autoplay = "default"
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="." unique_id=1010021521]
+position = Vector2(1227, 103)
+scale = Vector2(5, 4.333)
+sprite_frames = SubResource("SpriteFrames_6dk6o")
+autoplay = "default"
 
 [connection signal="pressed" from="Button" to="." method="_on_comenzar_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_opciones_pressed"]

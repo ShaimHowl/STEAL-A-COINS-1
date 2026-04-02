@@ -107,7 +107,7 @@ target_position = Vector2(70, 0)
 target_position = Vector2(-70, 0)
 
 [node name="Timer" type="Timer" parent="." unique_id=312989693]
-wait_time = 0.4
+wait_time = 0.2
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1912699588]
 stream = ExtResource("3_afpow")

@@ -48,7 +48,7 @@ func _physics_process(delta):
 	if Input.is_action_pressed("run") and direction != 0:
 		current_speed = run_speed
 
-	# Mirar izquierda/derecha
+	# Mirar dirección
 	if direction < 0:
 		mirando_izquierda = true
 	elif direction > 0:
@@ -71,7 +71,7 @@ func _physics_process(delta):
 		else:
 			animated_sprite_2d.play("fall")
 
-	# Aplicar movimiento
+	# Movimiento
 	if direction:
 		velocity.x = direction * current_speed
 	else:
@@ -83,7 +83,7 @@ func _physics_process(delta):
 # DAÑO Y MUERTE
 # ===============================
 
-func recibir_daño(cantidad, ignorar_invulnerabilidad := false):
+func recibir_daño(cantidad, ignorar_invulnerabilidad := true):
 	if muerto:
 		return
 
@@ -94,13 +94,15 @@ func recibir_daño(cantidad, ignorar_invulnerabilidad := false):
 	GameData.health = health
 	print("Vida:", health)
 
-	activar_invulnerabilidad()
+	# 🔒 evita múltiples corrutinas
+	if not invulnerable:
+		activar_invulnerabilidad()
 
 	if health <= 0:
 		morir()
 
 # ===============================
-# PARPADEO CON AWAIT (CORREGIDO)
+# INVULNERABILIDAD MEJORADA
 # ===============================
 
 func activar_invulnerabilidad():
@@ -108,15 +110,23 @@ func activar_invulnerabilidad():
 	var tiempo := 0.0
 
 	while tiempo < tiempo_invulnerable:
+		if !is_inside_tree() or muerto:
+			break
+
 		animated_sprite_2d.modulate = Color(1, 0, 0)
-		var t1 = get_tree().create_timer(tiempo_flash)
-		await t1.timeout
+		await get_tree().create_timer(tiempo_flash).timeout
+
+		if !is_inside_tree() or muerto:
+			break
 
 		animated_sprite_2d.modulate = Color(1, 1, 1)
-		var t2 = get_tree().create_timer(tiempo_flash)
-		await t2.timeout
+		await get_tree().create_timer(tiempo_flash).timeout
 
 		tiempo += tiempo_flash * 2
+
+	# 🔁 reset visual SIEMPRE
+	if is_inside_tree():
+		animated_sprite_2d.modulate = Color(1, 1, 1)
 
 	invulnerable = false
 
@@ -140,12 +150,15 @@ func curar(cantidad):
 # ===============================
 
 func morir():
+	if muerto:
+		return
+
 	muerto = true
 	velocity = Vector2.ZERO
 	animated_sprite_2d.modulate = Color(1, 1, 1)
 	animated_sprite_2d.play("")
 
-	var t = get_tree().create_timer(1.0)
-	await t.timeout
+	await get_tree().create_timer(1.0).timeout
 
-	get_tree().change_scene_to_file("res://Scenes/misionfallida.tscn")
+	if is_inside_tree():
+		get_tree().change_scene_to_file("res://Scenes/misionfallida.tscn")

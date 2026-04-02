@@ -82,7 +82,7 @@ color = Color(0.1254902, 0.1254902, 0.13333334, 1)
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=1142870706]
 offset_top = 126.0
 offset_right = 1361.0
-offset_bottom = 535.0
+offset_bottom = 566.0
 color = Color(0.23529412, 0.23529412, 0.23529412, 1)
 
 [node name="Titulo" type="Label" parent="." unique_id=76083789]
@@ -112,21 +112,23 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_5fmoo")
 text = "-1 de vida/0.3"
 
 [node name="Subtitulo2" type="Label" parent="." unique_id=628313008]
-offset_left = 60.0
-offset_top = 252.0
-offset_right = 1292.0
-offset_bottom = 505.0
+offset_left = 25.0
+offset_top = 243.0
+offset_right = 1331.0
+offset_bottom = 533.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(1, 0.3019608, 0.10980392, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_s0c7q")
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_5fmoo")
 text = "En este ultimo nivel no habrá trampas
 
-solo pinchos pero tu vida ira bajando 
+ pero tu vida ira bajando 
 
-de 1 en 1, mas vale que lo acabes pronto
+de 1 en 1, mas vale que lo acabes pronto, un salto
+
+ mal te podria costar la partida
 
 ¡¡¡Buena Suerte!!!"
 horizontal_alignment = 1

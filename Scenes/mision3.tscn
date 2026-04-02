@@ -1,16 +1,15 @@
 [gd_scene format=3 uid="uid://c2v70c25daah6"]
 
 [ext_resource type="Script" uid="uid://b4pyur4og12ex" path="res://Scripts/mision_3.gd" id="1_00ljf"]
-[ext_resource type="Texture2D" uid="uid://cx52r06ujoqb0" path="res://Assets/mc.png" id="1_pogfr"]
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_00ljf"]
+[ext_resource type="Texture2D" uid="uid://3em6nv3pxml6" path="res://Detallesf/misionf.png" id="2_pcqls"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_pcqls"]
 [ext_resource type="Texture2D" uid="uid://cmo6rlgoleck3" path="res://Icono/Copilot_20260102_165125.png" id="4_p8764"]
 [ext_resource type="Texture2D" uid="uid://c6026bdnis2og" path="res://Icono/home.png" id="6_00ljf"]
 [ext_resource type="AudioStream" uid="uid://dx8rucdunm3do" path="res://Sounds/complete.wav" id="6_wawrx"]
 [ext_resource type="Texture2D" uid="uid://huemn6fs8kn0" path="res://Assets/Background/fondogris.png" id="8_00ljf"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="8_8qtbn"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_00ljf"]
+[ext_resource type="Texture2D" uid="uid://dncuitfxjy7ng" path="res://Assets/Coins_16x16/PNG/Coin_One.png" id="10_pcqls"]
 
 [sub_resource type="Animation" id="Animation_qrfpl"]
 length = 0.001
@@ -52,55 +51,150 @@ _data = {
 &"mostrar_textos": SubResource("Animation_xjrh6")
 }
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_nolx5"]
+atlas = ExtResource("10_pcqls")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_voadd"]
+atlas = ExtResource("10_pcqls")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xgac7"]
+atlas = ExtResource("10_pcqls")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4i61g"]
+atlas = ExtResource("10_pcqls")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgoy0"]
+atlas = ExtResource("10_pcqls")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sq6wh"]
+atlas = ExtResource("10_pcqls")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mfwgu"]
+atlas = ExtResource("10_pcqls")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kkw3d"]
+atlas = ExtResource("10_pcqls")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_snbde"]
+atlas = ExtResource("10_pcqls")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6877r"]
+atlas = ExtResource("10_pcqls")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_meaht"]
+atlas = ExtResource("10_pcqls")
+region = Rect2(160, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6y6oo"]
+atlas = ExtResource("10_pcqls")
+region = Rect2(176, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p8764"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nolx5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_voadd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xgac7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4i61g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgoy0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sq6wh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mfwgu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kkw3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_snbde")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6877r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_meaht")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6y6oo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 11.0
+}]
+
 [node name="CanvasLayer" type="CanvasLayer" unique_id=835007490]
 script = ExtResource("1_00ljf")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1289145167]
-position = Vector2(670, 351)
-scale = Vector2(0.9244791, 0.7363281)
-texture = ExtResource("1_pogfr")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1212150120]
+position = Vector2(679, 361.00003)
+scale = Vector2(0.9153645, 0.72851557)
+texture = ExtResource("2_pcqls")
 
-[node name="LabelTitulo" type="Label" parent="." unique_id=455568998]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -582.0
-offset_top = 130.0
-offset_right = 591.0
-offset_bottom = 199.0
-grow_horizontal = 2
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+[node name="LabelTitulo" type="Label" parent="." unique_id=174932732]
+offset_left = 34.0
+offset_top = 126.0
+offset_right = 1339.0
+offset_bottom = 179.0
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(3.78, 0, 0.186, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_00ljf")
-theme_override_font_sizes/font_size = 63
-theme_override_styles/focus = SubResource("StyleBoxFlat_00ljf")
-text = "MISION  COMPLETADA"
+theme_override_font_sizes/font_size = 60
+text = "MISIÓN COMPLETADA"
 horizontal_alignment = 1
-metadata/_edit_use_anchors_ = true
 
-[node name="LabelTexto" type="Label" parent="." unique_id=1475796239]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -420.0
-offset_top = -64.0
-offset_right = 421.0
-offset_bottom = -11.0
+[node name="LabelTexto" type="Label" parent="." unique_id=1375297389]
+anchors_preset = -1
+anchor_left = 0.44800884
+anchor_top = 0.45480227
+anchor_right = 0.55199116
+anchor_bottom = 0.45480227
+offset_left = -332.5
+offset_top = -35.0
+offset_right = 367.5
+offset_bottom = 130.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.9036193, 0, 0.09477439, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_outline_size = 1
 theme_override_fonts/font = ExtResource("3_pcqls")
 theme_override_font_sizes/font_size = 60
-text = "Mision Completada"
+text = "Mision Completada
+"
+metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="." unique_id=1013178685]
-offset_left = 781.0
-offset_top = 445.0
-offset_right = 1006.0
-offset_bottom = 660.0
-theme_override_colors/icon_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_colors/icon_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
+offset_left = 822.0
+offset_top = 432.0
+offset_right = 1045.0
+offset_bottom = 645.0
+theme_override_colors/icon_pressed_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/icon_hover_color = Color(1, 0.7372549, 0, 1)
 icon = ExtResource("4_p8764")
 expand_icon = true
 
@@ -109,8 +203,8 @@ offset_left = 321.0
 offset_top = 433.0
 offset_right = 549.0
 offset_bottom = 648.0
-theme_override_colors/icon_pressed_color = Color(0.20392157, 0.8156863, 0.2, 1)
-theme_override_colors/icon_hover_color = Color(0.20392157, 0.8156863, 0.2, 1)
+theme_override_colors/icon_pressed_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/icon_hover_color = Color(1, 0.7372549, 0, 1)
 icon = ExtResource("6_00ljf")
 expand_icon = true
 
@@ -124,13 +218,25 @@ scale = Vector2(1.7304688, 1)
 texture = ExtResource("8_00ljf")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D2" unique_id=878338666]
-root_node = NodePath("../../Sprite2D")
+root_node = NodePath("")
 libraries/ = SubResource("AnimationLibrary_xjrh6")
 autoplay = &"mision"
 
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1429392355]
 stream = ExtResource("8_8qtbn")
 volume_db = -5.474
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=804607251]
+position = Vector2(89.00001, 153.00002)
+scale = Vector2(5, 4.333)
+sprite_frames = SubResource("SpriteFrames_p8764")
+autoplay = "default"
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="." unique_id=1874425670]
+position = Vector2(1276.0001, 153.00002)
+scale = Vector2(5, 4.333)
+sprite_frames = SubResource("SpriteFrames_p8764")
+autoplay = "default"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

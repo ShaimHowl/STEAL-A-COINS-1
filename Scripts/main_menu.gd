@@ -52,3 +52,6 @@ func _on_salir_pressed():
 	tecla_audio.play()
 	await get_tree().create_timer(0.1).timeout
 	get_tree().quit()
+	GameData.health = GameData.max_health
+	GameData.monedas = 0
+	GameData.monedas_recogidas.clear()

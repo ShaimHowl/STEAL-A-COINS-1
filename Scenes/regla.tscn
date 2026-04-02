@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://huemn6fs8kn0" path="res://Assets/Background/fondogris.png" id="7_yh6y6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhsot"]
-bg_color = Color(1, 1, 1, 1)
+bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yh6y6"]
 bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
@@ -65,46 +65,51 @@ script = ExtResource("1_huoo6")
 layout_mode = 0
 offset_right = 1378.0
 offset_bottom = 720.0
-color = Color(0.1333332, 0, 1, 1)
+color = Color(1, 0.7372549, 0, 1)
 
 [node name="portada" type="Sprite2D" parent="." unique_id=1986516031]
-position = Vector2(675.5, 353.5)
+position = Vector2(751, 228.00002)
 scale = Vector2(1.3271484, 0.6845703)
 
 [node name="Label" type="Label" parent="." unique_id=418025834]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 18.0
-offset_right = 363.0
+offset_right = 313.0
 offset_bottom = 67.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_vy0c0")
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhsot")
 text = "Reglas:"
 
 [node name="Label2" type="Label" parent="." unique_id=1957333392]
 layout_mode = 0
-offset_left = 62.0
-offset_top = 88.0
-offset_right = 1274.0
-offset_bottom = 418.0
+offset_left = 65.0
+offset_top = 79.0
+offset_right = 1220.0
+offset_bottom = 615.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("3_huoo6")
 theme_override_font_sizes/font_size = 38
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhsot")
-text = "1. Recoger todas las monedas (no importa 
-el orden)
+text = "1. Recoger todas las monedas
 
 2. No morir ante las trampas o enemigos
 
-3. Llegar hasta la meta final
+3. Llegar hasta el ultimo nivel
 
-"
+AVISO: tienes solo 100% de vida y hay 
+un contador
+
+Tu vida no se reiniciará al siguiente 
+nivel, el nivel no acaba si no recoges
+todas las monedas. Cada trampa o 
+enemigo tiene su propio daño"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("4_x5iqr")
@@ -122,12 +127,7 @@ offset_bottom = 655.0
 theme_override_colors/font_color = Color(0.54408157, 0.066962525, 0.068398684, 1)
 theme_override_fonts/font = ExtResource("2_vy0c0")
 theme_override_font_sizes/font_size = 30
-text = "AVISO: tienes solo 100% de vida
-
-Tu vida no se reiniciará al siguiente 
-nivel, el nivel no acab si no recoges
-todas las monedas. Cada trampa o 
-enemigo tiene su propio daño
+text = "
 "
 horizontal_alignment = 1
 script = ExtResource("6_rhsot")
@@ -138,17 +138,17 @@ volume_db = -20.0
 
 [node name="Button" type="Button" parent="." unique_id=162326153]
 layout_mode = 0
-offset_left = 300.0
-offset_top = 633.0
-offset_right = 1065.0
-offset_bottom = 699.0
+offset_left = 306.0
+offset_top = 636.0
+offset_right = 999.0
+offset_bottom = 702.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_focus_color = Color(0.49411765, 0.07058824, 0, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("3_huoo6")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_yh6y6")
-text = "Trampas o enemigos"
+text = "Siguiente"
 
 [node name="Fondogris" type="Sprite2D" parent="." unique_id=1763469617]
 visible = false
