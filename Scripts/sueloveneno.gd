@@ -1,7 +1,7 @@
 extends Node2D
 
 var jugador_en_contacto: Node2D = null
-var tiempo_entre_daño := 0.05  # daño cada 0.05 segundos
+var tiempo_entre_daño := 0.1  # daño cada 0.05 segundos
 var temporizador_daño := 0.0
 
 func _physics_process(delta):

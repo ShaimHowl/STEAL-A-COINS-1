@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://bnb34w848pgft"]
+[gd_scene format=3 uid="uid://bnb34w848pgft"]
 
 [ext_resource type="Script" uid="uid://dfnt8dohc5767" path="res://Scripts/pinchos.gd" id="1_idb68"]
 [ext_resource type="Script" uid="uid://dfmawnyxhunva" path="res://Scripts/fire.gd" id="1_s2jnl"]
@@ -117,34 +117,34 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_meckj"]
 size = Vector2(32, 44)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1561230310]
 collision_layer = 16
 script = ExtResource("1_s2jnl")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." unique_id=794967008]
 collision_layer = 2
 collision_mask = 16
 script = ExtResource("1_idb68")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1574077518]
 position = Vector2(-5.5, -6)
 shape = SubResource("RectangleShape2D_hrujk")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1509770509]
 stream = ExtResource("2_s2jnl")
 volume_db = -1.284
 
-[node name="Timer" type="Timer" parent="."]
-wait_time = 0.4
+[node name="Timer" type="Timer" parent="." unique_id=2056228982]
+wait_time = 0.2
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1700694268]
 position = Vector2(-5.0000005, -25.000002)
 scale = Vector2(2.75, 2.4999998)
 sprite_frames = SubResource("SpriteFrames_0aj0r")
 autoplay = "default"
 frame_progress = 0.98216033
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=652374178]
 position = Vector2(-5, -8)
 shape = SubResource("RectangleShape2D_meckj")
 

@@ -33,7 +33,7 @@ stream = ExtResource("3_306q4")
 volume_db = -1.284
 
 [node name="Timer" type="Timer" parent="." unique_id=528644455]
-wait_time = 0.3
+wait_time = 0.2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=214108600]
 position = Vector2(-12.5, 1.5)

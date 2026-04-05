@@ -62,7 +62,7 @@ target_position = Vector2(70, 0)
 target_position = Vector2(-70, 0)
 
 [node name="Timer" type="Timer" parent="." unique_id=146240703]
-wait_time = 0.35
+wait_time = 0.2
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1430272789]
 stream = ExtResource("3_2arym")
