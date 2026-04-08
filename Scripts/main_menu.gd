@@ -1,31 +1,14 @@
 extends Control
 
 @onready var tecla_audio: AudioStreamPlayer = $Audio
-@onready var label := $Titulo   # Asegúrate del nombre del nodo
+@onready var label := $Titulo
+@onready var label2 := $Titulo2
+
 
 func _ready():
-	_animar_label()
+	pass  # sin animaciones
 
 
-func _animar_label():
-	var tween = create_tween().set_loops()  # animación infinita
-
-	# --- PARPADEO (fade in/out) ---
-	tween.tween_property(label, "modulate:a", 0.3, 0.5) \
-		.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
-
-	tween.tween_property(label, "modulate:a", 1.0, 0.5) \
-		.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
-
-	# --- MOVIMIENTO SUAVE (arriba/abajo) ---
-	tween.tween_property(label, "position:y", label.position.y - 7, 0.25) \
-		.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
-
-	tween.tween_property(label, "position:y", label.position.y + 7, 0.25) \
-		.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
-	
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	pass
 
