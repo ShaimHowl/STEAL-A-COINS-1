@@ -31,6 +31,28 @@ bg_color = Color(0.75963026, 0.10848156, 0.081031196, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_82la8"]
 bg_color = Color(1, 0.7372549, 0, 1)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1qqd"]
+atlas = ExtResource("6_c0yc2")
+region = Rect2(0, 0, 50, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v37lf"]
+atlas = ExtResource("7_7wcxl")
+region = Rect2(0, 0, 51, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rmeiq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1qqd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v37lf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [sub_resource type="Animation" id="Animation_cfapw"]
 length = 0.001
 tracks/0/type = "value"
@@ -66,28 +88,6 @@ _data = {
 &"RESET": SubResource("Animation_cfapw"),
 &"trampas1": SubResource("Animation_i0yh6")
 }
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_f1qqd"]
-atlas = ExtResource("6_c0yc2")
-region = Rect2(0, 0, 50, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_v37lf"]
-atlas = ExtResource("7_7wcxl")
-region = Rect2(0, 0, 51, 26)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_rmeiq"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_f1qqd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_v37lf")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
 
 [node name="detalles_3" type="Node2D" unique_id=1419563569]
 script = ExtResource("1_05c0f")
@@ -141,7 +141,7 @@ theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_05c0f")
 theme_override_font_sizes/font_size = 42
 theme_override_styles/normal = SubResource("StyleBoxFlat_7wcxl")
-text = "10 de daño/0.4s
+text = "10 de daño  cada 0.2s
 (se mueve mas rapido)"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -162,6 +162,12 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_82la8")
 text = "Seguir
 "
 
+[node name="Slime" type="AnimatedSprite2D" parent="." unique_id=1718616820]
+position = Vector2(639, 395)
+scale = Vector2(3.9600003, 3.2321427)
+sprite_frames = SubResource("SpriteFrames_rmeiq")
+autoplay = "default"
+
 [node name="transicion" type="Sprite2D" parent="." unique_id=929742219]
 position = Vector2(684, 380)
 scale = Vector2(1.4785156, 1)
@@ -174,11 +180,5 @@ autoplay = &"trampas1"
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=657469329]
 stream = ExtResource("5_rmeiq")
 volume_db = -5.474
-
-[node name="Slime" type="AnimatedSprite2D" parent="." unique_id=1718616820]
-position = Vector2(639, 395)
-scale = Vector2(3.9600003, 3.2321427)
-sprite_frames = SubResource("SpriteFrames_rmeiq")
-autoplay = "default"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

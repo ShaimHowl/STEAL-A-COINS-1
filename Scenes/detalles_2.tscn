@@ -230,7 +230,7 @@ theme_override_fonts/font = ExtResource("2_h6pr8")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_h6pr8")
 text = "10 de daño
-cada /0.45s"
+cada 0.2s"
 horizontal_alignment = 1
 vertical_alignment = 1
 

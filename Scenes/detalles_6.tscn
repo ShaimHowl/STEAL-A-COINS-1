@@ -99,38 +99,31 @@ text = "Nivel 6"
 horizontal_alignment = 1
 
 [node name="Subtitulo" type="Label" parent="." unique_id=1259948063]
-offset_left = 339.0
-offset_top = 167.0
-offset_right = 971.0
-offset_bottom = 225.0
+offset_left = 276.0
+offset_top = 139.0
+offset_right = 1065.0
+offset_bottom = 197.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(1, 0.3019608, 0.10980392, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_s0c7q")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_5fmoo")
-text = "-1 de vida/0.3"
+text = "-1 de vida cada 0.2s"
+horizontal_alignment = 1
 
 [node name="Subtitulo2" type="Label" parent="." unique_id=628313008]
 offset_left = 25.0
-offset_top = 243.0
+offset_top = 215.0
 offset_right = 1331.0
-offset_bottom = 533.0
+offset_bottom = 560.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(1, 0.3019608, 0.10980392, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_s0c7q")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_5fmoo")
-text = "En este ultimo nivel no habrá trampas
-
- pero tu vida ira bajando 
-
-de 1 en 1, mas vale que lo acabes pronto, un salto
-
- mal te podria costar la partida
-
-¡¡¡Buena Suerte!!!"
+text = "-1 de vida cada 0.2s"
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="." unique_id=1010612238]
@@ -154,7 +147,6 @@ stream = ExtResource("4_g2ntk")
 volume_db = -5.474
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=1934651516]
-visible = false
 position = Vector2(684, 380)
 scale = Vector2(1.4785156, 1)
 texture = ExtResource("5_uim55")

@@ -740,9 +740,9 @@ volume_db = 8.801
 
 [node name="Button" type="Button" parent="." unique_id=443343748]
 layout_mode = 0
-offset_left = 44.0
-offset_top = 619.0
-offset_right = 457.0
+offset_left = 72.0
+offset_top = 623.0
+offset_right = 485.0
 offset_bottom = 697.0
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
@@ -758,10 +758,10 @@ text = "Ver reglas"
 
 [node name="Button2" type="Button" parent="." unique_id=1508519700]
 layout_mode = 0
-offset_left = 509.0
-offset_top = 624.0
-offset_right = 875.0
-offset_bottom = 698.0
+offset_left = 532.0
+offset_top = 620.0
+offset_right = 881.0
+offset_bottom = 694.0
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 0.72156864, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)

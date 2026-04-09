@@ -127,7 +127,7 @@ theme_override_fonts/font = ExtResource("2_3cusv")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_bm7o6")
 text = "15 de daño
-cada 0.4s"
+cada 0.2s"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -176,7 +176,6 @@ position = Vector2(770.00006, 219.00002)
 scale = Vector2(2.6, 2.6)
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=146815204]
-visible = false
 position = Vector2(684, 380)
 scale = Vector2(1.4785156, 1)
 texture = ExtResource("7_jyo6o")

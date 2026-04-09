@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" uid="uid://cn73umben57tm" path="res://Scripts/detalles_5.gd" id="1_hdicr"]
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_hdicr"]
+[ext_resource type="Texture2D" uid="uid://brdxd14qf075" path="res://Assets/enemy3/Slime/Slime_Spiked_Jump.png" id="3_5an60"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_tsjc1"]
+[ext_resource type="Texture2D" uid="uid://duhpd78jiuov7" path="res://Assets/enemy3/Slime/Slime_Spiked_Run.png" id="4_whcjo"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="5_whcjo"]
 [ext_resource type="PackedScene" uid="uid://ctd8gggp7pk26" path="res://Scenes/sueloveneno.tscn" id="6_hdicr"]
 [ext_resource type="Texture2D" uid="uid://huemn6fs8kn0" path="res://Assets/Background/fondogris.png" id="6_tsjc1"]
@@ -66,6 +68,103 @@ _data = {
 &"trampas1": SubResource("Animation_i0yh6")
 }
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_23p4j"]
+atlas = ExtResource("3_5an60")
+region = Rect2(192, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gv4o1"]
+atlas = ExtResource("3_5an60")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pyg0a"]
+atlas = ExtResource("3_5an60")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nfxc2"]
+atlas = ExtResource("3_5an60")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jb6j8"]
+atlas = ExtResource("3_5an60")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nypmv"]
+atlas = ExtResource("3_5an60")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jtdi"]
+atlas = ExtResource("3_5an60")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i7bq3"]
+atlas = ExtResource("3_5an60")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0bu25"]
+atlas = ExtResource("4_whcjo")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdsjd"]
+atlas = ExtResource("4_whcjo")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iv6vr"]
+atlas = ExtResource("4_whcjo")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4twbx"]
+atlas = ExtResource("4_whcjo")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5an60"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23p4j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gv4o1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pyg0a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nfxc2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jb6j8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nypmv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jtdi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i7bq3")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0bu25")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jdsjd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iv6vr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4twbx")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}]
+
 [node name="detalles_5" type="Node2D" unique_id=2009570502]
 script = ExtResource("1_hdicr")
 
@@ -77,7 +176,7 @@ color = Color(0.0925, 0.37, 0, 1)
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=2031060111]
 offset_top = 125.0
 offset_right = 1361.0
-offset_bottom = 265.0
+offset_bottom = 428.0
 color = Color(0.1175, 0.47, 0, 1)
 
 [node name="ColorRect3" type="ColorRect" parent="." unique_id=1136279547]
@@ -94,7 +193,7 @@ offset_bottom = 720.0
 color = Color(0.1175, 0.47, 0, 1)
 
 [node name="sueloveneno" parent="." unique_id=321802248 instance=ExtResource("6_hdicr")]
-position = Vector2(688, 427.00003)
+position = Vector2(424, 397)
 rotation = -1.5707964
 scale = Vector2(6, 6)
 
@@ -108,20 +207,38 @@ theme_override_colors/font_shadow_color = Color(3.4611928, 0, 0.15817644, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_hdicr")
 theme_override_font_sizes/font_size = 60
-text = "Nivel 5: Quarta trampa"
+text = "Nivel 5: Cuarta trampa"
 
 [node name="Subtitulo" type="Label" parent="." unique_id=1625861455]
-offset_left = 339.0
-offset_top = 167.0
-offset_right = 971.0
-offset_bottom = 225.0
+offset_left = 44.0
+offset_top = 148.0
+offset_right = 676.0
+offset_bottom = 249.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(1, 0.3019608, 0.10980392, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_hdicr")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_whcjo")
-text = "15 de daño/0.4s"
+text = "15 de daño
+cada 0.2s"
+horizontal_alignment = 1
+
+[node name="Subtitulo2" type="Label" parent="." unique_id=136378005]
+offset_left = 695.0
+offset_top = 146.0
+offset_right = 1327.0
+offset_bottom = 247.0
+theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.3019608, 0.10980392, 1)
+theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
+theme_override_fonts/font = ExtResource("2_hdicr")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_whcjo")
+text = "100 de daño
+muerte en 1 hit
+(pueden saltar)"
+horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="." unique_id=1488575084]
 offset_left = 409.0
@@ -144,7 +261,6 @@ stream = ExtResource("5_whcjo")
 volume_db = -5.474
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=953316526]
-visible = false
 position = Vector2(684, 380)
 scale = Vector2(1.4785156, 1)
 texture = ExtResource("6_tsjc1")
@@ -152,5 +268,13 @@ texture = ExtResource("6_tsjc1")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="transicion" unique_id=1810551942]
 libraries/ = SubResource("AnimationLibrary_5an60")
 autoplay = &"trampas1"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=413372570]
+texture_filter = 1
+position = Vector2(1000, 364.00003)
+scale = Vector2(4, 4.893)
+sprite_frames = SubResource("SpriteFrames_5an60")
+animation = &"run"
+autoplay = "run"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

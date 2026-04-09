@@ -284,7 +284,7 @@ theme_override_fonts/font = ExtResource("2_mqihf")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_ehmkb")
 text = "15 de daño 
-cada 0.4s"
+cada 0.2s"
 horizontal_alignment = 1
 
 [node name="Pinchos" type="Label" parent="." unique_id=778807546]
@@ -299,7 +299,7 @@ theme_override_fonts/font = ExtResource("2_mqihf")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_ehmkb")
 text = "15 de daño 
-cada 0.3s"
+cada 0.2s"
 horizontal_alignment = 1
 
 [node name="Portal" type="Label" parent="." unique_id=2033636085]
