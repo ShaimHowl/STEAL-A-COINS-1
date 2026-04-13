@@ -6,40 +6,64 @@
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="4_wlf8h"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="4_yu0yr"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j7idb"]
+bg_color = Color(0.27450982, 0.015686275, 0.011764706, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 9
+border_width_bottom = 9
+border_color = Color(1, 0.7372549, 0, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xe2t2"]
-bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+bg_color = Color(0.27404818, 0.0148830265, 0.009923658, 1)
 border_width_left = 10
 border_width_top = 5
 border_width_right = 10
 border_width_bottom = 5
 border_color = Color(1, 0.7372549, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yu0yr"]
-bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+bg_color = Color(0.27450982, 0.015686275, 0.011764706, 1)
 border_width_left = 10
 border_width_top = 5
 border_width_right = 10
 border_width_bottom = 5
 border_color = Color(1, 0.7372549, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wlf8h"]
-bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+bg_color = Color(0.27450982, 0.015686275, 0.011764706, 1)
 border_width_left = 10
 border_width_top = 5
 border_width_right = 10
 border_width_bottom = 5
 border_color = Color(1, 0.7372549, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
 
 [node name="Menupausa" type="Node2D" unique_id=1821771297]
 script = ExtResource("1_dbfgq")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1317046054]
+[node name="ColorRect" type="Panel" parent="." unique_id=2112459776]
 visible = false
-offset_left = 333.0
-offset_top = 216.0
-offset_right = 1110.0
-offset_bottom = 406.0
-color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+offset_left = 344.0
+offset_top = 178.0
+offset_right = 1098.0
+offset_bottom = 411.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_j7idb")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=320845081]
 anchors_preset = 8
@@ -53,6 +77,7 @@ offset_right = 1096.0
 offset_bottom = 385.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 19
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=1663856875]
 layout_mode = 2
@@ -66,7 +91,7 @@ text = "     Pausa"
 [node name="Button" type="Button" parent="VBoxContainer" unique_id=395320088]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.9882353, 0.73333335, 0, 1)
-theme_override_colors/font_focus_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_focus_color = Color(0.20989329, 0.2093243, 0.15586132, 1)
 theme_override_colors/font_pressed_color = Color(0.9882353, 0.73333335, 0, 1)
 theme_override_fonts/font = ExtResource("3_yu0yr")
 theme_override_font_sizes/font_size = 40
@@ -76,7 +101,7 @@ text = "Reiniciar"
 [node name="Button2" type="Button" parent="VBoxContainer" unique_id=1076346233]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.9882353, 0.73333335, 0, 1)
-theme_override_colors/font_focus_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_focus_color = Color(0.20989329, 0.2093243, 0.15586132, 1)
 theme_override_colors/font_pressed_color = Color(0.9882353, 0.73333335, 0, 1)
 theme_override_fonts/font = ExtResource("3_yu0yr")
 theme_override_font_sizes/font_size = 40
@@ -87,7 +112,7 @@ text = "Volver al menu
 [node name="Button3" type="Button" parent="VBoxContainer" unique_id=307016481]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.9882353, 0.73333335, 0, 1)
-theme_override_colors/font_focus_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
+theme_override_colors/font_focus_color = Color(0.20989329, 0.2093243, 0.15586132, 1)
 theme_override_colors/font_pressed_color = Color(0.9882353, 0.73333335, 0, 1)
 theme_override_fonts/font = ExtResource("4_wlf8h")
 theme_override_font_sizes/font_size = 40

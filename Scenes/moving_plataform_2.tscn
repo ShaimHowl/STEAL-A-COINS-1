@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://b0siv771ytk7n"]
+[gd_scene format=4 uid="uid://b0siv771ytk7n"]
 
 [ext_resource type="Texture2D" uid="uid://cqr6j3evgk3cn" path="res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png" id="1_b8ima"]
 
@@ -78,22 +78,6 @@ sources/0 = SubResource("TileSetAtlasSource_dnh8m")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eywq7"]
 size = Vector2(100, 17)
 
-[sub_resource type="Animation" id="Animation_b8ima"]
-resource_name = "arriba"
-length = 2.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1, 2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(0, -150), Vector2(0, 0)]
-}
-
 [sub_resource type="Animation" id="Animation_dnh8m"]
 length = 2.0
 loop_mode = 1
@@ -110,26 +94,41 @@ tracks/0/keys = {
 "values": [Vector2(0, 0), Vector2(0, -100), Vector2(0, 0)]
 }
 
+[sub_resource type="Animation" id="Animation_b8ima"]
+resource_name = "arriba"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -150), Vector2(0, 0)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_x5t5r"]
 _data = {
 &"RESET": SubResource("Animation_dnh8m"),
 &"arriba": SubResource("Animation_b8ima")
 }
 
-[node name="MovingPlataform2" type="Node2D"]
+[node name="MovingPlataform2" type="Node2D" unique_id=405592784]
 
-[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=1717847675]
 
-[node name="TileMapLayer" type="TileMapLayer" parent="AnimatableBody2D"]
+[node name="TileMapLayer" type="TileMapLayer" parent="AnimatableBody2D" unique_id=1683740903]
 tile_map_data = PackedByteArray("AAAAAAAAAAAAAAIAAAABAAAAAAABAAIAAAACAAAAAAAAAAIAAAADAAAAAAABAAIAAAAEAAAAAAAAAAIAAAAFAAAAAAABAAIAAAA=")
 tile_set = SubResource("TileSet_x5t5r")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=1905673012]
 position = Vector2(48, 9.5)
 shape = SubResource("RectangleShape2D_eywq7")
+one_way_collision = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D"]
-libraries = {
-&"": SubResource("AnimationLibrary_x5t5r")
-}
-autoplay = "RESET"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=1835353236]
+libraries/ = SubResource("AnimationLibrary_x5t5r")
+autoplay = &"RESET"
