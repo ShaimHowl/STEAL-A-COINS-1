@@ -1,9 +1,10 @@
+Sprite2D
+AnimatedSprite2D
 ColorRect
 Label
 CharacterBody2D
 Button
 CanvasLayer
-AnimatedSprite2D
 TileMapLayer
 CollisionShape2D
 Area2D
