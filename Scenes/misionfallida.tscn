@@ -11,8 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://co7sp2k8lfmgy" path="res://Assets/Background/suelomuerte.png" id="9_7ikvd"]
 [ext_resource type="Texture2D" uid="uid://dncuitfxjy7ng" path="res://Assets/Coins_16x16/PNG/Coin_One.png" id="9_80bml"]
 [ext_resource type="Texture2D" uid="uid://i0l0ishmf0qh" path="res://Assets/Background/sueloo.png" id="10_7ikvd"]
-[ext_resource type="Texture2D" uid="uid://huemn6fs8kn0" path="res://Assets/Background/fondogris.png" id="11_7ikvd"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="13_5iqhi"]
+[ext_resource type="Texture2D" uid="uid://cb6hb7o7cv25n" path="res://azulito.png" id="13_gjeh3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k3bf4"]
 atlas = ExtResource("9_80bml")
@@ -106,12 +106,12 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="Animation" id="Animation_qrfpl"]
+[sub_resource type="Animation" id="Animation_hnw35"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D2:modulate")
+tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -121,29 +121,26 @@ tracks/0/keys = {
 "values": [Color(1, 1, 1, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_84o0k"]
-resource_name = "mision"
+[sub_resource type="Animation" id="Animation_nmfx7"]
+resource_name = "juego"
+length = 1.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D2:modulate")
+tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
+"times": PackedFloat32Array(0, 1.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_xjrh6"]
-resource_name = "mostrar_textos"
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_xjrh6"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_shps0"]
 _data = {
-&"RESET": SubResource("Animation_qrfpl"),
-&"mision": SubResource("Animation_84o0k"),
-&"mostrar_textos": SubResource("Animation_xjrh6")
+&"RESET": SubResource("Animation_hnw35"),
+&"juego": SubResource("Animation_nmfx7")
 }
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=363863865]
@@ -241,22 +238,21 @@ position = Vector2(676, 494)
 scale = Vector2(0.6226934, 0.4315234)
 texture = ExtResource("10_7ikvd")
 
-[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=540339226]
-position = Vector2(708, 372)
-scale = Vector2(1.7304688, 1)
-texture = ExtResource("11_7ikvd")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D2" unique_id=324700871]
-root_node = NodePath("../../Sprite2D")
-libraries/ = SubResource("AnimationLibrary_xjrh6")
-autoplay = &"mision"
-
 [node name="SonidoMisionF" type="AudioStreamPlayer" parent="." unique_id=1766815745]
 stream = ExtResource("7_dae75")
 
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=577095762]
 stream = ExtResource("13_5iqhi")
 volume_db = 13.193
+
+[node name="transicion" type="Sprite2D" parent="." unique_id=1765478326]
+position = Vector2(693, 360.00003)
+scale = Vector2(3.4746988, 4.154639)
+texture = ExtResource("13_gjeh3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion" unique_id=1808543330]
+libraries/ = SubResource("AnimationLibrary_shps0")
+autoplay = &"juego"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

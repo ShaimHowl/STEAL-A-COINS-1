@@ -7,49 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://cmo6rlgoleck3" path="res://Icono/Copilot_20260102_165125.png" id="4_p8764"]
 [ext_resource type="Texture2D" uid="uid://c6026bdnis2og" path="res://Icono/home.png" id="6_00ljf"]
 [ext_resource type="AudioStream" uid="uid://dx8rucdunm3do" path="res://Sounds/complete.wav" id="6_wawrx"]
-[ext_resource type="Texture2D" uid="uid://huemn6fs8kn0" path="res://Assets/Background/fondogris.png" id="8_00ljf"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="8_8qtbn"]
+[ext_resource type="Texture2D" uid="uid://cb6hb7o7cv25n" path="res://azulito.png" id="10_p8764"]
 [ext_resource type="Texture2D" uid="uid://dncuitfxjy7ng" path="res://Assets/Coins_16x16/PNG/Coin_One.png" id="10_pcqls"]
-
-[sub_resource type="Animation" id="Animation_qrfpl"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D2:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_84o0k"]
-resource_name = "mision"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D2:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_xjrh6"]
-resource_name = "mostrar_textos"
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_xjrh6"]
-_data = {
-&"RESET": SubResource("Animation_qrfpl"),
-&"mision": SubResource("Animation_84o0k"),
-&"mostrar_textos": SubResource("Animation_xjrh6")
-}
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nolx5"]
 atlas = ExtResource("10_pcqls")
@@ -143,6 +103,43 @@ animations = [{
 "speed": 11.0
 }]
 
+[sub_resource type="Animation" id="Animation_hnw35"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_nmfx7"]
+resource_name = "juego"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qk30j"]
+_data = {
+&"RESET": SubResource("Animation_hnw35"),
+&"juego": SubResource("Animation_nmfx7")
+}
+
 [node name="CanvasLayer" type="CanvasLayer" unique_id=835007490]
 script = ExtResource("1_00ljf")
 
@@ -211,16 +208,6 @@ expand_icon = true
 [node name="SonidoMision" type="AudioStreamPlayer" parent="." unique_id=496863273]
 stream = ExtResource("6_wawrx")
 
-[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=448093773]
-position = Vector2(708, 372)
-scale = Vector2(1.7304688, 1)
-texture = ExtResource("8_00ljf")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D2" unique_id=878338666]
-root_node = NodePath("")
-libraries/ = SubResource("AnimationLibrary_xjrh6")
-autoplay = &"mision"
-
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1429392355]
 stream = ExtResource("8_8qtbn")
 volume_db = -5.474
@@ -236,6 +223,15 @@ position = Vector2(1276.0001, 153.00002)
 scale = Vector2(5, 4.333)
 sprite_frames = SubResource("SpriteFrames_p8764")
 autoplay = "default"
+
+[node name="transicion" type="Sprite2D" parent="." unique_id=538020936]
+position = Vector2(693, 360.00003)
+scale = Vector2(3.4746988, 4.154639)
+texture = ExtResource("10_p8764")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion" unique_id=2048097943]
+libraries/ = SubResource("AnimationLibrary_qk30j")
+autoplay = &"juego"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
