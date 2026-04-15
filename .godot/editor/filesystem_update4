@@ -9,3 +9,5 @@ res://Scenes/mision4.tscn
 res://Scenes/mision5.tscn
 res://Scenes/mision6.tscn
 res://Scenes/misionfallida.tscn
+res://Scenes/veneno.tscn
+res://Scripts/veneno.gd
