@@ -1,7 +1,7 @@
-AudioStreamPlayer
-Panel
 Sprite2D
 AnimatedSprite2D
+AudioStreamPlayer
+Panel
 ColorRect
 Label
 CharacterBody2D

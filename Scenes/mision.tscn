@@ -221,7 +221,6 @@ expand_icon = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1709945621]
-visible = false
 position = Vector2(708, 372)
 scale = Vector2(1.7304688, 1)
 texture = ExtResource("8_84o0k")
