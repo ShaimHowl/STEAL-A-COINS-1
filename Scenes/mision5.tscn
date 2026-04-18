@@ -9,6 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="8_non5e"]
 [ext_resource type="Texture2D" uid="uid://cb6hb7o7cv25n" path="res://azulito.png" id="9_iiqci"]
 [ext_resource type="Texture2D" uid="uid://dncuitfxjy7ng" path="res://Assets/Coins_16x16/PNG/Coin_One.png" id="10_f5us4"]
+[ext_resource type="AudioStream" uid="uid://dx8rucdunm3do" path="res://Sounds/complete.wav" id="10_wmatl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nolx5"]
 atlas = ExtResource("10_f5us4")
@@ -228,6 +229,9 @@ texture = ExtResource("9_iiqci")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="transicion" unique_id=136884473]
 libraries/ = SubResource("AnimationLibrary_f5us4")
 autoplay = &"juego"
+
+[node name="SonidoMision" type="AudioStreamPlayer" parent="." unique_id=1191722117]
+stream = ExtResource("10_wmatl")
 
 [connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
