@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://c010ekbvplouh"]
+
+[ext_resource type="Script" uid="uid://dfnt8dohc5767" path="res://Scripts/pinchos.gd" id="1_gm5gc"]
+[ext_resource type="Texture2D" uid="uid://bgr4p83iwlef4" path="res://Assets/Animate Spikes/Animate Spikes/spike.png" id="2_gm5gc"]
+[ext_resource type="AudioStream" uid="uid://druswm8b1d213" path="res://Sounds/homemadeoof-47509.mp3" id="3_n5qjn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2dfvy"]
+size = Vector2(4, 3)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k3w8g"]
+size = Vector2(10, 19)
+
+[node name="Pinchos2" type="CharacterBody2D" unique_id=1653019270]
+script = ExtResource("1_gm5gc")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1589405448]
+collision_layer = 2
+collision_mask = 16
+script = ExtResource("1_gm5gc")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=702859382]
+texture_filter = 1
+position = Vector2(-13, -11.5)
+scale = Vector2(0.62857145, 0.67142856)
+texture = ExtResource("2_gm5gc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1045107726]
+position = Vector2(-13, -21.5)
+shape = SubResource("RectangleShape2D_2dfvy")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=352411190]
+stream = ExtResource("3_n5qjn")
+volume_db = -1.284
+
+[node name="Timer" type="Timer" parent="." unique_id=1818091126]
+wait_time = 0.2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=655381518]
+position = Vector2(-13, -10.5)
+shape = SubResource("RectangleShape2D_k3w8g")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
