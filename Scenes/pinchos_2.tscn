@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://druswm8b1d213" path="res://Sounds/homemadeoof-47509.mp3" id="3_n5qjn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2dfvy"]
-size = Vector2(4, 3)
+size = Vector2(6, 3)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k3w8g"]
 size = Vector2(10, 19)
