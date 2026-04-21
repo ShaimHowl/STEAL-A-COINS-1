@@ -9,7 +9,7 @@ func _physics_process(delta):
 		temporizador_daño -= delta
 		if temporizador_daño <= 0.0:
 			if jugador_en_contacto.has_method("recibir_daño"):
-				jugador_en_contacto.recibir_daño(15)
+				jugador_en_contacto.recibir_daño(5)
 				$AudioStreamPlayer.play()
 			temporizador_daño = tiempo_entre_daño
 
