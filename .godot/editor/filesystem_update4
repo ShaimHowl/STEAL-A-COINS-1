@@ -1,5 +1,3 @@
 res://Scenes/nivel_6.tscn
-res://Scenes/jugador.tscn
 res://Scenes/pinchos_2.tscn
-res://Scripts/pinchos.gd
 res://Scripts/veneno.gd
