@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const enemyrun = 225
+const enemyrun = 250
 const gravedad = 98
 
 var jugador_en_area: Node2D = null
